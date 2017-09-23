@@ -1,0 +1,6 @@
+"","Everything","our study","public samples","GS1","GS2","GS1 only","GS2 only"
+"Core genes",274,302,354,358,295,0,0
+"Soft core genes",150,117,51,75,145,0,0
+"Shell genes",2701,2822,2631,2877,2654,7,8
+"Cloud genes",25340,11554,17002,6721,21870,3494,18426
+"Total genes",28465,14795,20038,10031,24964,3501,18434

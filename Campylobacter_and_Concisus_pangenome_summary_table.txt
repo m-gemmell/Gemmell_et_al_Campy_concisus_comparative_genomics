@@ -1,0 +1,6 @@
+"","All Campylobacter","Other Campylobacter","C. concisus","Genes present in Other Campylobacter and absent in C. concisus","Genes present in C. concisus and absent in other Campylobacter"
+"Core genes",0,0,2,0,0
+"Soft core genes",2,0,403,0,10
+"Shell genes",2897,393,2740,207,1664
+"Cloud genes",56206,31073,26402,29095,24718
+"Total genes",59105,31466,29547,29302,26392

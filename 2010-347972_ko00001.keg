@@ -1,0 +1,1516 @@
++D	KO
+#<h2><a href="/kegg/kegg2.html"><img src="/Fig/bget/kegg3.gif" align="middle" border=0></a> &nbsp; KEGG Orthology (KO)</h2>
+#<!---
+#ENTRY       ko00001
+#NAME        KO
+#DEFINITION  KEGG Orthology (KO)
+#--->
+!
+A<b>Metabolism</b>
+B  <b>Overview</b>
+C    01200 Carbon metabolism [PATH:ko01200]
+D      PROKKA_01784 <a href="/dbget-bin/www_bget?ko:K01624">K01624</a>  FBA, fbaA; fructose-bisphosphate aldolase, class II [EC:4.1.2.13]
+D      PROKKA_00763 <a href="/dbget-bin/www_bget?ko:K01803">K01803</a>  TPI, tpiA; triosephosphate isomerase (TIM) [EC:5.3.1.1]
+D      PROKKA_00765 <a href="/dbget-bin/www_bget?ko:K00134">K00134</a>  GAPDH, gapA; glyceraldehyde 3-phosphate dehydrogenase [EC:1.2.1.12]
+D      PROKKA_00764 <a href="/dbget-bin/www_bget?ko:K00927">K00927</a>  PGK, pgk; phosphoglycerate kinase [EC:2.7.2.3]
+D      PROKKA_00774 <a href="/dbget-bin/www_bget?ko:K15633">K15633</a>  gpmI; 2,3-bisphosphoglycerate-independent phosphoglycerate mutase [EC:5.4.2.12]
+D      PROKKA_01043 <a href="/dbget-bin/www_bget?ko:K15633">K15633</a>  gpmI; 2,3-bisphosphoglycerate-independent phosphoglycerate mutase [EC:5.4.2.12]
+D      PROKKA_00025 <a href="/dbget-bin/www_bget?ko:K01689">K01689</a>  ENO, eno; enolase [EC:4.2.1.11]
+D      PROKKA_00900 <a href="/dbget-bin/www_bget?ko:K01689">K01689</a>  ENO, eno; enolase [EC:4.2.1.11]
+D      PROKKA_00472 <a href="/dbget-bin/www_bget?ko:K00029">K00029</a>  E1.1.1.40, maeB; malate dehydrogenase (oxaloacetate-decarboxylating)(NADP+) [EC:1.1.1.40]
+D      PROKKA_00250 <a href="/dbget-bin/www_bget?ko:K00615">K00615</a>  E2.2.1.1, tktA, tktB; transketolase [EC:2.2.1.1]
+D      PROKKA_00578 <a href="/dbget-bin/www_bget?ko:K00616">K00616</a>  E2.2.1.2, talA, talB; transaldolase [EC:2.2.1.2]
+D      PROKKA_01477 <a href="/dbget-bin/www_bget?ko:K00948">K00948</a>  PRPS, prsA; ribose-phosphate pyrophosphokinase [EC:2.7.6.1]
+D      PROKKA_00002 <a href="/dbget-bin/www_bget?ko:K01647">K01647</a>  CS, gltA; citrate synthase [EC:2.3.3.1]
+D      PROKKA_01508 <a href="/dbget-bin/www_bget?ko:K00031">K00031</a>  IDH1, IDH2, icd; isocitrate dehydrogenase [EC:1.1.1.42]
+D      PROKKA_01511 <a href="/dbget-bin/www_bget?ko:K00174">K00174</a>  korA, oorA, oforA; 2-oxoglutarate/2-oxoacid ferredoxin oxidoreductase subunit alpha [EC:1.2.7.3 1.2.7.11]
+D      PROKKA_01512 <a href="/dbget-bin/www_bget?ko:K00175">K00175</a>  korB, oorB, oforB; 2-oxoglutarate/2-oxoacid ferredoxin oxidoreductase subunit beta [EC:1.2.7.3 1.2.7.11]
+D      PROKKA_01513 <a href="/dbget-bin/www_bget?ko:K00177">K00177</a>  korC, oorC; 2-oxoglutarate ferredoxin oxidoreductase subunit gamma [EC:1.2.7.3]
+D      PROKKA_01510 <a href="/dbget-bin/www_bget?ko:K00176">K00176</a>  korD, oorD; 2-oxoglutarate ferredoxin oxidoreductase subunit delta [EC:1.2.7.3]
+D      PROKKA_00828 <a href="/dbget-bin/www_bget?ko:K00244">K00244</a>  frdA; fumarate reductase flavoprotein subunit [EC:1.3.5.4]
+D      PROKKA_00879 <a href="/dbget-bin/www_bget?ko:K00244">K00244</a>  frdA; fumarate reductase flavoprotein subunit [EC:1.3.5.4]
+D      PROKKA_00896 <a href="/dbget-bin/www_bget?ko:K00244">K00244</a>  frdA; fumarate reductase flavoprotein subunit [EC:1.3.5.4]
+D      PROKKA_00961 <a href="/dbget-bin/www_bget?ko:K00244">K00244</a>  frdA; fumarate reductase flavoprotein subunit [EC:1.3.5.4]
+D      PROKKA_00966 <a href="/dbget-bin/www_bget?ko:K00244">K00244</a>  frdA; fumarate reductase flavoprotein subunit [EC:1.3.5.4]
+D      PROKKA_01141 <a href="/dbget-bin/www_bget?ko:K00244">K00244</a>  frdA; fumarate reductase flavoprotein subunit [EC:1.3.5.4]
+D      PROKKA_01188 <a href="/dbget-bin/www_bget?ko:K00244">K00244</a>  frdA; fumarate reductase flavoprotein subunit [EC:1.3.5.4]
+D      PROKKA_01611 <a href="/dbget-bin/www_bget?ko:K00244">K00244</a>  frdA; fumarate reductase flavoprotein subunit [EC:1.3.5.4]
+D      PROKKA_01615 <a href="/dbget-bin/www_bget?ko:K00244">K00244</a>  frdA; fumarate reductase flavoprotein subunit [EC:1.3.5.4]
+D      PROKKA_01641 <a href="/dbget-bin/www_bget?ko:K00244">K00244</a>  frdA; fumarate reductase flavoprotein subunit [EC:1.3.5.4]
+D      PROKKA_01676 <a href="/dbget-bin/www_bget?ko:K00244">K00244</a>  frdA; fumarate reductase flavoprotein subunit [EC:1.3.5.4]
+D      PROKKA_01703 <a href="/dbget-bin/www_bget?ko:K00244">K00244</a>  frdA; fumarate reductase flavoprotein subunit [EC:1.3.5.4]
+D      PROKKA_01723 <a href="/dbget-bin/www_bget?ko:K00244">K00244</a>  frdA; fumarate reductase flavoprotein subunit [EC:1.3.5.4]
+D      PROKKA_01774 <a href="/dbget-bin/www_bget?ko:K00244">K00244</a>  frdA; fumarate reductase flavoprotein subunit [EC:1.3.5.4]
+D      PROKKA_01782 <a href="/dbget-bin/www_bget?ko:K00244">K00244</a>  frdA; fumarate reductase flavoprotein subunit [EC:1.3.5.4]
+D      PROKKA_00889 <a href="/dbget-bin/www_bget?ko:K00024">K00024</a>  mdh; malate dehydrogenase [EC:1.1.1.37]
+D      PROKKA_01509 <a href="/dbget-bin/www_bget?ko:K00024">K00024</a>  mdh; malate dehydrogenase [EC:1.1.1.37]
+D      PROKKA_00801 <a href="/dbget-bin/www_bget?ko:K03841">K03841</a>  FBP, fbp; fructose-1,6-bisphosphatase I [EC:3.1.3.11]
+D      PROKKA_00733 <a href="/dbget-bin/www_bget?ko:K01610">K01610</a>  E4.1.1.49, pckA; phosphoenolpyruvate carboxykinase (ATP) [EC:4.1.1.49]
+D      PROKKA_01069 <a href="/dbget-bin/www_bget?ko:K01958">K01958</a>  PC, pyc; pyruvate carboxylase [EC:6.4.1.1]
+D      PROKKA_00732 <a href="/dbget-bin/www_bget?ko:K01960">K01960</a>  pycB; pyruvate carboxylase subunit B [EC:6.4.1.1]
+D      PROKKA_01470 <a href="/dbget-bin/www_bget?ko:K02160">K02160</a>  accB, bccP; acetyl-CoA carboxylase biotin carboxyl carrier protein
+D      PROKKA_01469 <a href="/dbget-bin/www_bget?ko:K01961">K01961</a>  accC; acetyl-CoA carboxylase, biotin carboxylase subunit [EC:6.4.1.2 6.3.4.14]
+D      PROKKA_01422 <a href="/dbget-bin/www_bget?ko:K15022">K15022</a>  fdhB; formate dehydrogenase beta subunit [EC:1.2.1.43]
+D      PROKKA_00722 <a href="/dbget-bin/www_bget?ko:K01938">K01938</a>  fhs; formate--tetrahydrofolate ligase [EC:6.3.4.3]
+D      PROKKA_00605 <a href="/dbget-bin/www_bget?ko:K00123">K00123</a>  fdoG, fdfH; formate dehydrogenase major subunit [EC:1.2.1.2]
+D      PROKKA_00606 <a href="/dbget-bin/www_bget?ko:K00123">K00123</a>  fdoG, fdfH; formate dehydrogenase major subunit [EC:1.2.1.2]
+D      PROKKA_00829 <a href="/dbget-bin/www_bget?ko:K00123">K00123</a>  fdoG, fdfH; formate dehydrogenase major subunit [EC:1.2.1.2]
+D      PROKKA_01133 <a href="/dbget-bin/www_bget?ko:K00123">K00123</a>  fdoG, fdfH; formate dehydrogenase major subunit [EC:1.2.1.2]
+D      PROKKA_00604 <a href="/dbget-bin/www_bget?ko:K00124">K00124</a>  fdoH; formate dehydrogenase iron-sulfur subunit
+D      PROKKA_00830 <a href="/dbget-bin/www_bget?ko:K00124">K00124</a>  fdoH; formate dehydrogenase iron-sulfur subunit
+D      PROKKA_00831 <a href="/dbget-bin/www_bget?ko:K00127">K00127</a>  fdoI; formate dehydrogenase subunit gamma
+D      PROKKA_01175 <a href="/dbget-bin/www_bget?ko:K00127">K00127</a>  fdoI; formate dehydrogenase subunit gamma
+D      PROKKA_00667 <a href="/dbget-bin/www_bget?ko:K00018">K00018</a>  hprA; glycerate dehydrogenase [EC:1.1.1.29]
+D      PROKKA_01256 <a href="/dbget-bin/www_bget?ko:K00058">K00058</a>  serA, PHGDH; D-3-phosphoglycerate dehydrogenase [EC:1.1.1.95]
+D      PROKKA_01771 <a href="/dbget-bin/www_bget?ko:K00831">K00831</a>  serC, PSAT1; phosphoserine aminotransferase [EC:2.6.1.52]
+D      PROKKA_00579 <a href="/dbget-bin/www_bget?ko:K01079">K01079</a>  serB, PSPH; phosphoserine phosphatase [EC:3.1.3.3]
+D      PROKKA_01325 <a href="/dbget-bin/www_bget?ko:K01752">K01752</a>  E4.3.1.17, sdaA, sdaB, tdcG; L-serine dehydratase [EC:4.3.1.17]
+D      PROKKA_01361 <a href="/dbget-bin/www_bget?ko:K12339">K12339</a>  cysM; cysteine synthase B [EC:2.5.1.47]
+C    01210 2-Oxocarboxylic acid metabolism [PATH:ko01210]
+D      PROKKA_00002 <a href="/dbget-bin/www_bget?ko:K01647">K01647</a>  CS, gltA; citrate synthase [EC:2.3.3.1]
+D      PROKKA_01508 <a href="/dbget-bin/www_bget?ko:K00031">K00031</a>  IDH1, IDH2, icd; isocitrate dehydrogenase [EC:1.1.1.42]
+D      PROKKA_00304 <a href="/dbget-bin/www_bget?ko:K00620">K00620</a>  argJ; glutamate N-acetyltransferase / amino-acid N-acetyltransferase [EC:2.3.1.35 2.3.1.1]
+D      PROKKA_00852 <a href="/dbget-bin/www_bget?ko:K00821">K00821</a>  argD; acetylornithine/N-succinyldiaminopimelate aminotransferase [EC:2.6.1.11 2.6.1.17]
+D      PROKKA_00085 <a href="/dbget-bin/www_bget?ko:K01703">K01703</a>  leuC, IPMI-L; 3-isopropylmalate/(R)-2-methylmalate dehydratase large subunit [EC:4.2.1.33 4.2.1.35]
+D      PROKKA_00968 <a href="/dbget-bin/www_bget?ko:K01703">K01703</a>  leuC, IPMI-L; 3-isopropylmalate/(R)-2-methylmalate dehydratase large subunit [EC:4.2.1.33 4.2.1.35]
+D      PROKKA_01397 <a href="/dbget-bin/www_bget?ko:K01703">K01703</a>  leuC, IPMI-L; 3-isopropylmalate/(R)-2-methylmalate dehydratase large subunit [EC:4.2.1.33 4.2.1.35]
+D      PROKKA_00398 <a href="/dbget-bin/www_bget?ko:K01704">K01704</a>  leuD, IPMI-S; 3-isopropylmalate/(R)-2-methylmalate dehydratase small subunit [EC:4.2.1.33 4.2.1.35]
+D      PROKKA_00967 <a href="/dbget-bin/www_bget?ko:K01704">K01704</a>  leuD, IPMI-S; 3-isopropylmalate/(R)-2-methylmalate dehydratase small subunit [EC:4.2.1.33 4.2.1.35]
+D      PROKKA_01396 <a href="/dbget-bin/www_bget?ko:K01704">K01704</a>  leuD, IPMI-S; 3-isopropylmalate/(R)-2-methylmalate dehydratase small subunit [EC:4.2.1.33 4.2.1.35]
+D      PROKKA_00399 <a href="/dbget-bin/www_bget?ko:K00052">K00052</a>  leuB, IMDH; 3-isopropylmalate dehydrogenase [EC:1.1.1.85]
+D      PROKKA_00969 <a href="/dbget-bin/www_bget?ko:K00052">K00052</a>  leuB, IMDH; 3-isopropylmalate dehydrogenase [EC:1.1.1.85]
+D      PROKKA_00267 <a href="/dbget-bin/www_bget?ko:K01687">K01687</a>  ilvD; dihydroxy-acid dehydratase [EC:4.2.1.9]
+D      PROKKA_01081 <a href="/dbget-bin/www_bget?ko:K01687">K01687</a>  ilvD; dihydroxy-acid dehydratase [EC:4.2.1.9]
+D      PROKKA_01139 <a href="/dbget-bin/www_bget?ko:K00826">K00826</a>  E2.6.1.42, ilvE; branched-chain amino acid aminotransferase [EC:2.6.1.42]
+D      PROKKA_00970 <a href="/dbget-bin/www_bget?ko:K01649">K01649</a>  leuA, IMS; 2-isopropylmalate synthase [EC:2.3.3.13]
+C    01212 Fatty acid metabolism [PATH:ko01212]
+D      PROKKA_01470 <a href="/dbget-bin/www_bget?ko:K02160">K02160</a>  accB, bccP; acetyl-CoA carboxylase biotin carboxyl carrier protein
+D      PROKKA_01469 <a href="/dbget-bin/www_bget?ko:K01961">K01961</a>  accC; acetyl-CoA carboxylase, biotin carboxylase subunit [EC:6.4.1.2 6.3.4.14]
+D      PROKKA_01290 <a href="/dbget-bin/www_bget?ko:K00645">K00645</a>  fabD; [acyl-carrier-protein] S-malonyltransferase [EC:2.3.1.39]
+D      PROKKA_01289 <a href="/dbget-bin/www_bget?ko:K00648">K00648</a>  fabH; 3-oxoacyl-[acyl-carrier-protein] synthase III [EC:2.3.1.180]
+D      PROKKA_00844 <a href="/dbget-bin/www_bget?ko:K00647">K00647</a>  fabB; 3-oxoacyl-[acyl-carrier-protein] synthase I [EC:2.3.1.41]
+D      PROKKA_00847 <a href="/dbget-bin/www_bget?ko:K09458">K09458</a>  fabF; 3-oxoacyl-[acyl-carrier-protein] synthase II [EC:2.3.1.179]
+D      PROKKA_01293 <a href="/dbget-bin/www_bget?ko:K09458">K09458</a>  fabF; 3-oxoacyl-[acyl-carrier-protein] synthase II [EC:2.3.1.179]
+D      PROKKA_00846 <a href="/dbget-bin/www_bget?ko:K00059">K00059</a>  fabG; 3-oxoacyl-[acyl-carrier protein] reductase [EC:1.1.1.100]
+D      PROKKA_01291 <a href="/dbget-bin/www_bget?ko:K00059">K00059</a>  fabG; 3-oxoacyl-[acyl-carrier protein] reductase [EC:1.1.1.100]
+D      PROKKA_01315 <a href="/dbget-bin/www_bget?ko:K02372">K02372</a>  fabZ; 3-hydroxyacyl-[acyl-carrier-protein] dehydratase [EC:4.2.1.59]
+D      PROKKA_01330 <a href="/dbget-bin/www_bget?ko:K02372">K02372</a>  fabZ; 3-hydroxyacyl-[acyl-carrier-protein] dehydratase [EC:4.2.1.59]
+D      PROKKA_00762 <a href="/dbget-bin/www_bget?ko:K00208">K00208</a>  fabI; enoyl-[acyl-carrier protein] reductase I [EC:1.3.1.9 1.3.1.10]
+D      PROKKA_00481 <a href="/dbget-bin/www_bget?ko:K01897">K01897</a>  ACSL, fadD; long-chain acyl-CoA synthetase [EC:6.2.1.3]
+D      PROKKA_00925 <a href="/dbget-bin/www_bget?ko:K01897">K01897</a>  ACSL, fadD; long-chain acyl-CoA synthetase [EC:6.2.1.3]
+D      PROKKA_01179 <a href="/dbget-bin/www_bget?ko:K01897">K01897</a>  ACSL, fadD; long-chain acyl-CoA synthetase [EC:6.2.1.3]
+C    01230 Biosynthesis of amino acids [PATH:ko01230]
+D      PROKKA_00763 <a href="/dbget-bin/www_bget?ko:K01803">K01803</a>  TPI, tpiA; triosephosphate isomerase (TIM) [EC:5.3.1.1]
+D      PROKKA_00765 <a href="/dbget-bin/www_bget?ko:K00134">K00134</a>  GAPDH, gapA; glyceraldehyde 3-phosphate dehydrogenase [EC:1.2.1.12]
+D      PROKKA_00764 <a href="/dbget-bin/www_bget?ko:K00927">K00927</a>  PGK, pgk; phosphoglycerate kinase [EC:2.7.2.3]
+D      PROKKA_00774 <a href="/dbget-bin/www_bget?ko:K15633">K15633</a>  gpmI; 2,3-bisphosphoglycerate-independent phosphoglycerate mutase [EC:5.4.2.12]
+D      PROKKA_01043 <a href="/dbget-bin/www_bget?ko:K15633">K15633</a>  gpmI; 2,3-bisphosphoglycerate-independent phosphoglycerate mutase [EC:5.4.2.12]
+D      PROKKA_00025 <a href="/dbget-bin/www_bget?ko:K01689">K01689</a>  ENO, eno; enolase [EC:4.2.1.11]
+D      PROKKA_00900 <a href="/dbget-bin/www_bget?ko:K01689">K01689</a>  ENO, eno; enolase [EC:4.2.1.11]
+D      PROKKA_01784 <a href="/dbget-bin/www_bget?ko:K01624">K01624</a>  FBA, fbaA; fructose-bisphosphate aldolase, class II [EC:4.1.2.13]
+D      PROKKA_00250 <a href="/dbget-bin/www_bget?ko:K00615">K00615</a>  E2.2.1.1, tktA, tktB; transketolase [EC:2.2.1.1]
+D      PROKKA_00578 <a href="/dbget-bin/www_bget?ko:K00616">K00616</a>  E2.2.1.2, talA, talB; transaldolase [EC:2.2.1.2]
+D      PROKKA_01477 <a href="/dbget-bin/www_bget?ko:K00948">K00948</a>  PRPS, prsA; ribose-phosphate pyrophosphokinase [EC:2.7.6.1]
+D      PROKKA_00085 <a href="/dbget-bin/www_bget?ko:K01703">K01703</a>  leuC, IPMI-L; 3-isopropylmalate/(R)-2-methylmalate dehydratase large subunit [EC:4.2.1.33 4.2.1.35]
+D      PROKKA_00968 <a href="/dbget-bin/www_bget?ko:K01703">K01703</a>  leuC, IPMI-L; 3-isopropylmalate/(R)-2-methylmalate dehydratase large subunit [EC:4.2.1.33 4.2.1.35]
+D      PROKKA_01397 <a href="/dbget-bin/www_bget?ko:K01703">K01703</a>  leuC, IPMI-L; 3-isopropylmalate/(R)-2-methylmalate dehydratase large subunit [EC:4.2.1.33 4.2.1.35]
+D      PROKKA_00398 <a href="/dbget-bin/www_bget?ko:K01704">K01704</a>  leuD, IPMI-S; 3-isopropylmalate/(R)-2-methylmalate dehydratase small subunit [EC:4.2.1.33 4.2.1.35]
+D      PROKKA_00967 <a href="/dbget-bin/www_bget?ko:K01704">K01704</a>  leuD, IPMI-S; 3-isopropylmalate/(R)-2-methylmalate dehydratase small subunit [EC:4.2.1.33 4.2.1.35]
+D      PROKKA_01396 <a href="/dbget-bin/www_bget?ko:K01704">K01704</a>  leuD, IPMI-S; 3-isopropylmalate/(R)-2-methylmalate dehydratase small subunit [EC:4.2.1.33 4.2.1.35]
+D      PROKKA_00399 <a href="/dbget-bin/www_bget?ko:K00052">K00052</a>  leuB, IMDH; 3-isopropylmalate dehydrogenase [EC:1.1.1.85]
+D      PROKKA_00969 <a href="/dbget-bin/www_bget?ko:K00052">K00052</a>  leuB, IMDH; 3-isopropylmalate dehydrogenase [EC:1.1.1.85]
+D      PROKKA_00267 <a href="/dbget-bin/www_bget?ko:K01687">K01687</a>  ilvD; dihydroxy-acid dehydratase [EC:4.2.1.9]
+D      PROKKA_01081 <a href="/dbget-bin/www_bget?ko:K01687">K01687</a>  ilvD; dihydroxy-acid dehydratase [EC:4.2.1.9]
+D      PROKKA_01139 <a href="/dbget-bin/www_bget?ko:K00826">K00826</a>  E2.6.1.42, ilvE; branched-chain amino acid aminotransferase [EC:2.6.1.42]
+D      PROKKA_00970 <a href="/dbget-bin/www_bget?ko:K01649">K01649</a>  leuA, IMS; 2-isopropylmalate synthase [EC:2.3.3.13]
+D      PROKKA_01325 <a href="/dbget-bin/www_bget?ko:K01752">K01752</a>  E4.3.1.17, sdaA, sdaB, tdcG; L-serine dehydratase [EC:4.3.1.17]
+D      PROKKA_01256 <a href="/dbget-bin/www_bget?ko:K00058">K00058</a>  serA, PHGDH; D-3-phosphoglycerate dehydrogenase [EC:1.1.1.95]
+D      PROKKA_01771 <a href="/dbget-bin/www_bget?ko:K00831">K00831</a>  serC, PSAT1; phosphoserine aminotransferase [EC:2.6.1.52]
+D      PROKKA_00579 <a href="/dbget-bin/www_bget?ko:K01079">K01079</a>  serB, PSPH; phosphoserine phosphatase [EC:3.1.3.3]
+D      PROKKA_01361 <a href="/dbget-bin/www_bget?ko:K12339">K12339</a>  cysM; cysteine synthase B [EC:2.5.1.47]
+D      PROKKA_01092 <a href="/dbget-bin/www_bget?ko:K01733">K01733</a>  thrC; threonine synthase [EC:4.2.3.1]
+D      PROKKA_01401 <a href="/dbget-bin/www_bget?ko:K01733">K01733</a>  thrC; threonine synthase [EC:4.2.3.1]
+D      PROKKA_01503 <a href="/dbget-bin/www_bget?ko:K01915">K01915</a>  glnA, GLUL; glutamine synthetase [EC:6.3.1.2]
+D      PROKKA_01138 <a href="/dbget-bin/www_bget?ko:K00265">K00265</a>  gltB; glutamate synthase (NADPH/NADH) large chain [EC:1.4.1.13 1.4.1.14]
+D      PROKKA_01137 <a href="/dbget-bin/www_bget?ko:K00266">K00266</a>  gltD; glutamate synthase (NADPH/NADH) small chain [EC:1.4.1.13 1.4.1.14]
+D      PROKKA_00950 <a href="/dbget-bin/www_bget?ko:K00651">K00651</a>  metA; homoserine O-succinyltransferase [EC:2.3.1.46]
+D      PROKKA_00203 <a href="/dbget-bin/www_bget?ko:K01760">K01760</a>  metC; cystathionine beta-lyase [EC:4.4.1.8]
+D      PROKKA_00873 <a href="/dbget-bin/www_bget?ko:K01760">K01760</a>  metC; cystathionine beta-lyase [EC:4.4.1.8]
+D      PROKKA_00201 <a href="/dbget-bin/www_bget?ko:K14155">K14155</a>  patB, malY; cystathione beta-lyase [EC:4.4.1.8]
+D      PROKKA_00874 <a href="/dbget-bin/www_bget?ko:K14155">K14155</a>  patB, malY; cystathione beta-lyase [EC:4.4.1.8]
+D      PROKKA_01544 <a href="/dbget-bin/www_bget?ko:K00549">K00549</a>  metE; 5-methyltetrahydropteroyltriglutamate--homocysteine methyltransferase [EC:2.1.1.14]
+D      PROKKA_00121 <a href="/dbget-bin/www_bget?ko:K07173">K07173</a>  luxS; S-ribosylhomocysteine lyase [EC:4.4.1.21]
+D      PROKKA_01069 <a href="/dbget-bin/www_bget?ko:K01958">K01958</a>  PC, pyc; pyruvate carboxylase [EC:6.4.1.1]
+D      PROKKA_00732 <a href="/dbget-bin/www_bget?ko:K01960">K01960</a>  pycB; pyruvate carboxylase subunit B [EC:6.4.1.1]
+D      PROKKA_00002 <a href="/dbget-bin/www_bget?ko:K01647">K01647</a>  CS, gltA; citrate synthase [EC:2.3.3.1]
+D      PROKKA_01508 <a href="/dbget-bin/www_bget?ko:K00031">K00031</a>  IDH1, IDH2, icd; isocitrate dehydrogenase [EC:1.1.1.42]
+D      PROKKA_00304 <a href="/dbget-bin/www_bget?ko:K00620">K00620</a>  argJ; glutamate N-acetyltransferase / amino-acid N-acetyltransferase [EC:2.3.1.35 2.3.1.1]
+D      PROKKA_00852 <a href="/dbget-bin/www_bget?ko:K00821">K00821</a>  argD; acetylornithine/N-succinyldiaminopimelate aminotransferase [EC:2.6.1.11 2.6.1.17]
+D      PROKKA_01047 <a href="/dbget-bin/www_bget?ko:K01755">K01755</a>  argH, ASL; argininosuccinate lyase [EC:4.3.2.1]
+D      PROKKA_01097 <a href="/dbget-bin/www_bget?ko:K01755">K01755</a>  argH, ASL; argininosuccinate lyase [EC:4.3.2.1]
+D      PROKKA_01247 <a href="/dbget-bin/www_bget?ko:K01755">K01755</a>  argH, ASL; argininosuccinate lyase [EC:4.3.2.1]
+D      PROKKA_00315 <a href="/dbget-bin/www_bget?ko:K00931">K00931</a>  proB; glutamate 5-kinase [EC:2.7.2.11]
+D      PROKKA_00135 <a href="/dbget-bin/www_bget?ko:K00286">K00286</a>  proC; pyrroline-5-carboxylate reductase [EC:1.5.1.2]
+D      PROKKA_00322 <a href="/dbget-bin/www_bget?ko:K01439">K01439</a>  dapE; succinyl-diaminopimelate desuccinylase [EC:3.5.1.18]
+D      PROKKA_00430 <a href="/dbget-bin/www_bget?ko:K01586">K01586</a>  lysA; diaminopimelate decarboxylase [EC:4.1.1.20]
+D      PROKKA_00574 <a href="/dbget-bin/www_bget?ko:K01586">K01586</a>  lysA; diaminopimelate decarboxylase [EC:4.1.1.20]
+D      PROKKA_01240 <a href="/dbget-bin/www_bget?ko:K00765">K00765</a>  hisG; ATP phosphoribosyltransferase [EC:2.4.2.17]
+D      PROKKA_01812 <a href="/dbget-bin/www_bget?ko:K01814">K01814</a>  hisA; phosphoribosylformimino-5-aminoimidazole carboxamide ribotide isomerase [EC:5.3.1.16]
+D      PROKKA_00632 <a href="/dbget-bin/www_bget?ko:K02501">K02501</a>  hisH; glutamine amidotransferase [EC:2.4.2.-]
+D      PROKKA_01813 <a href="/dbget-bin/www_bget?ko:K02501">K02501</a>  hisH; glutamine amidotransferase [EC:2.4.2.-]
+D      PROKKA_01237 <a href="/dbget-bin/www_bget?ko:K01089">K01089</a>  hisB; imidazoleglycerol-phosphate dehydratase / histidinol-phosphatase [EC:4.2.1.19 3.1.3.15]
+D      PROKKA_00572 <a href="/dbget-bin/www_bget?ko:K00817">K00817</a>  hisC; histidinol-phosphate aminotransferase [EC:2.6.1.9]
+D      PROKKA_00824 <a href="/dbget-bin/www_bget?ko:K00817">K00817</a>  hisC; histidinol-phosphate aminotransferase [EC:2.6.1.9]
+D      PROKKA_01238 <a href="/dbget-bin/www_bget?ko:K00817">K00817</a>  hisC; histidinol-phosphate aminotransferase [EC:2.6.1.9]
+D      PROKKA_00379 <a href="/dbget-bin/www_bget?ko:K00013">K00013</a>  hisD; histidinol dehydrogenase [EC:1.1.1.23]
+D      PROKKA_01239 <a href="/dbget-bin/www_bget?ko:K00013">K00013</a>  hisD; histidinol dehydrogenase [EC:1.1.1.23]
+D      PROKKA_00951 <a href="/dbget-bin/www_bget?ko:K03856">K03856</a>  AROA2, aroA; 3-deoxy-7-phosphoheptulonate synthase [EC:2.5.1.54]
+D      PROKKA_00952 <a href="/dbget-bin/www_bget?ko:K01735">K01735</a>  aroB; 3-dehydroquinate synthase [EC:4.2.3.4]
+D      PROKKA_01612 <a href="/dbget-bin/www_bget?ko:K03785">K03785</a>  aroD; 3-dehydroquinate dehydratase I [EC:4.2.1.10]
+D      PROKKA_01651 <a href="/dbget-bin/www_bget?ko:K03785">K03785</a>  aroD; 3-dehydroquinate dehydratase I [EC:4.2.1.10]
+D      PROKKA_00955 <a href="/dbget-bin/www_bget?ko:K00014">K00014</a>  aroE; shikimate dehydrogenase [EC:1.1.1.25]
+D      PROKKA_00589 <a href="/dbget-bin/www_bget?ko:K00891">K00891</a>  E2.7.1.71, aroK, aroL; shikimate kinase [EC:2.7.1.71]
+D      PROKKA_00953 <a href="/dbget-bin/www_bget?ko:K00800">K00800</a>  aroA; 3-phosphoshikimate 1-carboxyvinyltransferase [EC:2.5.1.19]
+D      PROKKA_01252 <a href="/dbget-bin/www_bget?ko:K00800">K00800</a>  aroA; 3-phosphoshikimate 1-carboxyvinyltransferase [EC:2.5.1.19]
+D      PROKKA_00954 <a href="/dbget-bin/www_bget?ko:K01736">K01736</a>  aroC; chorismate synthase [EC:4.2.3.5]
+D      PROKKA_01426 <a href="/dbget-bin/www_bget?ko:K01736">K01736</a>  aroC; chorismate synthase [EC:4.2.3.5]
+D      PROKKA_00956 <a href="/dbget-bin/www_bget?ko:K01657">K01657</a>  trpE; anthranilate synthase component I [EC:4.1.3.27]
+D      PROKKA_00957 <a href="/dbget-bin/www_bget?ko:K01658">K01658</a>  trpG; anthranilate synthase component II [EC:4.1.3.27]
+D      PROKKA_01190 <a href="/dbget-bin/www_bget?ko:K14187">K14187</a>  tyrA; chorismate mutase / prephenate dehydrogenase [EC:5.4.99.5 1.3.1.12]
+D      PROKKA_00573 <a href="/dbget-bin/www_bget?ko:K14170">K14170</a>  pheA; chorismate mutase / prephenate dehydratase [EC:5.4.99.5 4.2.1.51]
+D      PROKKA_01656 <a href="/dbget-bin/www_bget?ko:K00832">K00832</a>  tyrB; aromatic-amino-acid transaminase [EC:2.6.1.57]
+C    01220 Degradation of aromatic compounds [PATH:ko01220]
+D      PROKKA_00305 <a href="/dbget-bin/www_bget?ko:K01607">K01607</a>  pcaC; 4-carboxymuconolactone decarboxylase [EC:4.1.1.44]
+D      PROKKA_01006 <a href="/dbget-bin/www_bget?ko:K01607">K01607</a>  pcaC; 4-carboxymuconolactone decarboxylase [EC:4.1.1.44]
+B  <b>Carbohydrate metabolism</b>
+C    00010 Glycolysis / Gluconeogenesis [PATH:ko00010]
+D      PROKKA_00801 <a href="/dbget-bin/www_bget?ko:K03841">K03841</a>  FBP, fbp; fructose-1,6-bisphosphatase I [EC:3.1.3.11]
+D      PROKKA_01784 <a href="/dbget-bin/www_bget?ko:K01624">K01624</a>  FBA, fbaA; fructose-bisphosphate aldolase, class II [EC:4.1.2.13]
+D      PROKKA_00763 <a href="/dbget-bin/www_bget?ko:K01803">K01803</a>  TPI, tpiA; triosephosphate isomerase (TIM) [EC:5.3.1.1]
+D      PROKKA_00765 <a href="/dbget-bin/www_bget?ko:K00134">K00134</a>  GAPDH, gapA; glyceraldehyde 3-phosphate dehydrogenase [EC:1.2.1.12]
+D      PROKKA_00764 <a href="/dbget-bin/www_bget?ko:K00927">K00927</a>  PGK, pgk; phosphoglycerate kinase [EC:2.7.2.3]
+D      PROKKA_00774 <a href="/dbget-bin/www_bget?ko:K15633">K15633</a>  gpmI; 2,3-bisphosphoglycerate-independent phosphoglycerate mutase [EC:5.4.2.12]
+D      PROKKA_01043 <a href="/dbget-bin/www_bget?ko:K15633">K15633</a>  gpmI; 2,3-bisphosphoglycerate-independent phosphoglycerate mutase [EC:5.4.2.12]
+D      PROKKA_00025 <a href="/dbget-bin/www_bget?ko:K01689">K01689</a>  ENO, eno; enolase [EC:4.2.1.11]
+D      PROKKA_00900 <a href="/dbget-bin/www_bget?ko:K01689">K01689</a>  ENO, eno; enolase [EC:4.2.1.11]
+D      PROKKA_01511 <a href="/dbget-bin/www_bget?ko:K00174">K00174</a>  korA, oorA, oforA; 2-oxoglutarate/2-oxoacid ferredoxin oxidoreductase subunit alpha [EC:1.2.7.3 1.2.7.11]
+D      PROKKA_01512 <a href="/dbget-bin/www_bget?ko:K00175">K00175</a>  korB, oorB, oforB; 2-oxoglutarate/2-oxoacid ferredoxin oxidoreductase subunit beta [EC:1.2.7.3 1.2.7.11]
+D      PROKKA_00733 <a href="/dbget-bin/www_bget?ko:K01610">K01610</a>  E4.1.1.49, pckA; phosphoenolpyruvate carboxykinase (ATP) [EC:4.1.1.49]
+C    00020 Citrate cycle (TCA cycle) [PATH:ko00020]
+D      PROKKA_00002 <a href="/dbget-bin/www_bget?ko:K01647">K01647</a>  CS, gltA; citrate synthase [EC:2.3.3.1]
+D      PROKKA_01508 <a href="/dbget-bin/www_bget?ko:K00031">K00031</a>  IDH1, IDH2, icd; isocitrate dehydrogenase [EC:1.1.1.42]
+D      PROKKA_01511 <a href="/dbget-bin/www_bget?ko:K00174">K00174</a>  korA, oorA, oforA; 2-oxoglutarate/2-oxoacid ferredoxin oxidoreductase subunit alpha [EC:1.2.7.3 1.2.7.11]
+D      PROKKA_01512 <a href="/dbget-bin/www_bget?ko:K00175">K00175</a>  korB, oorB, oforB; 2-oxoglutarate/2-oxoacid ferredoxin oxidoreductase subunit beta [EC:1.2.7.3 1.2.7.11]
+D      PROKKA_01513 <a href="/dbget-bin/www_bget?ko:K00177">K00177</a>  korC, oorC; 2-oxoglutarate ferredoxin oxidoreductase subunit gamma [EC:1.2.7.3]
+D      PROKKA_01510 <a href="/dbget-bin/www_bget?ko:K00176">K00176</a>  korD, oorD; 2-oxoglutarate ferredoxin oxidoreductase subunit delta [EC:1.2.7.3]
+D      PROKKA_00828 <a href="/dbget-bin/www_bget?ko:K00244">K00244</a>  frdA; fumarate reductase flavoprotein subunit [EC:1.3.5.4]
+D      PROKKA_00879 <a href="/dbget-bin/www_bget?ko:K00244">K00244</a>  frdA; fumarate reductase flavoprotein subunit [EC:1.3.5.4]
+D      PROKKA_00896 <a href="/dbget-bin/www_bget?ko:K00244">K00244</a>  frdA; fumarate reductase flavoprotein subunit [EC:1.3.5.4]
+D      PROKKA_00961 <a href="/dbget-bin/www_bget?ko:K00244">K00244</a>  frdA; fumarate reductase flavoprotein subunit [EC:1.3.5.4]
+D      PROKKA_00966 <a href="/dbget-bin/www_bget?ko:K00244">K00244</a>  frdA; fumarate reductase flavoprotein subunit [EC:1.3.5.4]
+D      PROKKA_01141 <a href="/dbget-bin/www_bget?ko:K00244">K00244</a>  frdA; fumarate reductase flavoprotein subunit [EC:1.3.5.4]
+D      PROKKA_01188 <a href="/dbget-bin/www_bget?ko:K00244">K00244</a>  frdA; fumarate reductase flavoprotein subunit [EC:1.3.5.4]
+D      PROKKA_01611 <a href="/dbget-bin/www_bget?ko:K00244">K00244</a>  frdA; fumarate reductase flavoprotein subunit [EC:1.3.5.4]
+D      PROKKA_01615 <a href="/dbget-bin/www_bget?ko:K00244">K00244</a>  frdA; fumarate reductase flavoprotein subunit [EC:1.3.5.4]
+D      PROKKA_01641 <a href="/dbget-bin/www_bget?ko:K00244">K00244</a>  frdA; fumarate reductase flavoprotein subunit [EC:1.3.5.4]
+D      PROKKA_01676 <a href="/dbget-bin/www_bget?ko:K00244">K00244</a>  frdA; fumarate reductase flavoprotein subunit [EC:1.3.5.4]
+D      PROKKA_01703 <a href="/dbget-bin/www_bget?ko:K00244">K00244</a>  frdA; fumarate reductase flavoprotein subunit [EC:1.3.5.4]
+D      PROKKA_01723 <a href="/dbget-bin/www_bget?ko:K00244">K00244</a>  frdA; fumarate reductase flavoprotein subunit [EC:1.3.5.4]
+D      PROKKA_01774 <a href="/dbget-bin/www_bget?ko:K00244">K00244</a>  frdA; fumarate reductase flavoprotein subunit [EC:1.3.5.4]
+D      PROKKA_01782 <a href="/dbget-bin/www_bget?ko:K00244">K00244</a>  frdA; fumarate reductase flavoprotein subunit [EC:1.3.5.4]
+D      PROKKA_00889 <a href="/dbget-bin/www_bget?ko:K00024">K00024</a>  mdh; malate dehydrogenase [EC:1.1.1.37]
+D      PROKKA_01509 <a href="/dbget-bin/www_bget?ko:K00024">K00024</a>  mdh; malate dehydrogenase [EC:1.1.1.37]
+D      PROKKA_01069 <a href="/dbget-bin/www_bget?ko:K01958">K01958</a>  PC, pyc; pyruvate carboxylase [EC:6.4.1.1]
+D      PROKKA_00732 <a href="/dbget-bin/www_bget?ko:K01960">K01960</a>  pycB; pyruvate carboxylase subunit B [EC:6.4.1.1]
+D      PROKKA_00733 <a href="/dbget-bin/www_bget?ko:K01610">K01610</a>  E4.1.1.49, pckA; phosphoenolpyruvate carboxykinase (ATP) [EC:4.1.1.49]
+C    00030 Pentose phosphate pathway [PATH:ko00030]
+D      PROKKA_00250 <a href="/dbget-bin/www_bget?ko:K00615">K00615</a>  E2.2.1.1, tktA, tktB; transketolase [EC:2.2.1.1]
+D      PROKKA_00578 <a href="/dbget-bin/www_bget?ko:K00616">K00616</a>  E2.2.1.2, talA, talB; transaldolase [EC:2.2.1.2]
+D      PROKKA_00865 <a href="/dbget-bin/www_bget?ko:K00852">K00852</a>  rbsK, RBKS; ribokinase [EC:2.7.1.15]
+D      PROKKA_01477 <a href="/dbget-bin/www_bget?ko:K00948">K00948</a>  PRPS, prsA; ribose-phosphate pyrophosphokinase [EC:2.7.6.1]
+D      PROKKA_01784 <a href="/dbget-bin/www_bget?ko:K01624">K01624</a>  FBA, fbaA; fructose-bisphosphate aldolase, class II [EC:4.1.2.13]
+D      PROKKA_00801 <a href="/dbget-bin/www_bget?ko:K03841">K03841</a>  FBP, fbp; fructose-1,6-bisphosphatase I [EC:3.1.3.11]
+C    00040 Pentose and glucuronate interconversions [PATH:ko00040]
+D      PROKKA_00336 <a href="/dbget-bin/www_bget?ko:K01728">K01728</a>  pel; pectate lyase [EC:4.2.2.2]
+D      PROKKA_00337 <a href="/dbget-bin/www_bget?ko:K01728">K01728</a>  pel; pectate lyase [EC:4.2.2.2]
+D      PROKKA_00615 <a href="/dbget-bin/www_bget?ko:K00012">K00012</a>  UGDH, ugd; UDPglucose 6-dehydrogenase [EC:1.1.1.22]
+C    00051 Fructose and mannose metabolism [PATH:ko00051]
+D      PROKKA_00801 <a href="/dbget-bin/www_bget?ko:K03841">K03841</a>  FBP, fbp; fructose-1,6-bisphosphatase I [EC:3.1.3.11]
+D      PROKKA_01784 <a href="/dbget-bin/www_bget?ko:K01624">K01624</a>  FBA, fbaA; fructose-bisphosphate aldolase, class II [EC:4.1.2.13]
+D      PROKKA_00763 <a href="/dbget-bin/www_bget?ko:K01803">K01803</a>  TPI, tpiA; triosephosphate isomerase (TIM) [EC:5.3.1.1]
+C    00052 Galactose metabolism [PATH:ko00052]
+D      PROKKA_00614 <a href="/dbget-bin/www_bget?ko:K01784">K01784</a>  galE, GALE; UDP-glucose 4-epimerase [EC:5.1.3.2]
+C    00053 Ascorbate and aldarate metabolism [PATH:ko00053]
+D      PROKKA_00615 <a href="/dbget-bin/www_bget?ko:K00012">K00012</a>  UGDH, ugd; UDPglucose 6-dehydrogenase [EC:1.1.1.22]
+C    00500 Starch and sucrose metabolism [PATH:ko00500]
+D      PROKKA_01260 <a href="/dbget-bin/www_bget?ko:K00694">K00694</a>  bcsA; cellulose synthase (UDP-forming) [EC:2.4.1.12]
+C    00520 Amino sugar and nucleotide sugar metabolism [PATH:ko00520]
+D      PROKKA_01031 <a href="/dbget-bin/www_bget?ko:K01207">K01207</a>  nagZ; beta-N-acetylhexosaminidase [EC:3.2.1.52]
+D      PROKKA_00480 <a href="/dbget-bin/www_bget?ko:K07102">K07102</a>  amgK; anomeric MurNAc/GlcNAc kinase [EC:2.7.1.-]
+D      PROKKA_00479 <a href="/dbget-bin/www_bget?ko:K00992">K00992</a>  murU; MurNAc alpha-1-phosphate uridylyltransferase [EC:2.7.7.-]
+D      PROKKA_00617 <a href="/dbget-bin/www_bget?ko:K02474">K02474</a>  wbpO; UDP-N-acetyl-D-galactosamine dehydrogenase [EC:1.1.1.-]
+D      PROKKA_00420 <a href="/dbget-bin/www_bget?ko:K00790">K00790</a>  murA; UDP-N-acetylglucosamine 1-carboxyvinyltransferase [EC:2.5.1.7]
+D      PROKKA_00022 <a href="/dbget-bin/www_bget?ko:K00075">K00075</a>  murB; UDP-N-acetylmuramate dehydrogenase [EC:1.3.1.98]
+D      PROKKA_01721 <a href="/dbget-bin/www_bget?ko:K00075">K00075</a>  murB; UDP-N-acetylmuramate dehydrogenase [EC:1.3.1.98]
+D      PROKKA_00922 <a href="/dbget-bin/www_bget?ko:K03431">K03431</a>  glmM; phosphoglucosamine mutase [EC:5.4.2.10]
+D      PROKKA_01167 <a href="/dbget-bin/www_bget?ko:K03431">K03431</a>  glmM; phosphoglucosamine mutase [EC:5.4.2.10]
+D      PROKKA_00615 <a href="/dbget-bin/www_bget?ko:K00012">K00012</a>  UGDH, ugd; UDPglucose 6-dehydrogenase [EC:1.1.1.22]
+D      PROKKA_00614 <a href="/dbget-bin/www_bget?ko:K01784">K01784</a>  galE, GALE; UDP-glucose 4-epimerase [EC:5.1.3.2]
+D      PROKKA_00611 <a href="/dbget-bin/www_bget?ko:K08679">K08679</a>  E5.1.3.6; UDP-glucuronate 4-epimerase [EC:5.1.3.6]
+C    00620 Pyruvate metabolism [PATH:ko00620]
+D      PROKKA_01511 <a href="/dbget-bin/www_bget?ko:K00174">K00174</a>  korA, oorA, oforA; 2-oxoglutarate/2-oxoacid ferredoxin oxidoreductase subunit alpha [EC:1.2.7.3 1.2.7.11]
+D      PROKKA_01512 <a href="/dbget-bin/www_bget?ko:K00175">K00175</a>  korB, oorB, oforB; 2-oxoglutarate/2-oxoacid ferredoxin oxidoreductase subunit beta [EC:1.2.7.3 1.2.7.11]
+D      PROKKA_01616 <a href="/dbget-bin/www_bget?ko:K00656">K00656</a>  E2.3.1.54, pflD; formate C-acetyltransferase [EC:2.3.1.54]
+D      PROKKA_01470 <a href="/dbget-bin/www_bget?ko:K02160">K02160</a>  accB, bccP; acetyl-CoA carboxylase biotin carboxyl carrier protein
+D      PROKKA_01469 <a href="/dbget-bin/www_bget?ko:K01961">K01961</a>  accC; acetyl-CoA carboxylase, biotin carboxylase subunit [EC:6.4.1.2 6.3.4.14]
+D      PROKKA_00472 <a href="/dbget-bin/www_bget?ko:K00029">K00029</a>  E1.1.1.40, maeB; malate dehydrogenase (oxaloacetate-decarboxylating)(NADP+) [EC:1.1.1.40]
+D      PROKKA_01069 <a href="/dbget-bin/www_bget?ko:K01958">K01958</a>  PC, pyc; pyruvate carboxylase [EC:6.4.1.1]
+D      PROKKA_00732 <a href="/dbget-bin/www_bget?ko:K01960">K01960</a>  pycB; pyruvate carboxylase subunit B [EC:6.4.1.1]
+D      PROKKA_00889 <a href="/dbget-bin/www_bget?ko:K00024">K00024</a>  mdh; malate dehydrogenase [EC:1.1.1.37]
+D      PROKKA_01509 <a href="/dbget-bin/www_bget?ko:K00024">K00024</a>  mdh; malate dehydrogenase [EC:1.1.1.37]
+D      PROKKA_00828 <a href="/dbget-bin/www_bget?ko:K00244">K00244</a>  frdA; fumarate reductase flavoprotein subunit [EC:1.3.5.4]
+D      PROKKA_00879 <a href="/dbget-bin/www_bget?ko:K00244">K00244</a>  frdA; fumarate reductase flavoprotein subunit [EC:1.3.5.4]
+D      PROKKA_00896 <a href="/dbget-bin/www_bget?ko:K00244">K00244</a>  frdA; fumarate reductase flavoprotein subunit [EC:1.3.5.4]
+D      PROKKA_00961 <a href="/dbget-bin/www_bget?ko:K00244">K00244</a>  frdA; fumarate reductase flavoprotein subunit [EC:1.3.5.4]
+D      PROKKA_00966 <a href="/dbget-bin/www_bget?ko:K00244">K00244</a>  frdA; fumarate reductase flavoprotein subunit [EC:1.3.5.4]
+D      PROKKA_01141 <a href="/dbget-bin/www_bget?ko:K00244">K00244</a>  frdA; fumarate reductase flavoprotein subunit [EC:1.3.5.4]
+D      PROKKA_01188 <a href="/dbget-bin/www_bget?ko:K00244">K00244</a>  frdA; fumarate reductase flavoprotein subunit [EC:1.3.5.4]
+D      PROKKA_01611 <a href="/dbget-bin/www_bget?ko:K00244">K00244</a>  frdA; fumarate reductase flavoprotein subunit [EC:1.3.5.4]
+D      PROKKA_01615 <a href="/dbget-bin/www_bget?ko:K00244">K00244</a>  frdA; fumarate reductase flavoprotein subunit [EC:1.3.5.4]
+D      PROKKA_01641 <a href="/dbget-bin/www_bget?ko:K00244">K00244</a>  frdA; fumarate reductase flavoprotein subunit [EC:1.3.5.4]
+D      PROKKA_01676 <a href="/dbget-bin/www_bget?ko:K00244">K00244</a>  frdA; fumarate reductase flavoprotein subunit [EC:1.3.5.4]
+D      PROKKA_01703 <a href="/dbget-bin/www_bget?ko:K00244">K00244</a>  frdA; fumarate reductase flavoprotein subunit [EC:1.3.5.4]
+D      PROKKA_01723 <a href="/dbget-bin/www_bget?ko:K00244">K00244</a>  frdA; fumarate reductase flavoprotein subunit [EC:1.3.5.4]
+D      PROKKA_01774 <a href="/dbget-bin/www_bget?ko:K00244">K00244</a>  frdA; fumarate reductase flavoprotein subunit [EC:1.3.5.4]
+D      PROKKA_01782 <a href="/dbget-bin/www_bget?ko:K00244">K00244</a>  frdA; fumarate reductase flavoprotein subunit [EC:1.3.5.4]
+D      PROKKA_00733 <a href="/dbget-bin/www_bget?ko:K01610">K01610</a>  E4.1.1.49, pckA; phosphoenolpyruvate carboxykinase (ATP) [EC:4.1.1.49]
+D      PROKKA_00970 <a href="/dbget-bin/www_bget?ko:K01649">K01649</a>  leuA, IMS; 2-isopropylmalate synthase [EC:2.3.3.13]
+C    00630 Glyoxylate and dicarboxylate metabolism [PATH:ko00630]
+D      PROKKA_00889 <a href="/dbget-bin/www_bget?ko:K00024">K00024</a>  mdh; malate dehydrogenase [EC:1.1.1.37]
+D      PROKKA_01509 <a href="/dbget-bin/www_bget?ko:K00024">K00024</a>  mdh; malate dehydrogenase [EC:1.1.1.37]
+D      PROKKA_00002 <a href="/dbget-bin/www_bget?ko:K01647">K01647</a>  CS, gltA; citrate synthase [EC:2.3.3.1]
+D      PROKKA_01503 <a href="/dbget-bin/www_bget?ko:K01915">K01915</a>  glnA, GLUL; glutamine synthetase [EC:6.3.1.2]
+D      PROKKA_00029 <a href="/dbget-bin/www_bget?ko:K00865">K00865</a>  glxK, garK; glycerate 2-kinase [EC:2.7.1.165]
+D      PROKKA_00667 <a href="/dbget-bin/www_bget?ko:K00018">K00018</a>  hprA; glycerate dehydrogenase [EC:1.1.1.29]
+D      PROKKA_00605 <a href="/dbget-bin/www_bget?ko:K00123">K00123</a>  fdoG, fdfH; formate dehydrogenase major subunit [EC:1.2.1.2]
+D      PROKKA_00606 <a href="/dbget-bin/www_bget?ko:K00123">K00123</a>  fdoG, fdfH; formate dehydrogenase major subunit [EC:1.2.1.2]
+D      PROKKA_00829 <a href="/dbget-bin/www_bget?ko:K00123">K00123</a>  fdoG, fdfH; formate dehydrogenase major subunit [EC:1.2.1.2]
+D      PROKKA_01133 <a href="/dbget-bin/www_bget?ko:K00123">K00123</a>  fdoG, fdfH; formate dehydrogenase major subunit [EC:1.2.1.2]
+D      PROKKA_00604 <a href="/dbget-bin/www_bget?ko:K00124">K00124</a>  fdoH; formate dehydrogenase iron-sulfur subunit
+D      PROKKA_00830 <a href="/dbget-bin/www_bget?ko:K00124">K00124</a>  fdoH; formate dehydrogenase iron-sulfur subunit
+D      PROKKA_00831 <a href="/dbget-bin/www_bget?ko:K00127">K00127</a>  fdoI; formate dehydrogenase subunit gamma
+D      PROKKA_01175 <a href="/dbget-bin/www_bget?ko:K00127">K00127</a>  fdoI; formate dehydrogenase subunit gamma
+D      PROKKA_00788 <a href="/dbget-bin/www_bget?ko:K07130">K07130</a>  kynB; arylformamidase [EC:3.5.1.9]
+C    00640 Propanoate metabolism [PATH:ko00640]
+D      PROKKA_01616 <a href="/dbget-bin/www_bget?ko:K00656">K00656</a>  E2.3.1.54, pflD; formate C-acetyltransferase [EC:2.3.1.54]
+D      PROKKA_01470 <a href="/dbget-bin/www_bget?ko:K02160">K02160</a>  accB, bccP; acetyl-CoA carboxylase biotin carboxyl carrier protein
+D      PROKKA_01469 <a href="/dbget-bin/www_bget?ko:K01961">K01961</a>  accC; acetyl-CoA carboxylase, biotin carboxylase subunit [EC:6.4.1.2 6.3.4.14]
+D      PROKKA_01650 <a href="/dbget-bin/www_bget?ko:K19709">K19709</a>  ydiF; acetate CoA-transferase [EC:2.8.3.8]
+C    00650 Butanoate metabolism [PATH:ko00650]
+D      PROKKA_01650 <a href="/dbget-bin/www_bget?ko:K19709">K19709</a>  ydiF; acetate CoA-transferase [EC:2.8.3.8]
+D      PROKKA_00828 <a href="/dbget-bin/www_bget?ko:K00244">K00244</a>  frdA; fumarate reductase flavoprotein subunit [EC:1.3.5.4]
+D      PROKKA_00879 <a href="/dbget-bin/www_bget?ko:K00244">K00244</a>  frdA; fumarate reductase flavoprotein subunit [EC:1.3.5.4]
+D      PROKKA_00896 <a href="/dbget-bin/www_bget?ko:K00244">K00244</a>  frdA; fumarate reductase flavoprotein subunit [EC:1.3.5.4]
+D      PROKKA_00961 <a href="/dbget-bin/www_bget?ko:K00244">K00244</a>  frdA; fumarate reductase flavoprotein subunit [EC:1.3.5.4]
+D      PROKKA_00966 <a href="/dbget-bin/www_bget?ko:K00244">K00244</a>  frdA; fumarate reductase flavoprotein subunit [EC:1.3.5.4]
+D      PROKKA_01141 <a href="/dbget-bin/www_bget?ko:K00244">K00244</a>  frdA; fumarate reductase flavoprotein subunit [EC:1.3.5.4]
+D      PROKKA_01188 <a href="/dbget-bin/www_bget?ko:K00244">K00244</a>  frdA; fumarate reductase flavoprotein subunit [EC:1.3.5.4]
+D      PROKKA_01611 <a href="/dbget-bin/www_bget?ko:K00244">K00244</a>  frdA; fumarate reductase flavoprotein subunit [EC:1.3.5.4]
+D      PROKKA_01615 <a href="/dbget-bin/www_bget?ko:K00244">K00244</a>  frdA; fumarate reductase flavoprotein subunit [EC:1.3.5.4]
+D      PROKKA_01641 <a href="/dbget-bin/www_bget?ko:K00244">K00244</a>  frdA; fumarate reductase flavoprotein subunit [EC:1.3.5.4]
+D      PROKKA_01676 <a href="/dbget-bin/www_bget?ko:K00244">K00244</a>  frdA; fumarate reductase flavoprotein subunit [EC:1.3.5.4]
+D      PROKKA_01703 <a href="/dbget-bin/www_bget?ko:K00244">K00244</a>  frdA; fumarate reductase flavoprotein subunit [EC:1.3.5.4]
+D      PROKKA_01723 <a href="/dbget-bin/www_bget?ko:K00244">K00244</a>  frdA; fumarate reductase flavoprotein subunit [EC:1.3.5.4]
+D      PROKKA_01774 <a href="/dbget-bin/www_bget?ko:K00244">K00244</a>  frdA; fumarate reductase flavoprotein subunit [EC:1.3.5.4]
+D      PROKKA_01782 <a href="/dbget-bin/www_bget?ko:K00244">K00244</a>  frdA; fumarate reductase flavoprotein subunit [EC:1.3.5.4]
+D      PROKKA_01616 <a href="/dbget-bin/www_bget?ko:K00656">K00656</a>  E2.3.1.54, pflD; formate C-acetyltransferase [EC:2.3.1.54]
+D      PROKKA_01511 <a href="/dbget-bin/www_bget?ko:K00174">K00174</a>  korA, oorA, oforA; 2-oxoglutarate/2-oxoacid ferredoxin oxidoreductase subunit alpha [EC:1.2.7.3 1.2.7.11]
+D      PROKKA_01512 <a href="/dbget-bin/www_bget?ko:K00175">K00175</a>  korB, oorB, oforB; 2-oxoglutarate/2-oxoacid ferredoxin oxidoreductase subunit beta [EC:1.2.7.3 1.2.7.11]
+C    00660 C5-Branched dibasic acid metabolism [PATH:ko00660]
+D      PROKKA_00085 <a href="/dbget-bin/www_bget?ko:K01703">K01703</a>  leuC, IPMI-L; 3-isopropylmalate/(R)-2-methylmalate dehydratase large subunit [EC:4.2.1.33 4.2.1.35]
+D      PROKKA_00968 <a href="/dbget-bin/www_bget?ko:K01703">K01703</a>  leuC, IPMI-L; 3-isopropylmalate/(R)-2-methylmalate dehydratase large subunit [EC:4.2.1.33 4.2.1.35]
+D      PROKKA_01397 <a href="/dbget-bin/www_bget?ko:K01703">K01703</a>  leuC, IPMI-L; 3-isopropylmalate/(R)-2-methylmalate dehydratase large subunit [EC:4.2.1.33 4.2.1.35]
+D      PROKKA_00398 <a href="/dbget-bin/www_bget?ko:K01704">K01704</a>  leuD, IPMI-S; 3-isopropylmalate/(R)-2-methylmalate dehydratase small subunit [EC:4.2.1.33 4.2.1.35]
+D      PROKKA_00967 <a href="/dbget-bin/www_bget?ko:K01704">K01704</a>  leuD, IPMI-S; 3-isopropylmalate/(R)-2-methylmalate dehydratase small subunit [EC:4.2.1.33 4.2.1.35]
+D      PROKKA_01396 <a href="/dbget-bin/www_bget?ko:K01704">K01704</a>  leuD, IPMI-S; 3-isopropylmalate/(R)-2-methylmalate dehydratase small subunit [EC:4.2.1.33 4.2.1.35]
+D      PROKKA_00399 <a href="/dbget-bin/www_bget?ko:K00052">K00052</a>  leuB, IMDH; 3-isopropylmalate dehydrogenase [EC:1.1.1.85]
+D      PROKKA_00969 <a href="/dbget-bin/www_bget?ko:K00052">K00052</a>  leuB, IMDH; 3-isopropylmalate dehydrogenase [EC:1.1.1.85]
+C    00562 Inositol phosphate metabolism [PATH:ko00562]
+D      PROKKA_01336 <a href="/dbget-bin/www_bget?ko:K01092">K01092</a>  E3.1.3.25, IMPA, suhB; myo-inositol-1(or 4)-monophosphatase [EC:3.1.3.25]
+D      PROKKA_00763 <a href="/dbget-bin/www_bget?ko:K01803">K01803</a>  TPI, tpiA; triosephosphate isomerase (TIM) [EC:5.3.1.1]
+B  <b>Energy metabolism</b>
+C    00190 Oxidative phosphorylation [PATH:ko00190]
+D      PROKKA_00675 <a href="/dbget-bin/www_bget?ko:K00330">K00330</a>  nuoA; NADH-quinone oxidoreductase subunit A [EC:1.6.5.3]
+D      PROKKA_00676 <a href="/dbget-bin/www_bget?ko:K00331">K00331</a>  nuoB; NADH-quinone oxidoreductase subunit B [EC:1.6.5.3]
+D      PROKKA_00677 <a href="/dbget-bin/www_bget?ko:K00332">K00332</a>  nuoC; NADH-quinone oxidoreductase subunit C [EC:1.6.5.3]
+D      PROKKA_00678 <a href="/dbget-bin/www_bget?ko:K00333">K00333</a>  nuoD; NADH-quinone oxidoreductase subunit D [EC:1.6.5.3]
+D      PROKKA_00679 <a href="/dbget-bin/www_bget?ko:K00334">K00334</a>  nuoE; NADH-quinone oxidoreductase subunit E [EC:1.6.5.3]
+D      PROKKA_00828 <a href="/dbget-bin/www_bget?ko:K00244">K00244</a>  frdA; fumarate reductase flavoprotein subunit [EC:1.3.5.4]
+D      PROKKA_00879 <a href="/dbget-bin/www_bget?ko:K00244">K00244</a>  frdA; fumarate reductase flavoprotein subunit [EC:1.3.5.4]
+D      PROKKA_00896 <a href="/dbget-bin/www_bget?ko:K00244">K00244</a>  frdA; fumarate reductase flavoprotein subunit [EC:1.3.5.4]
+D      PROKKA_00961 <a href="/dbget-bin/www_bget?ko:K00244">K00244</a>  frdA; fumarate reductase flavoprotein subunit [EC:1.3.5.4]
+D      PROKKA_00966 <a href="/dbget-bin/www_bget?ko:K00244">K00244</a>  frdA; fumarate reductase flavoprotein subunit [EC:1.3.5.4]
+D      PROKKA_01141 <a href="/dbget-bin/www_bget?ko:K00244">K00244</a>  frdA; fumarate reductase flavoprotein subunit [EC:1.3.5.4]
+D      PROKKA_01188 <a href="/dbget-bin/www_bget?ko:K00244">K00244</a>  frdA; fumarate reductase flavoprotein subunit [EC:1.3.5.4]
+D      PROKKA_01611 <a href="/dbget-bin/www_bget?ko:K00244">K00244</a>  frdA; fumarate reductase flavoprotein subunit [EC:1.3.5.4]
+D      PROKKA_01615 <a href="/dbget-bin/www_bget?ko:K00244">K00244</a>  frdA; fumarate reductase flavoprotein subunit [EC:1.3.5.4]
+D      PROKKA_01641 <a href="/dbget-bin/www_bget?ko:K00244">K00244</a>  frdA; fumarate reductase flavoprotein subunit [EC:1.3.5.4]
+D      PROKKA_01676 <a href="/dbget-bin/www_bget?ko:K00244">K00244</a>  frdA; fumarate reductase flavoprotein subunit [EC:1.3.5.4]
+D      PROKKA_01703 <a href="/dbget-bin/www_bget?ko:K00244">K00244</a>  frdA; fumarate reductase flavoprotein subunit [EC:1.3.5.4]
+D      PROKKA_01723 <a href="/dbget-bin/www_bget?ko:K00244">K00244</a>  frdA; fumarate reductase flavoprotein subunit [EC:1.3.5.4]
+D      PROKKA_01774 <a href="/dbget-bin/www_bget?ko:K00244">K00244</a>  frdA; fumarate reductase flavoprotein subunit [EC:1.3.5.4]
+D      PROKKA_01782 <a href="/dbget-bin/www_bget?ko:K00244">K00244</a>  frdA; fumarate reductase flavoprotein subunit [EC:1.3.5.4]
+D      PROKKA_00760 <a href="/dbget-bin/www_bget?ko:K00411">K00411</a>  UQCRFS1, RIP1, petA; ubiquinol-cytochrome c reductase iron-sulfur subunit [EC:1.10.2.2]
+D      PROKKA_00759 <a href="/dbget-bin/www_bget?ko:K00412">K00412</a>  CYTB, petB; ubiquinol-cytochrome c reductase cytochrome b subunit
+D      PROKKA_00758 <a href="/dbget-bin/www_bget?ko:K00413">K00413</a>  CYC1, CYT1, petC; ubiquinol-cytochrome c reductase cytochrome c1 subunit
+D      PROKKA_00273 <a href="/dbget-bin/www_bget?ko:K00425">K00425</a>  cydA; cytochrome d ubiquinol oxidase subunit I [EC:1.10.3.14]
+D      PROKKA_00272 <a href="/dbget-bin/www_bget?ko:K00426">K00426</a>  cydB; cytochrome d ubiquinol oxidase subunit II [EC:1.10.3.14]
+D      PROKKA_00726 <a href="/dbget-bin/www_bget?ko:K02110">K02110</a>  ATPF0C, atpE; F-type H+-transporting ATPase subunit c
+C    00195 Photosynthesis [PATH:ko00195]
+D      PROKKA_00726 <a href="/dbget-bin/www_bget?ko:K02110">K02110</a>  ATPF0C, atpE; F-type H+-transporting ATPase subunit c
+C    00710 Carbon fixation in photosynthetic organisms [PATH:ko00710]
+D      PROKKA_00764 <a href="/dbget-bin/www_bget?ko:K00927">K00927</a>  PGK, pgk; phosphoglycerate kinase [EC:2.7.2.3]
+D      PROKKA_00765 <a href="/dbget-bin/www_bget?ko:K00134">K00134</a>  GAPDH, gapA; glyceraldehyde 3-phosphate dehydrogenase [EC:1.2.1.12]
+D      PROKKA_01784 <a href="/dbget-bin/www_bget?ko:K01624">K01624</a>  FBA, fbaA; fructose-bisphosphate aldolase, class II [EC:4.1.2.13]
+D      PROKKA_00801 <a href="/dbget-bin/www_bget?ko:K03841">K03841</a>  FBP, fbp; fructose-1,6-bisphosphatase I [EC:3.1.3.11]
+D      PROKKA_00250 <a href="/dbget-bin/www_bget?ko:K00615">K00615</a>  E2.2.1.1, tktA, tktB; transketolase [EC:2.2.1.1]
+D      PROKKA_00763 <a href="/dbget-bin/www_bget?ko:K01803">K01803</a>  TPI, tpiA; triosephosphate isomerase (TIM) [EC:5.3.1.1]
+D      PROKKA_00733 <a href="/dbget-bin/www_bget?ko:K01610">K01610</a>  E4.1.1.49, pckA; phosphoenolpyruvate carboxykinase (ATP) [EC:4.1.1.49]
+D      PROKKA_00472 <a href="/dbget-bin/www_bget?ko:K00029">K00029</a>  E1.1.1.40, maeB; malate dehydrogenase (oxaloacetate-decarboxylating)(NADP+) [EC:1.1.1.40]
+D      PROKKA_00889 <a href="/dbget-bin/www_bget?ko:K00024">K00024</a>  mdh; malate dehydrogenase [EC:1.1.1.37]
+D      PROKKA_01509 <a href="/dbget-bin/www_bget?ko:K00024">K00024</a>  mdh; malate dehydrogenase [EC:1.1.1.37]
+C    00720 Carbon fixation pathways in prokaryotes [PATH:ko00720]
+D      PROKKA_01069 <a href="/dbget-bin/www_bget?ko:K01958">K01958</a>  PC, pyc; pyruvate carboxylase [EC:6.4.1.1]
+D      PROKKA_00732 <a href="/dbget-bin/www_bget?ko:K01960">K01960</a>  pycB; pyruvate carboxylase subunit B [EC:6.4.1.1]
+D      PROKKA_00889 <a href="/dbget-bin/www_bget?ko:K00024">K00024</a>  mdh; malate dehydrogenase [EC:1.1.1.37]
+D      PROKKA_01509 <a href="/dbget-bin/www_bget?ko:K00024">K00024</a>  mdh; malate dehydrogenase [EC:1.1.1.37]
+D      PROKKA_00828 <a href="/dbget-bin/www_bget?ko:K00244">K00244</a>  frdA; fumarate reductase flavoprotein subunit [EC:1.3.5.4]
+D      PROKKA_00879 <a href="/dbget-bin/www_bget?ko:K00244">K00244</a>  frdA; fumarate reductase flavoprotein subunit [EC:1.3.5.4]
+D      PROKKA_00896 <a href="/dbget-bin/www_bget?ko:K00244">K00244</a>  frdA; fumarate reductase flavoprotein subunit [EC:1.3.5.4]
+D      PROKKA_00961 <a href="/dbget-bin/www_bget?ko:K00244">K00244</a>  frdA; fumarate reductase flavoprotein subunit [EC:1.3.5.4]
+D      PROKKA_00966 <a href="/dbget-bin/www_bget?ko:K00244">K00244</a>  frdA; fumarate reductase flavoprotein subunit [EC:1.3.5.4]
+D      PROKKA_01141 <a href="/dbget-bin/www_bget?ko:K00244">K00244</a>  frdA; fumarate reductase flavoprotein subunit [EC:1.3.5.4]
+D      PROKKA_01188 <a href="/dbget-bin/www_bget?ko:K00244">K00244</a>  frdA; fumarate reductase flavoprotein subunit [EC:1.3.5.4]
+D      PROKKA_01611 <a href="/dbget-bin/www_bget?ko:K00244">K00244</a>  frdA; fumarate reductase flavoprotein subunit [EC:1.3.5.4]
+D      PROKKA_01615 <a href="/dbget-bin/www_bget?ko:K00244">K00244</a>  frdA; fumarate reductase flavoprotein subunit [EC:1.3.5.4]
+D      PROKKA_01641 <a href="/dbget-bin/www_bget?ko:K00244">K00244</a>  frdA; fumarate reductase flavoprotein subunit [EC:1.3.5.4]
+D      PROKKA_01676 <a href="/dbget-bin/www_bget?ko:K00244">K00244</a>  frdA; fumarate reductase flavoprotein subunit [EC:1.3.5.4]
+D      PROKKA_01703 <a href="/dbget-bin/www_bget?ko:K00244">K00244</a>  frdA; fumarate reductase flavoprotein subunit [EC:1.3.5.4]
+D      PROKKA_01723 <a href="/dbget-bin/www_bget?ko:K00244">K00244</a>  frdA; fumarate reductase flavoprotein subunit [EC:1.3.5.4]
+D      PROKKA_01774 <a href="/dbget-bin/www_bget?ko:K00244">K00244</a>  frdA; fumarate reductase flavoprotein subunit [EC:1.3.5.4]
+D      PROKKA_01782 <a href="/dbget-bin/www_bget?ko:K00244">K00244</a>  frdA; fumarate reductase flavoprotein subunit [EC:1.3.5.4]
+D      PROKKA_01511 <a href="/dbget-bin/www_bget?ko:K00174">K00174</a>  korA, oorA, oforA; 2-oxoglutarate/2-oxoacid ferredoxin oxidoreductase subunit alpha [EC:1.2.7.3 1.2.7.11]
+D      PROKKA_01512 <a href="/dbget-bin/www_bget?ko:K00175">K00175</a>  korB, oorB, oforB; 2-oxoglutarate/2-oxoacid ferredoxin oxidoreductase subunit beta [EC:1.2.7.3 1.2.7.11]
+D      PROKKA_01513 <a href="/dbget-bin/www_bget?ko:K00177">K00177</a>  korC, oorC; 2-oxoglutarate ferredoxin oxidoreductase subunit gamma [EC:1.2.7.3]
+D      PROKKA_01510 <a href="/dbget-bin/www_bget?ko:K00176">K00176</a>  korD, oorD; 2-oxoglutarate ferredoxin oxidoreductase subunit delta [EC:1.2.7.3]
+D      PROKKA_01508 <a href="/dbget-bin/www_bget?ko:K00031">K00031</a>  IDH1, IDH2, icd; isocitrate dehydrogenase [EC:1.1.1.42]
+D      PROKKA_01470 <a href="/dbget-bin/www_bget?ko:K02160">K02160</a>  accB, bccP; acetyl-CoA carboxylase biotin carboxyl carrier protein
+D      PROKKA_01469 <a href="/dbget-bin/www_bget?ko:K01961">K01961</a>  accC; acetyl-CoA carboxylase, biotin carboxylase subunit [EC:6.4.1.2 6.3.4.14]
+D      PROKKA_01422 <a href="/dbget-bin/www_bget?ko:K15022">K15022</a>  fdhB; formate dehydrogenase beta subunit [EC:1.2.1.43]
+D      PROKKA_00722 <a href="/dbget-bin/www_bget?ko:K01938">K01938</a>  fhs; formate--tetrahydrofolate ligase [EC:6.3.4.3]
+C    00680 Methane metabolism [PATH:ko00680]
+D      PROKKA_00605 <a href="/dbget-bin/www_bget?ko:K00123">K00123</a>  fdoG, fdfH; formate dehydrogenase major subunit [EC:1.2.1.2]
+D      PROKKA_00606 <a href="/dbget-bin/www_bget?ko:K00123">K00123</a>  fdoG, fdfH; formate dehydrogenase major subunit [EC:1.2.1.2]
+D      PROKKA_00829 <a href="/dbget-bin/www_bget?ko:K00123">K00123</a>  fdoG, fdfH; formate dehydrogenase major subunit [EC:1.2.1.2]
+D      PROKKA_01133 <a href="/dbget-bin/www_bget?ko:K00123">K00123</a>  fdoG, fdfH; formate dehydrogenase major subunit [EC:1.2.1.2]
+D      PROKKA_00604 <a href="/dbget-bin/www_bget?ko:K00124">K00124</a>  fdoH; formate dehydrogenase iron-sulfur subunit
+D      PROKKA_00830 <a href="/dbget-bin/www_bget?ko:K00124">K00124</a>  fdoH; formate dehydrogenase iron-sulfur subunit
+D      PROKKA_00831 <a href="/dbget-bin/www_bget?ko:K00127">K00127</a>  fdoI; formate dehydrogenase subunit gamma
+D      PROKKA_01175 <a href="/dbget-bin/www_bget?ko:K00127">K00127</a>  fdoI; formate dehydrogenase subunit gamma
+D      PROKKA_01422 <a href="/dbget-bin/www_bget?ko:K15022">K15022</a>  fdhB; formate dehydrogenase beta subunit [EC:1.2.1.43]
+D      PROKKA_00667 <a href="/dbget-bin/www_bget?ko:K00018">K00018</a>  hprA; glycerate dehydrogenase [EC:1.1.1.29]
+D      PROKKA_00025 <a href="/dbget-bin/www_bget?ko:K01689">K01689</a>  ENO, eno; enolase [EC:4.2.1.11]
+D      PROKKA_00900 <a href="/dbget-bin/www_bget?ko:K01689">K01689</a>  ENO, eno; enolase [EC:4.2.1.11]
+D      PROKKA_00889 <a href="/dbget-bin/www_bget?ko:K00024">K00024</a>  mdh; malate dehydrogenase [EC:1.1.1.37]
+D      PROKKA_01509 <a href="/dbget-bin/www_bget?ko:K00024">K00024</a>  mdh; malate dehydrogenase [EC:1.1.1.37]
+D      PROKKA_01784 <a href="/dbget-bin/www_bget?ko:K01624">K01624</a>  FBA, fbaA; fructose-bisphosphate aldolase, class II [EC:4.1.2.13]
+D      PROKKA_00801 <a href="/dbget-bin/www_bget?ko:K03841">K03841</a>  FBP, fbp; fructose-1,6-bisphosphatase I [EC:3.1.3.11]
+D      PROKKA_00774 <a href="/dbget-bin/www_bget?ko:K15633">K15633</a>  gpmI; 2,3-bisphosphoglycerate-independent phosphoglycerate mutase [EC:5.4.2.12]
+D      PROKKA_01043 <a href="/dbget-bin/www_bget?ko:K15633">K15633</a>  gpmI; 2,3-bisphosphoglycerate-independent phosphoglycerate mutase [EC:5.4.2.12]
+D      PROKKA_01256 <a href="/dbget-bin/www_bget?ko:K00058">K00058</a>  serA, PHGDH; D-3-phosphoglycerate dehydrogenase [EC:1.1.1.95]
+D      PROKKA_01771 <a href="/dbget-bin/www_bget?ko:K00831">K00831</a>  serC, PSAT1; phosphoserine aminotransferase [EC:2.6.1.52]
+D      PROKKA_00579 <a href="/dbget-bin/www_bget?ko:K01079">K01079</a>  serB, PSPH; phosphoserine phosphatase [EC:3.1.3.3]
+C    00910 Nitrogen metabolism [PATH:ko00910]
+D      PROKKA_00460 <a href="/dbget-bin/www_bget?ko:K03385">K03385</a>  nrfA; nitrite reductase (cytochrome c-552) [EC:1.7.2.2]
+D      PROKKA_01648 <a href="/dbget-bin/www_bget?ko:K03385">K03385</a>  nrfA; nitrite reductase (cytochrome c-552) [EC:1.7.2.2]
+D      PROKKA_00368 <a href="/dbget-bin/www_bget?ko:K00459">K00459</a>  ncd2, npd; nitronate monooxygenase [EC:1.13.12.16]
+D      PROKKA_00914 <a href="/dbget-bin/www_bget?ko:K00262">K00262</a>  E1.4.1.4, gdhA; glutamate dehydrogenase (NADP+) [EC:1.4.1.4]
+D      PROKKA_01503 <a href="/dbget-bin/www_bget?ko:K01915">K01915</a>  glnA, GLUL; glutamine synthetase [EC:6.3.1.2]
+D      PROKKA_01138 <a href="/dbget-bin/www_bget?ko:K00265">K00265</a>  gltB; glutamate synthase (NADPH/NADH) large chain [EC:1.4.1.13 1.4.1.14]
+D      PROKKA_01137 <a href="/dbget-bin/www_bget?ko:K00266">K00266</a>  gltD; glutamate synthase (NADPH/NADH) small chain [EC:1.4.1.13 1.4.1.14]
+C    00920 Sulfur metabolism [PATH:ko00920]
+D      PROKKA_01364 <a href="/dbget-bin/www_bget?ko:K02046">K02046</a>  cysU; sulfate transport system permease protein
+D      PROKKA_01363 <a href="/dbget-bin/www_bget?ko:K02047">K02047</a>  cysW; sulfate transport system permease protein
+D      PROKKA_01362 <a href="/dbget-bin/www_bget?ko:K02045">K02045</a>  cysA; sulfate transport system ATP-binding protein [EC:3.6.3.25]
+D      PROKKA_00242 <a href="/dbget-bin/www_bget?ko:K15553">K15553</a>  ssuA; sulfonate transport system substrate-binding protein
+D      PROKKA_00240 <a href="/dbget-bin/www_bget?ko:K15554">K15554</a>  ssuC; sulfonate transport system permease protein
+D      PROKKA_00003 <a href="/dbget-bin/www_bget?ko:K01082">K01082</a>  cysQ, MET22, BPNT1; 3'(2'), 5'-bisphosphate nucleotidase [EC:3.1.3.7]
+D      PROKKA_00515 <a href="/dbget-bin/www_bget?ko:K08352">K08352</a>  phsA, psrA; thiosulfate reductase / polysulfide reductase chain A [EC:1.8.5.5]
+D      PROKKA_00516 <a href="/dbget-bin/www_bget?ko:K08352">K08352</a>  phsA, psrA; thiosulfate reductase / polysulfide reductase chain A [EC:1.8.5.5]
+D      PROKKA_01646 <a href="/dbget-bin/www_bget?ko:K08352">K08352</a>  phsA, psrA; thiosulfate reductase / polysulfide reductase chain A [EC:1.8.5.5]
+D      PROKKA_01702 <a href="/dbget-bin/www_bget?ko:K01011">K01011</a>  TST, MPST, sseA; thiosulfate/3-mercaptopyruvate sulfurtransferase [EC:2.8.1.1 2.8.1.2]
+D      PROKKA_01361 <a href="/dbget-bin/www_bget?ko:K12339">K12339</a>  cysM; cysteine synthase B [EC:2.5.1.47]
+D      PROKKA_00950 <a href="/dbget-bin/www_bget?ko:K00651">K00651</a>  metA; homoserine O-succinyltransferase [EC:2.3.1.46]
+D      PROKKA_00395 <a href="/dbget-bin/www_bget?ko:K17218">K17218</a>  sqr; sulfide:quinone oxidoreductase [EC:1.8.5.4]
+B  <b>Lipid metabolism</b>
+C    00061 Fatty acid biosynthesis [PATH:ko00061]
+D      PROKKA_01470 <a href="/dbget-bin/www_bget?ko:K02160">K02160</a>  accB, bccP; acetyl-CoA carboxylase biotin carboxyl carrier protein
+D      PROKKA_01469 <a href="/dbget-bin/www_bget?ko:K01961">K01961</a>  accC; acetyl-CoA carboxylase, biotin carboxylase subunit [EC:6.4.1.2 6.3.4.14]
+D      PROKKA_01292 <a href="/dbget-bin/www_bget?ko:K02078">K02078</a>  acpP; acyl carrier protein
+D      PROKKA_01290 <a href="/dbget-bin/www_bget?ko:K00645">K00645</a>  fabD; [acyl-carrier-protein] S-malonyltransferase [EC:2.3.1.39]
+D      PROKKA_01289 <a href="/dbget-bin/www_bget?ko:K00648">K00648</a>  fabH; 3-oxoacyl-[acyl-carrier-protein] synthase III [EC:2.3.1.180]
+D      PROKKA_00844 <a href="/dbget-bin/www_bget?ko:K00647">K00647</a>  fabB; 3-oxoacyl-[acyl-carrier-protein] synthase I [EC:2.3.1.41]
+D      PROKKA_00847 <a href="/dbget-bin/www_bget?ko:K09458">K09458</a>  fabF; 3-oxoacyl-[acyl-carrier-protein] synthase II [EC:2.3.1.179]
+D      PROKKA_01293 <a href="/dbget-bin/www_bget?ko:K09458">K09458</a>  fabF; 3-oxoacyl-[acyl-carrier-protein] synthase II [EC:2.3.1.179]
+D      PROKKA_00846 <a href="/dbget-bin/www_bget?ko:K00059">K00059</a>  fabG; 3-oxoacyl-[acyl-carrier protein] reductase [EC:1.1.1.100]
+D      PROKKA_01291 <a href="/dbget-bin/www_bget?ko:K00059">K00059</a>  fabG; 3-oxoacyl-[acyl-carrier protein] reductase [EC:1.1.1.100]
+D      PROKKA_01315 <a href="/dbget-bin/www_bget?ko:K02372">K02372</a>  fabZ; 3-hydroxyacyl-[acyl-carrier-protein] dehydratase [EC:4.2.1.59]
+D      PROKKA_01330 <a href="/dbget-bin/www_bget?ko:K02372">K02372</a>  fabZ; 3-hydroxyacyl-[acyl-carrier-protein] dehydratase [EC:4.2.1.59]
+D      PROKKA_00762 <a href="/dbget-bin/www_bget?ko:K00208">K00208</a>  fabI; enoyl-[acyl-carrier protein] reductase I [EC:1.3.1.9 1.3.1.10]
+D      PROKKA_00481 <a href="/dbget-bin/www_bget?ko:K01897">K01897</a>  ACSL, fadD; long-chain acyl-CoA synthetase [EC:6.2.1.3]
+D      PROKKA_00925 <a href="/dbget-bin/www_bget?ko:K01897">K01897</a>  ACSL, fadD; long-chain acyl-CoA synthetase [EC:6.2.1.3]
+D      PROKKA_01179 <a href="/dbget-bin/www_bget?ko:K01897">K01897</a>  ACSL, fadD; long-chain acyl-CoA synthetase [EC:6.2.1.3]
+C    00071 Fatty acid degradation [PATH:ko00071]
+D      PROKKA_00481 <a href="/dbget-bin/www_bget?ko:K01897">K01897</a>  ACSL, fadD; long-chain acyl-CoA synthetase [EC:6.2.1.3]
+D      PROKKA_00925 <a href="/dbget-bin/www_bget?ko:K01897">K01897</a>  ACSL, fadD; long-chain acyl-CoA synthetase [EC:6.2.1.3]
+D      PROKKA_01179 <a href="/dbget-bin/www_bget?ko:K01897">K01897</a>  ACSL, fadD; long-chain acyl-CoA synthetase [EC:6.2.1.3]
+C    00561 Glycerolipid metabolism [PATH:ko00561]
+D      PROKKA_00029 <a href="/dbget-bin/www_bget?ko:K00865">K00865</a>  glxK, garK; glycerate 2-kinase [EC:2.7.1.165]
+D      PROKKA_01281 <a href="/dbget-bin/www_bget?ko:K00864">K00864</a>  glpK, GK; glycerol kinase [EC:2.7.1.30]
+D      PROKKA_00989 <a href="/dbget-bin/www_bget?ko:K00655">K00655</a>  plsC; 1-acyl-sn-glycerol-3-phosphate acyltransferase [EC:2.3.1.51]
+C    00564 Glycerophospholipid metabolism [PATH:ko00564]
+D      PROKKA_00989 <a href="/dbget-bin/www_bget?ko:K00655">K00655</a>  plsC; 1-acyl-sn-glycerol-3-phosphate acyltransferase [EC:2.3.1.51]
+D      PROKKA_00031 <a href="/dbget-bin/www_bget?ko:K01058">K01058</a>  pldA; phospholipase A1 [EC:3.1.1.32 3.1.1.4]
+D      PROKKA_00928 <a href="/dbget-bin/www_bget?ko:K00981">K00981</a>  E2.7.7.41, CDS1, CDS2, cdsA; phosphatidate cytidylyltransferase [EC:2.7.7.41]
+D      PROKKA_01556 <a href="/dbget-bin/www_bget?ko:K00981">K00981</a>  E2.7.7.41, CDS1, CDS2, cdsA; phosphatidate cytidylyltransferase [EC:2.7.7.41]
+D      PROKKA_01780 <a href="/dbget-bin/www_bget?ko:K17103">K17103</a>  CHO1, pssA; CDP-diacylglycerol---serine O-phosphatidyltransferase [EC:2.7.8.8]
+D      PROKKA_00695 <a href="/dbget-bin/www_bget?ko:K01095">K01095</a>  pgpA; phosphatidylglycerophosphatase A [EC:3.1.3.27]
+D      PROKKA_01797 <a href="/dbget-bin/www_bget?ko:K06131">K06131</a>  clsA_B; cardiolipin synthase A/B [EC:2.7.8.-]
+C    00565 Ether lipid metabolism [PATH:ko00565]
+D      PROKKA_00031 <a href="/dbget-bin/www_bget?ko:K01058">K01058</a>  pldA; phospholipase A1 [EC:3.1.1.32 3.1.1.4]
+C    00590 Arachidonic acid metabolism [PATH:ko00590]
+D      PROKKA_00031 <a href="/dbget-bin/www_bget?ko:K01058">K01058</a>  pldA; phospholipase A1 [EC:3.1.1.32 3.1.1.4]
+C    00591 Linoleic acid metabolism [PATH:ko00591]
+D      PROKKA_00031 <a href="/dbget-bin/www_bget?ko:K01058">K01058</a>  pldA; phospholipase A1 [EC:3.1.1.32 3.1.1.4]
+C    00592 alpha-Linolenic acid metabolism [PATH:ko00592]
+D      PROKKA_00031 <a href="/dbget-bin/www_bget?ko:K01058">K01058</a>  pldA; phospholipase A1 [EC:3.1.1.32 3.1.1.4]
+C    01040 Biosynthesis of unsaturated fatty acids [PATH:ko01040]
+D      PROKKA_00846 <a href="/dbget-bin/www_bget?ko:K00059">K00059</a>  fabG; 3-oxoacyl-[acyl-carrier protein] reductase [EC:1.1.1.100]
+D      PROKKA_01291 <a href="/dbget-bin/www_bget?ko:K00059">K00059</a>  fabG; 3-oxoacyl-[acyl-carrier protein] reductase [EC:1.1.1.100]
+D      PROKKA_00742 <a href="/dbget-bin/www_bget?ko:K10806">K10806</a>  yciA; acyl-CoA thioesterase YciA [EC:3.1.2.-]
+B  <b>Nucleotide metabolism</b>
+C    00230 Purine metabolism [PATH:ko00230]
+D      PROKKA_01022 <a href="/dbget-bin/www_bget?ko:K01515">K01515</a>  nudF; ADP-ribose pyrophosphatase [EC:3.6.1.13]
+D      PROKKA_01477 <a href="/dbget-bin/www_bget?ko:K00948">K00948</a>  PRPS, prsA; ribose-phosphate pyrophosphokinase [EC:2.7.6.1]
+D      PROKKA_00491 <a href="/dbget-bin/www_bget?ko:K11175">K11175</a>  purN; phosphoribosylglycinamide formyltransferase 1 [EC:2.1.2.2]
+D      PROKKA_01135 <a href="/dbget-bin/www_bget?ko:K01952">K01952</a>  purL, PFAS; phosphoribosylformylglycinamidine synthase [EC:6.3.5.3]
+D      PROKKA_00997 <a href="/dbget-bin/www_bget?ko:K01933">K01933</a>  purM; phosphoribosylformylglycinamidine cyclo-ligase [EC:6.3.3.1]
+D      PROKKA_00794 <a href="/dbget-bin/www_bget?ko:K01756">K01756</a>  purB, ADSL; adenylosuccinate lyase [EC:4.3.2.2]
+D      PROKKA_00476 <a href="/dbget-bin/www_bget?ko:K00602">K00602</a>  purH; phosphoribosylaminoimidazolecarboxamide formyltransferase / IMP cyclohydrolase [EC:2.1.2.3 3.5.4.10]
+D      PROKKA_00586 <a href="/dbget-bin/www_bget?ko:K03787">K03787</a>  surE; 5'-nucleotidase [EC:3.1.3.5]
+D      PROKKA_01194 <a href="/dbget-bin/www_bget?ko:K03787">K03787</a>  surE; 5'-nucleotidase [EC:3.1.3.5]
+D      PROKKA_00864 <a href="/dbget-bin/www_bget?ko:K01239">K01239</a>  iunH; purine nucleosidase [EC:3.2.2.1]
+D      PROKKA_00332 <a href="/dbget-bin/www_bget?ko:K00088">K00088</a>  IMPDH, guaB; IMP dehydrogenase [EC:1.1.1.205]
+D      PROKKA_00633 <a href="/dbget-bin/www_bget?ko:K00940">K00940</a>  ndk, NME; nucleoside-diphosphate kinase [EC:2.7.4.6]
+D      PROKKA_01506 <a href="/dbget-bin/www_bget?ko:K02428">K02428</a>  rdgB; XTP/dITP diphosphohydrolase [EC:3.6.1.66]
+D      PROKKA_00431 <a href="/dbget-bin/www_bget?ko:K00364">K00364</a>  E1.7.1.7, guaC; GMP reductase [EC:1.7.1.7]
+D      PROKKA_00199 <a href="/dbget-bin/www_bget?ko:K00942">K00942</a>  E2.7.4.8, gmk; guanylate kinase [EC:2.7.4.8]
+D      PROKKA_00771 <a href="/dbget-bin/www_bget?ko:K00942">K00942</a>  E2.7.4.8, gmk; guanylate kinase [EC:2.7.4.8]
+D      PROKKA_00284 <a href="/dbget-bin/www_bget?ko:K00526">K00526</a>  E1.17.4.1B, nrdB, nrdF; ribonucleoside-diphosphate reductase beta chain [EC:1.17.4.1]
+D      PROKKA_00252 <a href="/dbget-bin/www_bget?ko:K21636">K21636</a>  nrdD; ribonucleoside-triphosphate reductase (formate) [EC:1.1.98.6]
+D      PROKKA_01530 <a href="/dbget-bin/www_bget?ko:K21636">K21636</a>  nrdD; ribonucleoside-triphosphate reductase (formate) [EC:1.1.98.6]
+D      PROKKA_01548 <a href="/dbget-bin/www_bget?ko:K21636">K21636</a>  nrdD; ribonucleoside-triphosphate reductase (formate) [EC:1.1.98.6]
+D      PROKKA_00236 <a href="/dbget-bin/www_bget?ko:K03040">K03040</a>  rpoA; DNA-directed RNA polymerase subunit alpha [EC:2.7.7.6]
+D      PROKKA_00436 <a href="/dbget-bin/www_bget?ko:K03040">K03040</a>  rpoA; DNA-directed RNA polymerase subunit alpha [EC:2.7.7.6]
+D      PROKKA_01235 <a href="/dbget-bin/www_bget?ko:K03046">K03046</a>  rpoC; DNA-directed RNA polymerase subunit beta' [EC:2.7.7.6]
+D      PROKKA_00198 <a href="/dbget-bin/www_bget?ko:K03060">K03060</a>  rpoZ; DNA-directed RNA polymerase subunit omega [EC:2.7.7.6]
+D      PROKKA_00365 <a href="/dbget-bin/www_bget?ko:K03060">K03060</a>  rpoZ; DNA-directed RNA polymerase subunit omega [EC:2.7.7.6]
+D      PROKKA_00320 <a href="/dbget-bin/www_bget?ko:K02335">K02335</a>  DPO1, polA; DNA polymerase I [EC:2.7.7.7]
+D      PROKKA_00347 <a href="/dbget-bin/www_bget?ko:K02337">K02337</a>  DPO3A1, dnaE; DNA polymerase III subunit alpha [EC:2.7.7.7]
+D      PROKKA_00125 <a href="/dbget-bin/www_bget?ko:K02338">K02338</a>  DPO3B, dnaN; DNA polymerase III subunit beta [EC:2.7.7.7]
+D      PROKKA_01155 <a href="/dbget-bin/www_bget?ko:K02343">K02343</a>  DPO3G, dnaX; DNA polymerase III subunit gamma/tau [EC:2.7.7.7]
+D      PROKKA_00943 <a href="/dbget-bin/www_bget?ko:K02341">K02341</a>  DPO3D2, holB; DNA polymerase III subunit delta' [EC:2.7.7.7]
+D      PROKKA_01209 <a href="/dbget-bin/www_bget?ko:K02342">K02342</a>  DPO3E, dnaQ; DNA polymerase III subunit epsilon [EC:2.7.7.7]
+D      PROKKA_01758 <a href="/dbget-bin/www_bget?ko:K02339">K02339</a>  DPO3C, holC; DNA polymerase III subunit chi [EC:2.7.7.7]
+D      PROKKA_00197 <a href="/dbget-bin/www_bget?ko:K01139">K01139</a>  spoT; GTP diphosphokinase / guanosine-3',5'-bis(diphosphate) 3'-diphosphatase [EC:2.7.6.5 3.1.7.2]
+D      PROKKA_00366 <a href="/dbget-bin/www_bget?ko:K01139">K01139</a>  spoT; GTP diphosphokinase / guanosine-3',5'-bis(diphosphate) 3'-diphosphatase [EC:2.7.6.5 3.1.7.2]
+D      PROKKA_00559 <a href="/dbget-bin/www_bget?ko:K01524">K01524</a>  ppx-gppA; exopolyphosphatase / guanosine-5'-triphosphate,3'-diphosphate pyrophosphatase [EC:3.6.1.11 3.6.1.40]
+D      PROKKA_01442 <a href="/dbget-bin/www_bget?ko:K00951">K00951</a>  relA; GTP pyrophosphokinase [EC:2.7.6.5]
+D      PROKKA_00649 <a href="/dbget-bin/www_bget?ko:K01939">K01939</a>  purA, ADSS; adenylosuccinate synthase [EC:6.3.4.4]
+D      PROKKA_01466 <a href="/dbget-bin/www_bget?ko:K00856">K00856</a>  E2.7.1.20, ADK; adenosine kinase [EC:2.7.1.20]
+D      PROKKA_01550 <a href="/dbget-bin/www_bget?ko:K01488">K01488</a>  add, ADA; adenosine deaminase [EC:3.5.4.4]
+D      PROKKA_00709 <a href="/dbget-bin/www_bget?ko:K00939">K00939</a>  adk, AK; adenylate kinase [EC:2.7.4.3]
+C    00240 Pyrimidine metabolism [PATH:ko00240]
+D      PROKKA_01032 <a href="/dbget-bin/www_bget?ko:K01465">K01465</a>  URA4, pyrC; dihydroorotase [EC:3.5.2.3]
+D      PROKKA_00116 <a href="/dbget-bin/www_bget?ko:K00762">K00762</a>  pyrE; orotate phosphoribosyltransferase [EC:2.4.2.10]
+D      PROKKA_00690 <a href="/dbget-bin/www_bget?ko:K01591">K01591</a>  pyrF; orotidine-5'-phosphate decarboxylase [EC:4.1.1.23]
+D      PROKKA_00364 <a href="/dbget-bin/www_bget?ko:K09903">K09903</a>  pyrH; uridylate kinase [EC:2.7.4.22]
+D      PROKKA_01561 <a href="/dbget-bin/www_bget?ko:K09903">K09903</a>  pyrH; uridylate kinase [EC:2.7.4.22]
+D      PROKKA_00633 <a href="/dbget-bin/www_bget?ko:K00940">K00940</a>  ndk, NME; nucleoside-diphosphate kinase [EC:2.7.4.6]
+D      PROKKA_00275 <a href="/dbget-bin/www_bget?ko:K01937">K01937</a>  pyrG, CTPS; CTP synthase [EC:6.3.4.2]
+D      PROKKA_00902 <a href="/dbget-bin/www_bget?ko:K01937">K01937</a>  pyrG, CTPS; CTP synthase [EC:6.3.4.2]
+D      PROKKA_01770 <a href="/dbget-bin/www_bget?ko:K00945">K00945</a>  cmk; CMP/dCMP kinase [EC:2.7.4.25]
+D      PROKKA_00236 <a href="/dbget-bin/www_bget?ko:K03040">K03040</a>  rpoA; DNA-directed RNA polymerase subunit alpha [EC:2.7.7.6]
+D      PROKKA_00436 <a href="/dbget-bin/www_bget?ko:K03040">K03040</a>  rpoA; DNA-directed RNA polymerase subunit alpha [EC:2.7.7.6]
+D      PROKKA_01235 <a href="/dbget-bin/www_bget?ko:K03046">K03046</a>  rpoC; DNA-directed RNA polymerase subunit beta' [EC:2.7.7.6]
+D      PROKKA_00198 <a href="/dbget-bin/www_bget?ko:K03060">K03060</a>  rpoZ; DNA-directed RNA polymerase subunit omega [EC:2.7.7.6]
+D      PROKKA_00365 <a href="/dbget-bin/www_bget?ko:K03060">K03060</a>  rpoZ; DNA-directed RNA polymerase subunit omega [EC:2.7.7.6]
+D      PROKKA_00320 <a href="/dbget-bin/www_bget?ko:K02335">K02335</a>  DPO1, polA; DNA polymerase I [EC:2.7.7.7]
+D      PROKKA_00347 <a href="/dbget-bin/www_bget?ko:K02337">K02337</a>  DPO3A1, dnaE; DNA polymerase III subunit alpha [EC:2.7.7.7]
+D      PROKKA_00125 <a href="/dbget-bin/www_bget?ko:K02338">K02338</a>  DPO3B, dnaN; DNA polymerase III subunit beta [EC:2.7.7.7]
+D      PROKKA_01155 <a href="/dbget-bin/www_bget?ko:K02343">K02343</a>  DPO3G, dnaX; DNA polymerase III subunit gamma/tau [EC:2.7.7.7]
+D      PROKKA_00943 <a href="/dbget-bin/www_bget?ko:K02341">K02341</a>  DPO3D2, holB; DNA polymerase III subunit delta' [EC:2.7.7.7]
+D      PROKKA_01209 <a href="/dbget-bin/www_bget?ko:K02342">K02342</a>  DPO3E, dnaQ; DNA polymerase III subunit epsilon [EC:2.7.7.7]
+D      PROKKA_01758 <a href="/dbget-bin/www_bget?ko:K02339">K02339</a>  DPO3C, holC; DNA polymerase III subunit chi [EC:2.7.7.7]
+D      PROKKA_00586 <a href="/dbget-bin/www_bget?ko:K03787">K03787</a>  surE; 5'-nucleotidase [EC:3.1.3.5]
+D      PROKKA_01194 <a href="/dbget-bin/www_bget?ko:K03787">K03787</a>  surE; 5'-nucleotidase [EC:3.1.3.5]
+D      PROKKA_01431 <a href="/dbget-bin/www_bget?ko:K06016">K06016</a>  pydC; beta-ureidopropionase / N-carbamoyl-L-amino-acid hydrolase [EC:3.5.1.6 3.5.1.87]
+D      PROKKA_00252 <a href="/dbget-bin/www_bget?ko:K21636">K21636</a>  nrdD; ribonucleoside-triphosphate reductase (formate) [EC:1.1.98.6]
+D      PROKKA_01530 <a href="/dbget-bin/www_bget?ko:K21636">K21636</a>  nrdD; ribonucleoside-triphosphate reductase (formate) [EC:1.1.98.6]
+D      PROKKA_01548 <a href="/dbget-bin/www_bget?ko:K21636">K21636</a>  nrdD; ribonucleoside-triphosphate reductase (formate) [EC:1.1.98.6]
+D      PROKKA_00284 <a href="/dbget-bin/www_bget?ko:K00526">K00526</a>  E1.17.4.1B, nrdB, nrdF; ribonucleoside-diphosphate reductase beta chain [EC:1.17.4.1]
+D      PROKKA_01215 <a href="/dbget-bin/www_bget?ko:K00560">K00560</a>  thyA, TYMS; thymidylate synthase [EC:2.1.1.45]
+D      PROKKA_00119 <a href="/dbget-bin/www_bget?ko:K03465">K03465</a>  thyX, thy1; thymidylate synthase (FAD) [EC:2.1.1.148]
+D      PROKKA_00942 <a href="/dbget-bin/www_bget?ko:K00943">K00943</a>  tmk, DTYMK; dTMP kinase [EC:2.7.4.9]
+B  <b>Amino acid metabolism</b>
+C    00250 Alanine, aspartate and glutamate metabolism [PATH:ko00250]
+D      PROKKA_00388 <a href="/dbget-bin/www_bget?ko:K01424">K01424</a>  E3.5.1.1, ansA, ansB; L-asparaginase [EC:3.5.1.1]
+D      PROKKA_01622 <a href="/dbget-bin/www_bget?ko:K01424">K01424</a>  E3.5.1.1, ansA, ansB; L-asparaginase [EC:3.5.1.1]
+D      PROKKA_01639 <a href="/dbget-bin/www_bget?ko:K01424">K01424</a>  E3.5.1.1, ansA, ansB; L-asparaginase [EC:3.5.1.1]
+D      PROKKA_01366 <a href="/dbget-bin/www_bget?ko:K01744">K01744</a>  aspA; aspartate ammonia-lyase [EC:4.3.1.1]
+D      PROKKA_01047 <a href="/dbget-bin/www_bget?ko:K01755">K01755</a>  argH, ASL; argininosuccinate lyase [EC:4.3.2.1]
+D      PROKKA_01097 <a href="/dbget-bin/www_bget?ko:K01755">K01755</a>  argH, ASL; argininosuccinate lyase [EC:4.3.2.1]
+D      PROKKA_01247 <a href="/dbget-bin/www_bget?ko:K01755">K01755</a>  argH, ASL; argininosuccinate lyase [EC:4.3.2.1]
+D      PROKKA_00649 <a href="/dbget-bin/www_bget?ko:K01939">K01939</a>  purA, ADSS; adenylosuccinate synthase [EC:6.3.4.4]
+D      PROKKA_00794 <a href="/dbget-bin/www_bget?ko:K01756">K01756</a>  purB, ADSL; adenylosuccinate lyase [EC:4.3.2.2]
+D      PROKKA_01138 <a href="/dbget-bin/www_bget?ko:K00265">K00265</a>  gltB; glutamate synthase (NADPH/NADH) large chain [EC:1.4.1.13 1.4.1.14]
+D      PROKKA_01137 <a href="/dbget-bin/www_bget?ko:K00266">K00266</a>  gltD; glutamate synthase (NADPH/NADH) small chain [EC:1.4.1.13 1.4.1.14]
+D      PROKKA_00914 <a href="/dbget-bin/www_bget?ko:K00262">K00262</a>  E1.4.1.4, gdhA; glutamate dehydrogenase (NADP+) [EC:1.4.1.4]
+D      PROKKA_01503 <a href="/dbget-bin/www_bget?ko:K01915">K01915</a>  glnA, GLUL; glutamine synthetase [EC:6.3.1.2]
+C    00260 Glycine, serine and threonine metabolism [PATH:ko00260]
+D      PROKKA_01092 <a href="/dbget-bin/www_bget?ko:K01733">K01733</a>  thrC; threonine synthase [EC:4.2.3.1]
+D      PROKKA_01401 <a href="/dbget-bin/www_bget?ko:K01733">K01733</a>  thrC; threonine synthase [EC:4.2.3.1]
+D      PROKKA_00667 <a href="/dbget-bin/www_bget?ko:K00018">K00018</a>  hprA; glycerate dehydrogenase [EC:1.1.1.29]
+D      PROKKA_00029 <a href="/dbget-bin/www_bget?ko:K00865">K00865</a>  glxK, garK; glycerate 2-kinase [EC:2.7.1.165]
+D      PROKKA_00774 <a href="/dbget-bin/www_bget?ko:K15633">K15633</a>  gpmI; 2,3-bisphosphoglycerate-independent phosphoglycerate mutase [EC:5.4.2.12]
+D      PROKKA_01043 <a href="/dbget-bin/www_bget?ko:K15633">K15633</a>  gpmI; 2,3-bisphosphoglycerate-independent phosphoglycerate mutase [EC:5.4.2.12]
+D      PROKKA_01256 <a href="/dbget-bin/www_bget?ko:K00058">K00058</a>  serA, PHGDH; D-3-phosphoglycerate dehydrogenase [EC:1.1.1.95]
+D      PROKKA_01771 <a href="/dbget-bin/www_bget?ko:K00831">K00831</a>  serC, PSAT1; phosphoserine aminotransferase [EC:2.6.1.52]
+D      PROKKA_00579 <a href="/dbget-bin/www_bget?ko:K01079">K01079</a>  serB, PSPH; phosphoserine phosphatase [EC:3.1.3.3]
+D      PROKKA_01780 <a href="/dbget-bin/www_bget?ko:K17103">K17103</a>  CHO1, pssA; CDP-diacylglycerol---serine O-phosphatidyltransferase [EC:2.7.8.8]
+D      PROKKA_01325 <a href="/dbget-bin/www_bget?ko:K01752">K01752</a>  E4.3.1.17, sdaA, sdaB, tdcG; L-serine dehydratase [EC:4.3.1.17]
+C    00270 Cysteine and methionine metabolism [PATH:ko00270]
+D      PROKKA_01361 <a href="/dbget-bin/www_bget?ko:K12339">K12339</a>  cysM; cysteine synthase B [EC:2.5.1.47]
+D      PROKKA_00203 <a href="/dbget-bin/www_bget?ko:K01760">K01760</a>  metC; cystathionine beta-lyase [EC:4.4.1.8]
+D      PROKKA_00873 <a href="/dbget-bin/www_bget?ko:K01760">K01760</a>  metC; cystathionine beta-lyase [EC:4.4.1.8]
+D      PROKKA_00201 <a href="/dbget-bin/www_bget?ko:K14155">K14155</a>  patB, malY; cystathione beta-lyase [EC:4.4.1.8]
+D      PROKKA_00874 <a href="/dbget-bin/www_bget?ko:K14155">K14155</a>  patB, malY; cystathione beta-lyase [EC:4.4.1.8]
+D      PROKKA_01606 <a href="/dbget-bin/www_bget?ko:K00547">K00547</a>  mmuM, BHMT2; homocysteine S-methyltransferase [EC:2.1.1.10]
+D      PROKKA_01544 <a href="/dbget-bin/www_bget?ko:K00549">K00549</a>  metE; 5-methyltetrahydropteroyltriglutamate--homocysteine methyltransferase [EC:2.1.1.14]
+D      PROKKA_01495 <a href="/dbget-bin/www_bget?ko:K08963">K08963</a>  mtnA; methylthioribose-1-phosphate isomerase [EC:5.3.1.23]
+D      PROKKA_01656 <a href="/dbget-bin/www_bget?ko:K00832">K00832</a>  tyrB; aromatic-amino-acid transaminase [EC:2.6.1.57]
+D      PROKKA_00121 <a href="/dbget-bin/www_bget?ko:K07173">K07173</a>  luxS; S-ribosylhomocysteine lyase [EC:4.4.1.21]
+D      PROKKA_00950 <a href="/dbget-bin/www_bget?ko:K00651">K00651</a>  metA; homoserine O-succinyltransferase [EC:2.3.1.46]
+D      PROKKA_00331 <a href="/dbget-bin/www_bget?ko:K00641">K00641</a>  metX; homoserine O-acetyltransferase [EC:2.3.1.31]
+D      PROKKA_01139 <a href="/dbget-bin/www_bget?ko:K00826">K00826</a>  E2.6.1.42, ilvE; branched-chain amino acid aminotransferase [EC:2.6.1.42]
+D      PROKKA_01702 <a href="/dbget-bin/www_bget?ko:K01011">K01011</a>  TST, MPST, sseA; thiosulfate/3-mercaptopyruvate sulfurtransferase [EC:2.8.1.1 2.8.1.2]
+D      PROKKA_00889 <a href="/dbget-bin/www_bget?ko:K00024">K00024</a>  mdh; malate dehydrogenase [EC:1.1.1.37]
+D      PROKKA_01509 <a href="/dbget-bin/www_bget?ko:K00024">K00024</a>  mdh; malate dehydrogenase [EC:1.1.1.37]
+D      PROKKA_01325 <a href="/dbget-bin/www_bget?ko:K01752">K01752</a>  E4.3.1.17, sdaA, sdaB, tdcG; L-serine dehydratase [EC:4.3.1.17]
+C    00280 Valine, leucine and isoleucine degradation [PATH:ko00280]
+D      PROKKA_01139 <a href="/dbget-bin/www_bget?ko:K00826">K00826</a>  E2.6.1.42, ilvE; branched-chain amino acid aminotransferase [EC:2.6.1.42]
+C    00290 Valine, leucine and isoleucine biosynthesis [PATH:ko00290]
+D      PROKKA_00085 <a href="/dbget-bin/www_bget?ko:K01703">K01703</a>  leuC, IPMI-L; 3-isopropylmalate/(R)-2-methylmalate dehydratase large subunit [EC:4.2.1.33 4.2.1.35]
+D      PROKKA_00968 <a href="/dbget-bin/www_bget?ko:K01703">K01703</a>  leuC, IPMI-L; 3-isopropylmalate/(R)-2-methylmalate dehydratase large subunit [EC:4.2.1.33 4.2.1.35]
+D      PROKKA_01397 <a href="/dbget-bin/www_bget?ko:K01703">K01703</a>  leuC, IPMI-L; 3-isopropylmalate/(R)-2-methylmalate dehydratase large subunit [EC:4.2.1.33 4.2.1.35]
+D      PROKKA_00398 <a href="/dbget-bin/www_bget?ko:K01704">K01704</a>  leuD, IPMI-S; 3-isopropylmalate/(R)-2-methylmalate dehydratase small subunit [EC:4.2.1.33 4.2.1.35]
+D      PROKKA_00967 <a href="/dbget-bin/www_bget?ko:K01704">K01704</a>  leuD, IPMI-S; 3-isopropylmalate/(R)-2-methylmalate dehydratase small subunit [EC:4.2.1.33 4.2.1.35]
+D      PROKKA_01396 <a href="/dbget-bin/www_bget?ko:K01704">K01704</a>  leuD, IPMI-S; 3-isopropylmalate/(R)-2-methylmalate dehydratase small subunit [EC:4.2.1.33 4.2.1.35]
+D      PROKKA_00399 <a href="/dbget-bin/www_bget?ko:K00052">K00052</a>  leuB, IMDH; 3-isopropylmalate dehydrogenase [EC:1.1.1.85]
+D      PROKKA_00969 <a href="/dbget-bin/www_bget?ko:K00052">K00052</a>  leuB, IMDH; 3-isopropylmalate dehydrogenase [EC:1.1.1.85]
+D      PROKKA_00267 <a href="/dbget-bin/www_bget?ko:K01687">K01687</a>  ilvD; dihydroxy-acid dehydratase [EC:4.2.1.9]
+D      PROKKA_01081 <a href="/dbget-bin/www_bget?ko:K01687">K01687</a>  ilvD; dihydroxy-acid dehydratase [EC:4.2.1.9]
+D      PROKKA_01139 <a href="/dbget-bin/www_bget?ko:K00826">K00826</a>  E2.6.1.42, ilvE; branched-chain amino acid aminotransferase [EC:2.6.1.42]
+D      PROKKA_00970 <a href="/dbget-bin/www_bget?ko:K01649">K01649</a>  leuA, IMS; 2-isopropylmalate synthase [EC:2.3.3.13]
+C    00300 Lysine biosynthesis [PATH:ko00300]
+D      PROKKA_00852 <a href="/dbget-bin/www_bget?ko:K00821">K00821</a>  argD; acetylornithine/N-succinyldiaminopimelate aminotransferase [EC:2.6.1.11 2.6.1.17]
+D      PROKKA_00322 <a href="/dbget-bin/www_bget?ko:K01439">K01439</a>  dapE; succinyl-diaminopimelate desuccinylase [EC:3.5.1.18]
+D      PROKKA_00430 <a href="/dbget-bin/www_bget?ko:K01586">K01586</a>  lysA; diaminopimelate decarboxylase [EC:4.1.1.20]
+D      PROKKA_00574 <a href="/dbget-bin/www_bget?ko:K01586">K01586</a>  lysA; diaminopimelate decarboxylase [EC:4.1.1.20]
+D      PROKKA_00245 <a href="/dbget-bin/www_bget?ko:K01928">K01928</a>  murE; UDP-N-acetylmuramoyl-L-alanyl-D-glutamate--2,6-diaminopimelate ligase [EC:6.3.2.13]
+D      PROKKA_00290 <a href="/dbget-bin/www_bget?ko:K01928">K01928</a>  murE; UDP-N-acetylmuramoyl-L-alanyl-D-glutamate--2,6-diaminopimelate ligase [EC:6.3.2.13]
+D      PROKKA_00291 <a href="/dbget-bin/www_bget?ko:K01929">K01929</a>  murF; UDP-N-acetylmuramoyl-tripeptide--D-alanyl-D-alanine ligase [EC:6.3.2.10]
+C    00220 Arginine biosynthesis [PATH:ko00220]
+D      PROKKA_01047 <a href="/dbget-bin/www_bget?ko:K01755">K01755</a>  argH, ASL; argininosuccinate lyase [EC:4.3.2.1]
+D      PROKKA_01097 <a href="/dbget-bin/www_bget?ko:K01755">K01755</a>  argH, ASL; argininosuccinate lyase [EC:4.3.2.1]
+D      PROKKA_01247 <a href="/dbget-bin/www_bget?ko:K01755">K01755</a>  argH, ASL; argininosuccinate lyase [EC:4.3.2.1]
+D      PROKKA_01503 <a href="/dbget-bin/www_bget?ko:K01915">K01915</a>  glnA, GLUL; glutamine synthetase [EC:6.3.1.2]
+D      PROKKA_00914 <a href="/dbget-bin/www_bget?ko:K00262">K00262</a>  E1.4.1.4, gdhA; glutamate dehydrogenase (NADP+) [EC:1.4.1.4]
+D      PROKKA_00304 <a href="/dbget-bin/www_bget?ko:K00620">K00620</a>  argJ; glutamate N-acetyltransferase / amino-acid N-acetyltransferase [EC:2.3.1.35 2.3.1.1]
+D      PROKKA_00852 <a href="/dbget-bin/www_bget?ko:K00821">K00821</a>  argD; acetylornithine/N-succinyldiaminopimelate aminotransferase [EC:2.6.1.11 2.6.1.17]
+C    00330 Arginine and proline metabolism [PATH:ko00330]
+D      PROKKA_00135 <a href="/dbget-bin/www_bget?ko:K00286">K00286</a>  proC; pyrroline-5-carboxylate reductase [EC:1.5.1.2]
+D      PROKKA_00315 <a href="/dbget-bin/www_bget?ko:K00931">K00931</a>  proB; glutamate 5-kinase [EC:2.7.2.11]
+C    00340 Histidine metabolism [PATH:ko00340]
+D      PROKKA_01240 <a href="/dbget-bin/www_bget?ko:K00765">K00765</a>  hisG; ATP phosphoribosyltransferase [EC:2.4.2.17]
+D      PROKKA_01812 <a href="/dbget-bin/www_bget?ko:K01814">K01814</a>  hisA; phosphoribosylformimino-5-aminoimidazole carboxamide ribotide isomerase [EC:5.3.1.16]
+D      PROKKA_00632 <a href="/dbget-bin/www_bget?ko:K02501">K02501</a>  hisH; glutamine amidotransferase [EC:2.4.2.-]
+D      PROKKA_01813 <a href="/dbget-bin/www_bget?ko:K02501">K02501</a>  hisH; glutamine amidotransferase [EC:2.4.2.-]
+D      PROKKA_01237 <a href="/dbget-bin/www_bget?ko:K01089">K01089</a>  hisB; imidazoleglycerol-phosphate dehydratase / histidinol-phosphatase [EC:4.2.1.19 3.1.3.15]
+D      PROKKA_00572 <a href="/dbget-bin/www_bget?ko:K00817">K00817</a>  hisC; histidinol-phosphate aminotransferase [EC:2.6.1.9]
+D      PROKKA_00824 <a href="/dbget-bin/www_bget?ko:K00817">K00817</a>  hisC; histidinol-phosphate aminotransferase [EC:2.6.1.9]
+D      PROKKA_01238 <a href="/dbget-bin/www_bget?ko:K00817">K00817</a>  hisC; histidinol-phosphate aminotransferase [EC:2.6.1.9]
+D      PROKKA_00379 <a href="/dbget-bin/www_bget?ko:K00013">K00013</a>  hisD; histidinol dehydrogenase [EC:1.1.1.23]
+D      PROKKA_01239 <a href="/dbget-bin/www_bget?ko:K00013">K00013</a>  hisD; histidinol dehydrogenase [EC:1.1.1.23]
+C    00350 Tyrosine metabolism [PATH:ko00350]
+D      PROKKA_00572 <a href="/dbget-bin/www_bget?ko:K00817">K00817</a>  hisC; histidinol-phosphate aminotransferase [EC:2.6.1.9]
+D      PROKKA_00824 <a href="/dbget-bin/www_bget?ko:K00817">K00817</a>  hisC; histidinol-phosphate aminotransferase [EC:2.6.1.9]
+D      PROKKA_01238 <a href="/dbget-bin/www_bget?ko:K00817">K00817</a>  hisC; histidinol-phosphate aminotransferase [EC:2.6.1.9]
+D      PROKKA_01656 <a href="/dbget-bin/www_bget?ko:K00832">K00832</a>  tyrB; aromatic-amino-acid transaminase [EC:2.6.1.57]
+C    00360 Phenylalanine metabolism [PATH:ko00360]
+D      PROKKA_00572 <a href="/dbget-bin/www_bget?ko:K00817">K00817</a>  hisC; histidinol-phosphate aminotransferase [EC:2.6.1.9]
+D      PROKKA_00824 <a href="/dbget-bin/www_bget?ko:K00817">K00817</a>  hisC; histidinol-phosphate aminotransferase [EC:2.6.1.9]
+D      PROKKA_01238 <a href="/dbget-bin/www_bget?ko:K00817">K00817</a>  hisC; histidinol-phosphate aminotransferase [EC:2.6.1.9]
+D      PROKKA_01656 <a href="/dbget-bin/www_bget?ko:K00832">K00832</a>  tyrB; aromatic-amino-acid transaminase [EC:2.6.1.57]
+C    00380 Tryptophan metabolism [PATH:ko00380]
+D      PROKKA_00788 <a href="/dbget-bin/www_bget?ko:K07130">K07130</a>  kynB; arylformamidase [EC:3.5.1.9]
+C    00400 Phenylalanine, tyrosine and tryptophan biosynthesis [PATH:ko00400]
+D      PROKKA_00951 <a href="/dbget-bin/www_bget?ko:K03856">K03856</a>  AROA2, aroA; 3-deoxy-7-phosphoheptulonate synthase [EC:2.5.1.54]
+D      PROKKA_00952 <a href="/dbget-bin/www_bget?ko:K01735">K01735</a>  aroB; 3-dehydroquinate synthase [EC:4.2.3.4]
+D      PROKKA_01612 <a href="/dbget-bin/www_bget?ko:K03785">K03785</a>  aroD; 3-dehydroquinate dehydratase I [EC:4.2.1.10]
+D      PROKKA_01651 <a href="/dbget-bin/www_bget?ko:K03785">K03785</a>  aroD; 3-dehydroquinate dehydratase I [EC:4.2.1.10]
+D      PROKKA_00955 <a href="/dbget-bin/www_bget?ko:K00014">K00014</a>  aroE; shikimate dehydrogenase [EC:1.1.1.25]
+D      PROKKA_01652 <a href="/dbget-bin/www_bget?ko:K05887">K05887</a>  ydiB; quinate/shikimate dehydrogenase [EC:1.1.1.282]
+D      PROKKA_00589 <a href="/dbget-bin/www_bget?ko:K00891">K00891</a>  E2.7.1.71, aroK, aroL; shikimate kinase [EC:2.7.1.71]
+D      PROKKA_00953 <a href="/dbget-bin/www_bget?ko:K00800">K00800</a>  aroA; 3-phosphoshikimate 1-carboxyvinyltransferase [EC:2.5.1.19]
+D      PROKKA_01252 <a href="/dbget-bin/www_bget?ko:K00800">K00800</a>  aroA; 3-phosphoshikimate 1-carboxyvinyltransferase [EC:2.5.1.19]
+D      PROKKA_00954 <a href="/dbget-bin/www_bget?ko:K01736">K01736</a>  aroC; chorismate synthase [EC:4.2.3.5]
+D      PROKKA_01426 <a href="/dbget-bin/www_bget?ko:K01736">K01736</a>  aroC; chorismate synthase [EC:4.2.3.5]
+D      PROKKA_00956 <a href="/dbget-bin/www_bget?ko:K01657">K01657</a>  trpE; anthranilate synthase component I [EC:4.1.3.27]
+D      PROKKA_00957 <a href="/dbget-bin/www_bget?ko:K01658">K01658</a>  trpG; anthranilate synthase component II [EC:4.1.3.27]
+D      PROKKA_01190 <a href="/dbget-bin/www_bget?ko:K14187">K14187</a>  tyrA; chorismate mutase / prephenate dehydrogenase [EC:5.4.99.5 1.3.1.12]
+D      PROKKA_00573 <a href="/dbget-bin/www_bget?ko:K14170">K14170</a>  pheA; chorismate mutase / prephenate dehydratase [EC:5.4.99.5 4.2.1.51]
+D      PROKKA_00572 <a href="/dbget-bin/www_bget?ko:K00817">K00817</a>  hisC; histidinol-phosphate aminotransferase [EC:2.6.1.9]
+D      PROKKA_00824 <a href="/dbget-bin/www_bget?ko:K00817">K00817</a>  hisC; histidinol-phosphate aminotransferase [EC:2.6.1.9]
+D      PROKKA_01238 <a href="/dbget-bin/www_bget?ko:K00817">K00817</a>  hisC; histidinol-phosphate aminotransferase [EC:2.6.1.9]
+D      PROKKA_01656 <a href="/dbget-bin/www_bget?ko:K00832">K00832</a>  tyrB; aromatic-amino-acid transaminase [EC:2.6.1.57]
+B  <b>Metabolism of other amino acids</b>
+C    00410 beta-Alanine metabolism [PATH:ko00410]
+D      PROKKA_00246 <a href="/dbget-bin/www_bget?ko:K01579">K01579</a>  panD; aspartate 1-decarboxylase [EC:4.1.1.11]
+C    00430 Taurine and hypotaurine metabolism [PATH:ko00430]
+D      PROKKA_00825 <a href="/dbget-bin/www_bget?ko:K00681">K00681</a>  ggt; gamma-glutamyltranspeptidase / glutathione hydrolase [EC:2.3.2.2 3.4.19.13]
+C    00450 Selenocompound metabolism [PATH:ko00450]
+D      PROKKA_00203 <a href="/dbget-bin/www_bget?ko:K01760">K01760</a>  metC; cystathionine beta-lyase [EC:4.4.1.8]
+D      PROKKA_00873 <a href="/dbget-bin/www_bget?ko:K01760">K01760</a>  metC; cystathionine beta-lyase [EC:4.4.1.8]
+D      PROKKA_00201 <a href="/dbget-bin/www_bget?ko:K14155">K14155</a>  patB, malY; cystathione beta-lyase [EC:4.4.1.8]
+D      PROKKA_00874 <a href="/dbget-bin/www_bget?ko:K14155">K14155</a>  patB, malY; cystathione beta-lyase [EC:4.4.1.8]
+D      PROKKA_01544 <a href="/dbget-bin/www_bget?ko:K00549">K00549</a>  metE; 5-methyltetrahydropteroyltriglutamate--homocysteine methyltransferase [EC:2.1.1.14]
+D      PROKKA_01575 <a href="/dbget-bin/www_bget?ko:K00384">K00384</a>  trxB; thioredoxin reductase (NADPH) [EC:1.8.1.9]
+D      PROKKA_00610 <a href="/dbget-bin/www_bget?ko:K01042">K01042</a>  selA; L-seryl-tRNA(Ser) seleniumtransferase [EC:2.9.1.1]
+C    00460 Cyanoamino acid metabolism [PATH:ko00460]
+D      PROKKA_00825 <a href="/dbget-bin/www_bget?ko:K00681">K00681</a>  ggt; gamma-glutamyltranspeptidase / glutathione hydrolase [EC:2.3.2.2 3.4.19.13]
+D      PROKKA_00388 <a href="/dbget-bin/www_bget?ko:K01424">K01424</a>  E3.5.1.1, ansA, ansB; L-asparaginase [EC:3.5.1.1]
+D      PROKKA_01622 <a href="/dbget-bin/www_bget?ko:K01424">K01424</a>  E3.5.1.1, ansA, ansB; L-asparaginase [EC:3.5.1.1]
+D      PROKKA_01639 <a href="/dbget-bin/www_bget?ko:K01424">K01424</a>  E3.5.1.1, ansA, ansB; L-asparaginase [EC:3.5.1.1]
+C    00471 D-Glutamine and D-glutamate metabolism [PATH:ko00471]
+D      PROKKA_00786 <a href="/dbget-bin/www_bget?ko:K01776">K01776</a>  murI; glutamate racemase [EC:5.1.1.3]
+D      PROKKA_00293 <a href="/dbget-bin/www_bget?ko:K01925">K01925</a>  murD; UDP-N-acetylmuramoylalanine--D-glutamate ligase [EC:6.3.2.9]
+D      PROKKA_00776 <a href="/dbget-bin/www_bget?ko:K01925">K01925</a>  murD; UDP-N-acetylmuramoylalanine--D-glutamate ligase [EC:6.3.2.9]
+D      PROKKA_00296 <a href="/dbget-bin/www_bget?ko:K01924">K01924</a>  murC; UDP-N-acetylmuramate--alanine ligase [EC:6.3.2.8]
+D      PROKKA_00327 <a href="/dbget-bin/www_bget?ko:K01924">K01924</a>  murC; UDP-N-acetylmuramate--alanine ligase [EC:6.3.2.8]
+C    00473 D-Alanine metabolism [PATH:ko00473]
+D      PROKKA_00297 <a href="/dbget-bin/www_bget?ko:K01921">K01921</a>  ddl; D-alanine-D-alanine ligase [EC:6.3.2.4]
+C    00480 Glutathione metabolism [PATH:ko00480]
+D      PROKKA_00825 <a href="/dbget-bin/www_bget?ko:K00681">K00681</a>  ggt; gamma-glutamyltranspeptidase / glutathione hydrolase [EC:2.3.2.2 3.4.19.13]
+D      PROKKA_00800 <a href="/dbget-bin/www_bget?ko:K01256">K01256</a>  pepN; aminopeptidase N [EC:3.4.11.2]
+D      PROKKA_01508 <a href="/dbget-bin/www_bget?ko:K00031">K00031</a>  IDH1, IDH2, icd; isocitrate dehydrogenase [EC:1.1.1.42]
+B  <b>Glycan biosynthesis and metabolism</b>
+C    00510 N-Glycan biosynthesis [PATH:ko00510]
+D      PROKKA_00618 <a href="/dbget-bin/www_bget?ko:K07151">K07151</a>  STT3; dolichyl-diphosphooligosaccharide--protein glycosyltransferase [EC:2.4.99.18]
+D      PROKKA_00625 <a href="/dbget-bin/www_bget?ko:K07151">K07151</a>  STT3; dolichyl-diphosphooligosaccharide--protein glycosyltransferase [EC:2.4.99.18]
+C    00513 Various types of N-glycan biosynthesis [PATH:ko00513]
+D      PROKKA_00618 <a href="/dbget-bin/www_bget?ko:K07151">K07151</a>  STT3; dolichyl-diphosphooligosaccharide--protein glycosyltransferase [EC:2.4.99.18]
+D      PROKKA_00625 <a href="/dbget-bin/www_bget?ko:K07151">K07151</a>  STT3; dolichyl-diphosphooligosaccharide--protein glycosyltransferase [EC:2.4.99.18]
+C    00531 Glycosaminoglycan degradation [PATH:ko00531]
+D      PROKKA_01031 <a href="/dbget-bin/www_bget?ko:K01207">K01207</a>  nagZ; beta-N-acetylhexosaminidase [EC:3.2.1.52]
+C    00540 Lipopolysaccharide biosynthesis [PATH:ko00540]
+D      PROKKA_01316 <a href="/dbget-bin/www_bget?ko:K00677">K00677</a>  lpxA; UDP-N-acetylglucosamine acyltransferase [EC:2.3.1.129]
+D      PROKKA_00301 <a href="/dbget-bin/www_bget?ko:K02535">K02535</a>  lpxC; UDP-3-O-[3-hydroxymyristoyl] N-acetylglucosamine deacetylase [EC:3.5.1.108]
+D      PROKKA_01331 <a href="/dbget-bin/www_bget?ko:K02536">K02536</a>  lpxD; UDP-3-O-[3-hydroxymyristoyl] glucosamine N-acyltransferase [EC:2.3.1.191]
+D      PROKKA_00583 <a href="/dbget-bin/www_bget?ko:K03269">K03269</a>  lpxH; UDP-2,3-diacylglucosamine hydrolase [EC:3.6.1.54]
+D      PROKKA_00585 <a href="/dbget-bin/www_bget?ko:K00748">K00748</a>  lpxB; lipid-A-disaccharide synthase [EC:2.4.1.182]
+D      PROKKA_00703 <a href="/dbget-bin/www_bget?ko:K00912">K00912</a>  lpxK; tetraacyldisaccharide 4'-kinase [EC:2.7.1.130]
+D      PROKKA_00101 <a href="/dbget-bin/www_bget?ko:K06041">K06041</a>  kdsD, kpsF; arabinose-5-phosphate isomerase [EC:5.3.1.13]
+D      PROKKA_01487 <a href="/dbget-bin/www_bget?ko:K06041">K06041</a>  kdsD, kpsF; arabinose-5-phosphate isomerase [EC:5.3.1.13]
+D      PROKKA_01488 <a href="/dbget-bin/www_bget?ko:K06041">K06041</a>  kdsD, kpsF; arabinose-5-phosphate isomerase [EC:5.3.1.13]
+D      PROKKA_00901 <a href="/dbget-bin/www_bget?ko:K01627">K01627</a>  kdsA; 2-dehydro-3-deoxyphosphooctonate aldolase (KDO 8-P synthase) [EC:2.5.1.55]
+D      PROKKA_01486 <a href="/dbget-bin/www_bget?ko:K03270">K03270</a>  kdsC; 3-deoxy-D-manno-octulosonate 8-phosphate phosphatase (KDO 8-P phosphatase) [EC:3.1.3.45]
+D      PROKKA_00705 <a href="/dbget-bin/www_bget?ko:K00979">K00979</a>  kdsB; 3-deoxy-manno-octulosonate cytidylyltransferase (CMP-KDO synthetase) [EC:2.7.7.38]
+D      PROKKA_01160 <a href="/dbget-bin/www_bget?ko:K03271">K03271</a>  gmhA, lpcA; D-sedoheptulose 7-phosphate isomerase [EC:5.3.1.28]
+D      PROKKA_00318 <a href="/dbget-bin/www_bget?ko:K02843">K02843</a>  waaF, rfaF; heptosyltransferase II [EC:2.4.-.-]
+D      PROKKA_00319 <a href="/dbget-bin/www_bget?ko:K02844">K02844</a>  waaG, rfaG; UDP-glucose:(heptosyl)LPS alpha-1,3-glucosyltransferase [EC:2.4.1.-]
+C    00550 Peptidoglycan biosynthesis [PATH:ko00550]
+D      PROKKA_00420 <a href="/dbget-bin/www_bget?ko:K00790">K00790</a>  murA; UDP-N-acetylglucosamine 1-carboxyvinyltransferase [EC:2.5.1.7]
+D      PROKKA_00022 <a href="/dbget-bin/www_bget?ko:K00075">K00075</a>  murB; UDP-N-acetylmuramate dehydrogenase [EC:1.3.1.98]
+D      PROKKA_01721 <a href="/dbget-bin/www_bget?ko:K00075">K00075</a>  murB; UDP-N-acetylmuramate dehydrogenase [EC:1.3.1.98]
+D      PROKKA_00296 <a href="/dbget-bin/www_bget?ko:K01924">K01924</a>  murC; UDP-N-acetylmuramate--alanine ligase [EC:6.3.2.8]
+D      PROKKA_00327 <a href="/dbget-bin/www_bget?ko:K01924">K01924</a>  murC; UDP-N-acetylmuramate--alanine ligase [EC:6.3.2.8]
+D      PROKKA_00293 <a href="/dbget-bin/www_bget?ko:K01925">K01925</a>  murD; UDP-N-acetylmuramoylalanine--D-glutamate ligase [EC:6.3.2.9]
+D      PROKKA_00776 <a href="/dbget-bin/www_bget?ko:K01925">K01925</a>  murD; UDP-N-acetylmuramoylalanine--D-glutamate ligase [EC:6.3.2.9]
+D      PROKKA_00245 <a href="/dbget-bin/www_bget?ko:K01928">K01928</a>  murE; UDP-N-acetylmuramoyl-L-alanyl-D-glutamate--2,6-diaminopimelate ligase [EC:6.3.2.13]
+D      PROKKA_00290 <a href="/dbget-bin/www_bget?ko:K01928">K01928</a>  murE; UDP-N-acetylmuramoyl-L-alanyl-D-glutamate--2,6-diaminopimelate ligase [EC:6.3.2.13]
+D      PROKKA_00297 <a href="/dbget-bin/www_bget?ko:K01921">K01921</a>  ddl; D-alanine-D-alanine ligase [EC:6.3.2.4]
+D      PROKKA_00291 <a href="/dbget-bin/www_bget?ko:K01929">K01929</a>  murF; UDP-N-acetylmuramoyl-tripeptide--D-alanyl-D-alanine ligase [EC:6.3.2.10]
+D      PROKKA_00292 <a href="/dbget-bin/www_bget?ko:K01000">K01000</a>  mraY; phospho-N-acetylmuramoyl-pentapeptide-transferase [EC:2.7.8.13]
+D      PROKKA_00775 <a href="/dbget-bin/www_bget?ko:K01000">K01000</a>  mraY; phospho-N-acetylmuramoyl-pentapeptide-transferase [EC:2.7.8.13]
+D      PROKKA_00295 <a href="/dbget-bin/www_bget?ko:K02563">K02563</a>  murG; UDP-N-acetylglucosamine--N-acetylmuramyl-(pentapeptide) pyrophosphoryl-undecaprenol N-acetylglucosamine transferase [EC:2.4.1.227]
+D      PROKKA_00409 <a href="/dbget-bin/www_bget?ko:K05366">K05366</a>  mrcA; penicillin-binding protein 1A [EC:2.4.1.129 3.4.16.4]
+D      PROKKA_00428 <a href="/dbget-bin/www_bget?ko:K05366">K05366</a>  mrcA; penicillin-binding protein 1A [EC:2.4.1.129 3.4.16.4]
+D      PROKKA_01586 <a href="/dbget-bin/www_bget?ko:K05515">K05515</a>  mrdA; penicillin-binding protein 2 [EC:3.4.16.4]
+D      PROKKA_00289 <a href="/dbget-bin/www_bget?ko:K03587">K03587</a>  ftsI; cell division protein FtsI (penicillin-binding protein 3) [EC:3.4.16.4]
+D      PROKKA_01595 <a href="/dbget-bin/www_bget?ko:K07258">K07258</a>  dacC, dacA, dacD; serine-type D-Ala-D-Ala carboxypeptidase (penicillin-binding protein 5/6) [EC:3.4.16.4]
+D      PROKKA_00686 <a href="/dbget-bin/www_bget?ko:K07259">K07259</a>  dacB; serine-type D-Ala-D-Ala carboxypeptidase/endopeptidase (penicillin-binding protein 4) [EC:3.4.16.4 3.4.21.-]
+B  <b>Metabolism of cofactors and vitamins</b>
+C    00730 Thiamine metabolism [PATH:ko00730]
+D      PROKKA_00353 <a href="/dbget-bin/www_bget?ko:K00941">K00941</a>  thiD; hydroxymethylpyrimidine/phosphomethylpyrimidine kinase [EC:2.7.1.49 2.7.4.7]
+D      PROKKA_00980 <a href="/dbget-bin/www_bget?ko:K00941">K00941</a>  thiD; hydroxymethylpyrimidine/phosphomethylpyrimidine kinase [EC:2.7.1.49 2.7.4.7]
+D      PROKKA_01000 <a href="/dbget-bin/www_bget?ko:K00941">K00941</a>  thiD; hydroxymethylpyrimidine/phosphomethylpyrimidine kinase [EC:2.7.1.49 2.7.4.7]
+D      PROKKA_01339 <a href="/dbget-bin/www_bget?ko:K04487">K04487</a>  iscS, NFS1; cysteine desulfurase [EC:2.8.1.7]
+D      PROKKA_00568 <a href="/dbget-bin/www_bget?ko:K01662">K01662</a>  dxs; 1-deoxy-D-xylulose-5-phosphate synthase [EC:2.2.1.7]
+D      PROKKA_00354 <a href="/dbget-bin/www_bget?ko:K00788">K00788</a>  thiE; thiamine-phosphate pyrophosphorylase [EC:2.5.1.3]
+D      PROKKA_00696 <a href="/dbget-bin/www_bget?ko:K00946">K00946</a>  thiL; thiamine-monophosphate kinase [EC:2.7.4.16]
+D      PROKKA_01321 <a href="/dbget-bin/www_bget?ko:K06949">K06949</a>  rsgA, engC; ribosome biogenesis GTPase / thiamine phosphate phosphatase [EC:3.6.1.- 3.1.3.100]
+D      PROKKA_00699 <a href="/dbget-bin/www_bget?ko:K01077">K01077</a>  E3.1.3.1, phoA, phoB; alkaline phosphatase [EC:3.1.3.1]
+D      PROKKA_00709 <a href="/dbget-bin/www_bget?ko:K00939">K00939</a>  adk, AK; adenylate kinase [EC:2.7.4.3]
+D      PROKKA_00936 <a href="/dbget-bin/www_bget?ko:K03707">K03707</a>  tenA; thiaminase (transcriptional activator TenA) [EC:3.5.99.2]
+C    00740 Riboflavin metabolism [PATH:ko00740]
+D      PROKKA_00502 <a href="/dbget-bin/www_bget?ko:K14652">K14652</a>  ribBA; 3,4-dihydroxy 2-butanone 4-phosphate synthase / GTP cyclohydrolase II [EC:4.1.99.12 3.5.4.25]
+D      PROKKA_00723 <a href="/dbget-bin/www_bget?ko:K11752">K11752</a>  ribD; diaminohydroxyphosphoribosylaminopyrimidine deaminase / 5-amino-6-(5-phosphoribosylamino)uracil reductase [EC:3.5.4.26 1.1.1.193]
+D      PROKKA_00698 <a href="/dbget-bin/www_bget?ko:K00794">K00794</a>  ribH, RIB4; 6,7-dimethyl-8-ribityllumazine synthase [EC:2.5.1.78]
+C    00750 Vitamin B6 metabolism [PATH:ko00750]
+D      PROKKA_01771 <a href="/dbget-bin/www_bget?ko:K00831">K00831</a>  serC, PSAT1; phosphoserine aminotransferase [EC:2.6.1.52]
+D      PROKKA_00992 <a href="/dbget-bin/www_bget?ko:K00097">K00097</a>  pdxA; 4-hydroxythreonine-4-phosphate dehydrogenase [EC:1.1.1.262]
+D      PROKKA_01030 <a href="/dbget-bin/www_bget?ko:K03474">K03474</a>  pdxJ; pyridoxine 5-phosphate synthase [EC:2.6.99.2]
+D      PROKKA_01092 <a href="/dbget-bin/www_bget?ko:K01733">K01733</a>  thrC; threonine synthase [EC:4.2.3.1]
+D      PROKKA_01401 <a href="/dbget-bin/www_bget?ko:K01733">K01733</a>  thrC; threonine synthase [EC:4.2.3.1]
+C    00760 Nicotinate and nicotinamide metabolism [PATH:ko00760]
+D      PROKKA_00018 <a href="/dbget-bin/www_bget?ko:K00763">K00763</a>  pncB, NAPRT1; nicotinate phosphoribosyltransferase [EC:6.3.4.21]
+D      PROKKA_01034 <a href="/dbget-bin/www_bget?ko:K00763">K00763</a>  pncB, NAPRT1; nicotinate phosphoribosyltransferase [EC:6.3.4.21]
+D      PROKKA_00586 <a href="/dbget-bin/www_bget?ko:K03787">K03787</a>  surE; 5'-nucleotidase [EC:3.1.3.5]
+D      PROKKA_01194 <a href="/dbget-bin/www_bget?ko:K03787">K03787</a>  surE; 5'-nucleotidase [EC:3.1.3.5]
+D      PROKKA_00766 <a href="/dbget-bin/www_bget?ko:K00969">K00969</a>  nadD; nicotinate-nucleotide adenylyltransferase [EC:2.7.7.18]
+D      PROKKA_00335 <a href="/dbget-bin/www_bget?ko:K03743">K03743</a>  pncC; nicotinamide-nucleotide amidase [EC:3.5.1.42]
+D      PROKKA_00694 <a href="/dbget-bin/www_bget?ko:K03743">K03743</a>  pncC; nicotinamide-nucleotide amidase [EC:3.5.1.42]
+D      PROKKA_00864 <a href="/dbget-bin/www_bget?ko:K01239">K01239</a>  iunH; purine nucleosidase [EC:3.2.2.1]
+D      PROKKA_01378 <a href="/dbget-bin/www_bget?ko:K08281">K08281</a>  pncA; nicotinamidase/pyrazinamidase [EC:3.5.1.19 3.5.1.-]
+C    00770 Pantothenate and CoA biosynthesis [PATH:ko00770]
+D      PROKKA_00267 <a href="/dbget-bin/www_bget?ko:K01687">K01687</a>  ilvD; dihydroxy-acid dehydratase [EC:4.2.1.9]
+D      PROKKA_01081 <a href="/dbget-bin/www_bget?ko:K01687">K01687</a>  ilvD; dihydroxy-acid dehydratase [EC:4.2.1.9]
+D      PROKKA_00503 <a href="/dbget-bin/www_bget?ko:K00606">K00606</a>  panB; 3-methyl-2-oxobutanoate hydroxymethyltransferase [EC:2.1.2.11]
+D      PROKKA_01593 <a href="/dbget-bin/www_bget?ko:K03525">K03525</a>  coaX; type III pantothenate kinase [EC:2.7.1.33]
+D      PROKKA_00562 <a href="/dbget-bin/www_bget?ko:K00954">K00954</a>  E2.7.7.3A, coaD, kdtB; pantetheine-phosphate adenylyltransferase [EC:2.7.7.3]
+D      PROKKA_00309 <a href="/dbget-bin/www_bget?ko:K00859">K00859</a>  coaE; dephospho-CoA kinase [EC:2.7.1.24]
+D      PROKKA_00996 <a href="/dbget-bin/www_bget?ko:K00859">K00859</a>  coaE; dephospho-CoA kinase [EC:2.7.1.24]
+D      PROKKA_01139 <a href="/dbget-bin/www_bget?ko:K00826">K00826</a>  E2.6.1.42, ilvE; branched-chain amino acid aminotransferase [EC:2.6.1.42]
+D      PROKKA_00246 <a href="/dbget-bin/www_bget?ko:K01579">K01579</a>  panD; aspartate 1-decarboxylase [EC:4.1.1.11]
+C    00780 Biotin metabolism [PATH:ko00780]
+D      PROKKA_00844 <a href="/dbget-bin/www_bget?ko:K00647">K00647</a>  fabB; 3-oxoacyl-[acyl-carrier-protein] synthase I [EC:2.3.1.41]
+D      PROKKA_00847 <a href="/dbget-bin/www_bget?ko:K09458">K09458</a>  fabF; 3-oxoacyl-[acyl-carrier-protein] synthase II [EC:2.3.1.179]
+D      PROKKA_01293 <a href="/dbget-bin/www_bget?ko:K09458">K09458</a>  fabF; 3-oxoacyl-[acyl-carrier-protein] synthase II [EC:2.3.1.179]
+D      PROKKA_00846 <a href="/dbget-bin/www_bget?ko:K00059">K00059</a>  fabG; 3-oxoacyl-[acyl-carrier protein] reductase [EC:1.1.1.100]
+D      PROKKA_01291 <a href="/dbget-bin/www_bget?ko:K00059">K00059</a>  fabG; 3-oxoacyl-[acyl-carrier protein] reductase [EC:1.1.1.100]
+D      PROKKA_01315 <a href="/dbget-bin/www_bget?ko:K02372">K02372</a>  fabZ; 3-hydroxyacyl-[acyl-carrier-protein] dehydratase [EC:4.2.1.59]
+D      PROKKA_01330 <a href="/dbget-bin/www_bget?ko:K02372">K02372</a>  fabZ; 3-hydroxyacyl-[acyl-carrier-protein] dehydratase [EC:4.2.1.59]
+D      PROKKA_00762 <a href="/dbget-bin/www_bget?ko:K00208">K00208</a>  fabI; enoyl-[acyl-carrier protein] reductase I [EC:1.3.1.9 1.3.1.10]
+D      PROKKA_00537 <a href="/dbget-bin/www_bget?ko:K01012">K01012</a>  bioB; biotin synthase [EC:2.8.1.6]
+D      PROKKA_01044 <a href="/dbget-bin/www_bget?ko:K01012">K01012</a>  bioB; biotin synthase [EC:2.8.1.6]
+D      PROKKA_01070 <a href="/dbget-bin/www_bget?ko:K03524">K03524</a>  birA; BirA family transcriptional regulator, biotin operon repressor / biotin-[acetyl-CoA-carboxylase] ligase [EC:6.3.4.15]
+D      PROKKA_01594 <a href="/dbget-bin/www_bget?ko:K03524">K03524</a>  birA; BirA family transcriptional regulator, biotin operon repressor / biotin-[acetyl-CoA-carboxylase] ligase [EC:6.3.4.15]
+C    00790 Folate biosynthesis [PATH:ko00790]
+D      PROKKA_00484 <a href="/dbget-bin/www_bget?ko:K01495">K01495</a>  GCH1, folE; GTP cyclohydrolase I [EC:3.5.4.16]
+D      PROKKA_00699 <a href="/dbget-bin/www_bget?ko:K01077">K01077</a>  E3.1.3.1, phoA, phoB; alkaline phosphatase [EC:3.1.3.1]
+D      PROKKA_01166 <a href="/dbget-bin/www_bget?ko:K00796">K00796</a>  folP; dihydropteroate synthase [EC:2.5.1.15]
+D      PROKKA_01216 <a href="/dbget-bin/www_bget?ko:K00287">K00287</a>  folA; dihydrofolate reductase [EC:1.5.1.3]
+D      PROKKA_00127 <a href="/dbget-bin/www_bget?ko:K09457">K09457</a>  queF; 7-cyano-7-deazaguanine reductase [EC:1.7.1.13]
+D      PROKKA_01320 <a href="/dbget-bin/www_bget?ko:K03639">K03639</a>  moaA, CNX2; GTP 3',8-cyclase [EC:4.1.99.22]
+D      PROKKA_01577 <a href="/dbget-bin/www_bget?ko:K03637">K03637</a>  moaC, CNX3; cyclic pyranopterin monophosphate synthase [EC:4.6.1.17]
+D      PROKKA_01088 <a href="/dbget-bin/www_bget?ko:K03635">K03635</a>  MOCS2B, moaE; molybdopterin synthase catalytic subunit [EC:2.8.1.12]
+D      PROKKA_01090 <a href="/dbget-bin/www_bget?ko:K03750">K03750</a>  moeA; molybdopterin molybdotransferase [EC:2.10.1.1]
+D      PROKKA_00032 <a href="/dbget-bin/www_bget?ko:K03752">K03752</a>  mobA; molybdenum cofactor guanylyltransferase [EC:2.7.7.77]
+C    00670 One carbon pool by folate [PATH:ko00670]
+D      PROKKA_01216 <a href="/dbget-bin/www_bget?ko:K00287">K00287</a>  folA; dihydrofolate reductase [EC:1.5.1.3]
+D      PROKKA_00722 <a href="/dbget-bin/www_bget?ko:K01938">K01938</a>  fhs; formate--tetrahydrofolate ligase [EC:6.3.4.3]
+D      PROKKA_00491 <a href="/dbget-bin/www_bget?ko:K11175">K11175</a>  purN; phosphoribosylglycinamide formyltransferase 1 [EC:2.1.2.2]
+D      PROKKA_00476 <a href="/dbget-bin/www_bget?ko:K00602">K00602</a>  purH; phosphoribosylaminoimidazolecarboxamide formyltransferase / IMP cyclohydrolase [EC:2.1.2.3 3.5.4.10]
+D      PROKKA_01215 <a href="/dbget-bin/www_bget?ko:K00560">K00560</a>  thyA, TYMS; thymidylate synthase [EC:2.1.1.45]
+D      PROKKA_00119 <a href="/dbget-bin/www_bget?ko:K03465">K03465</a>  thyX, thy1; thymidylate synthase (FAD) [EC:2.1.1.148]
+C    00860 Porphyrin and chlorophyll metabolism [PATH:ko00860]
+D      PROKKA_00978 <a href="/dbget-bin/www_bget?ko:K01885">K01885</a>  EARS, gltX; glutamyl-tRNA synthetase [EC:6.1.1.17]
+D      PROKKA_00684 <a href="/dbget-bin/www_bget?ko:K01845">K01845</a>  hemL; glutamate-1-semialdehyde 2,1-aminomutase [EC:5.4.3.8]
+D      PROKKA_00433 <a href="/dbget-bin/www_bget?ko:K01698">K01698</a>  hemB, ALAD; porphobilinogen synthase [EC:4.2.1.24]
+D      PROKKA_00926 <a href="/dbget-bin/www_bget?ko:K00230">K00230</a>  hemG; menaquinone-dependent protoporphyrinogen oxidase [EC:1.3.5.3]
+D      PROKKA_00934 <a href="/dbget-bin/www_bget?ko:K01772">K01772</a>  hemH, FECH; protoporphyrin/coproporphyrin ferrochelatase [EC:4.99.1.1 4.99.1.9]
+C    00130 Ubiquinone and other terpenoid-quinone biosynthesis [PATH:ko00130]
+D      PROKKA_00787 <a href="/dbget-bin/www_bget?ko:K01075">K01075</a>  E3.1.2.23; 4-hydroxybenzoyl-CoA thioesterase [EC:3.1.2.23]
+D      PROKKA_00565 <a href="/dbget-bin/www_bget?ko:K03183">K03183</a>  ubiE; demethylmenaquinone methyltransferase / 2-methoxy-6-polyprenyl-1,4-benzoquinol methylase [EC:2.1.1.163 2.1.1.201]
+D      PROKKA_01809 <a href="/dbget-bin/www_bget?ko:K01661">K01661</a>  menB; naphthoate synthase [EC:4.1.3.36]
+D      PROKKA_00020 <a href="/dbget-bin/www_bget?ko:K11785">K11785</a>  mqnD; 1,4-dihydroxy-6-naphthoate synthase [EC:1.14.-.-]
+B  <b>Metabolism of terpenoids and polyketides</b>
+C    00900 Terpenoid backbone biosynthesis [PATH:ko00900]
+D      PROKKA_00568 <a href="/dbget-bin/www_bget?ko:K01662">K01662</a>  dxs; 1-deoxy-D-xylulose-5-phosphate synthase [EC:2.2.1.7]
+D      PROKKA_00636 <a href="/dbget-bin/www_bget?ko:K03526">K03526</a>  gcpE, ispG; (E)-4-hydroxy-3-methylbut-2-enyl-diphosphate synthase [EC:1.17.7.1 1.17.7.3]
+D      PROKKA_01253 <a href="/dbget-bin/www_bget?ko:K03527">K03527</a>  ispH, lytB; 4-hydroxy-3-methylbut-2-en-1-yl diphosphate reductase [EC:1.17.7.4]
+D      PROKKA_00249 <a href="/dbget-bin/www_bget?ko:K00795">K00795</a>  ispA; farnesyl diphosphate synthase [EC:2.5.1.1 2.5.1.10]
+D      PROKKA_00311 <a href="/dbget-bin/www_bget?ko:K02523">K02523</a>  ispB; octaprenyl-diphosphate synthase [EC:2.5.1.90]
+D      PROKKA_01558 <a href="/dbget-bin/www_bget?ko:K00806">K00806</a>  uppS; undecaprenyl diphosphate synthase [EC:2.5.1.31]
+D      PROKKA_01322 <a href="/dbget-bin/www_bget?ko:K06013">K06013</a>  STE24; STE24 endopeptidase [EC:3.4.24.84]
+C    01051 Biosynthesis of ansamycins [PATH:ko01051]
+D      PROKKA_00250 <a href="/dbget-bin/www_bget?ko:K00615">K00615</a>  E2.2.1.1, tktA, tktB; transketolase [EC:2.2.1.1]
+B  <b>Biosynthesis of other secondary metabolites</b>
+C    00950 Isoquinoline alkaloid biosynthesis [PATH:ko00950]
+D      PROKKA_01656 <a href="/dbget-bin/www_bget?ko:K00832">K00832</a>  tyrB; aromatic-amino-acid transaminase [EC:2.6.1.57]
+C    00960 Tropane, piperidine and pyridine alkaloid biosynthesis [PATH:ko00960]
+D      PROKKA_00572 <a href="/dbget-bin/www_bget?ko:K00817">K00817</a>  hisC; histidinol-phosphate aminotransferase [EC:2.6.1.9]
+D      PROKKA_00824 <a href="/dbget-bin/www_bget?ko:K00817">K00817</a>  hisC; histidinol-phosphate aminotransferase [EC:2.6.1.9]
+D      PROKKA_01238 <a href="/dbget-bin/www_bget?ko:K00817">K00817</a>  hisC; histidinol-phosphate aminotransferase [EC:2.6.1.9]
+D      PROKKA_01656 <a href="/dbget-bin/www_bget?ko:K00832">K00832</a>  tyrB; aromatic-amino-acid transaminase [EC:2.6.1.57]
+C    00966 Glucosinolate biosynthesis [PATH:ko00966]
+D      PROKKA_00085 <a href="/dbget-bin/www_bget?ko:K01703">K01703</a>  leuC, IPMI-L; 3-isopropylmalate/(R)-2-methylmalate dehydratase large subunit [EC:4.2.1.33 4.2.1.35]
+D      PROKKA_00968 <a href="/dbget-bin/www_bget?ko:K01703">K01703</a>  leuC, IPMI-L; 3-isopropylmalate/(R)-2-methylmalate dehydratase large subunit [EC:4.2.1.33 4.2.1.35]
+D      PROKKA_01397 <a href="/dbget-bin/www_bget?ko:K01703">K01703</a>  leuC, IPMI-L; 3-isopropylmalate/(R)-2-methylmalate dehydratase large subunit [EC:4.2.1.33 4.2.1.35]
+C    00332 Carbapenem biosynthesis [PATH:ko00332]
+D      PROKKA_00315 <a href="/dbget-bin/www_bget?ko:K00931">K00931</a>  proB; glutamate 5-kinase [EC:2.7.2.11]
+C    00521 Streptomycin biosynthesis [PATH:ko00521]
+D      PROKKA_01336 <a href="/dbget-bin/www_bget?ko:K01092">K01092</a>  E3.1.3.25, IMPA, suhB; myo-inositol-1(or 4)-monophosphatase [EC:3.1.3.25]
+C    00401 Novobiocin biosynthesis [PATH:ko00401]
+D      PROKKA_01190 <a href="/dbget-bin/www_bget?ko:K14187">K14187</a>  tyrA; chorismate mutase / prephenate dehydrogenase [EC:5.4.99.5 1.3.1.12]
+D      PROKKA_00572 <a href="/dbget-bin/www_bget?ko:K00817">K00817</a>  hisC; histidinol-phosphate aminotransferase [EC:2.6.1.9]
+D      PROKKA_00824 <a href="/dbget-bin/www_bget?ko:K00817">K00817</a>  hisC; histidinol-phosphate aminotransferase [EC:2.6.1.9]
+D      PROKKA_01238 <a href="/dbget-bin/www_bget?ko:K00817">K00817</a>  hisC; histidinol-phosphate aminotransferase [EC:2.6.1.9]
+D      PROKKA_01656 <a href="/dbget-bin/www_bget?ko:K00832">K00832</a>  tyrB; aromatic-amino-acid transaminase [EC:2.6.1.57]
+C    00405 Phenazine biosynthesis [PATH:ko00405]
+D      PROKKA_00956 <a href="/dbget-bin/www_bget?ko:K01657">K01657</a>  trpE; anthranilate synthase component I [EC:4.1.3.27]
+D      PROKKA_00957 <a href="/dbget-bin/www_bget?ko:K01658">K01658</a>  trpG; anthranilate synthase component II [EC:4.1.3.27]
+C    00333 Prodigiosin biosyntheses [PATH:ko00333]
+D      PROKKA_01290 <a href="/dbget-bin/www_bget?ko:K00645">K00645</a>  fabD; [acyl-carrier-protein] S-malonyltransferase [EC:2.3.1.39]
+D      PROKKA_00846 <a href="/dbget-bin/www_bget?ko:K00059">K00059</a>  fabG; 3-oxoacyl-[acyl-carrier protein] reductase [EC:1.1.1.100]
+D      PROKKA_01291 <a href="/dbget-bin/www_bget?ko:K00059">K00059</a>  fabG; 3-oxoacyl-[acyl-carrier protein] reductase [EC:1.1.1.100]
+D      PROKKA_00762 <a href="/dbget-bin/www_bget?ko:K00208">K00208</a>  fabI; enoyl-[acyl-carrier protein] reductase I [EC:1.3.1.9 1.3.1.10]
+B  <b>Xenobiotics biodegradation and metabolism</b>
+C    00362 Benzoate degradation [PATH:ko00362]
+D      PROKKA_00305 <a href="/dbget-bin/www_bget?ko:K01607">K01607</a>  pcaC; 4-carboxymuconolactone decarboxylase [EC:4.1.1.44]
+D      PROKKA_01006 <a href="/dbget-bin/www_bget?ko:K01607">K01607</a>  pcaC; 4-carboxymuconolactone decarboxylase [EC:4.1.1.44]
+D      PROKKA_00787 <a href="/dbget-bin/www_bget?ko:K01075">K01075</a>  E3.1.2.23; 4-hydroxybenzoyl-CoA thioesterase [EC:3.1.2.23]
+C    00627 Aminobenzoate degradation [PATH:ko00627]
+D      PROKKA_01650 <a href="/dbget-bin/www_bget?ko:K19709">K19709</a>  ydiF; acetate CoA-transferase [EC:2.8.3.8]
+C    00633 Nitrotoluene degradation [PATH:ko00633]
+D      PROKKA_00887 <a href="/dbget-bin/www_bget?ko:K10679">K10679</a>  nfnB, nfsB; nitroreductase / dihydropteridine reductase [EC:1.-.-.- 1.5.1.34]
+D      PROKKA_00888 <a href="/dbget-bin/www_bget?ko:K10679">K10679</a>  nfnB, nfsB; nitroreductase / dihydropteridine reductase [EC:1.-.-.- 1.5.1.34]
+C    00983 Drug metabolism - other enzymes [PATH:ko00983]
+D      PROKKA_00332 <a href="/dbget-bin/www_bget?ko:K00088">K00088</a>  IMPDH, guaB; IMP dehydrogenase [EC:1.1.1.205]
+#
+A<b>Genetic Information Processing</b>
+B  <b>Transcription</b>
+C    03020 RNA polymerase [PATH:ko03020]
+D      PROKKA_00236 <a href="/dbget-bin/www_bget?ko:K03040">K03040</a>  rpoA; DNA-directed RNA polymerase subunit alpha [EC:2.7.7.6]
+D      PROKKA_00436 <a href="/dbget-bin/www_bget?ko:K03040">K03040</a>  rpoA; DNA-directed RNA polymerase subunit alpha [EC:2.7.7.6]
+D      PROKKA_01235 <a href="/dbget-bin/www_bget?ko:K03046">K03046</a>  rpoC; DNA-directed RNA polymerase subunit beta' [EC:2.7.7.6]
+D      PROKKA_00198 <a href="/dbget-bin/www_bget?ko:K03060">K03060</a>  rpoZ; DNA-directed RNA polymerase subunit omega [EC:2.7.7.6]
+D      PROKKA_00365 <a href="/dbget-bin/www_bget?ko:K03060">K03060</a>  rpoZ; DNA-directed RNA polymerase subunit omega [EC:2.7.7.6]
+B  <b>Translation</b>
+C    03010 Ribosome [PATH:ko03010]
+D      PROKKA_01254 <a href="/dbget-bin/www_bget?ko:K02945">K02945</a>  RP-S1, rpsA; small subunit ribosomal protein S1
+D      PROKKA_01617 <a href="/dbget-bin/www_bget?ko:K02945">K02945</a>  RP-S1, rpsA; small subunit ribosomal protein S1
+D      PROKKA_01563 <a href="/dbget-bin/www_bget?ko:K02967">K02967</a>  RP-S2, MRPS2, rpsB; small subunit ribosomal protein S2
+D      PROKKA_00216 <a href="/dbget-bin/www_bget?ko:K02982">K02982</a>  RP-S3, rpsC; small subunit ribosomal protein S3
+D      PROKKA_00455 <a href="/dbget-bin/www_bget?ko:K02982">K02982</a>  RP-S3, rpsC; small subunit ribosomal protein S3
+D      PROKKA_00235 <a href="/dbget-bin/www_bget?ko:K02986">K02986</a>  RP-S4, rpsD; small subunit ribosomal protein S4
+D      PROKKA_00437 <a href="/dbget-bin/www_bget?ko:K02986">K02986</a>  RP-S4, rpsD; small subunit ribosomal protein S4
+D      PROKKA_00227 <a href="/dbget-bin/www_bget?ko:K02988">K02988</a>  RP-S5, MRPS5, rpsE; small subunit ribosomal protein S5
+D      PROKKA_00444 <a href="/dbget-bin/www_bget?ko:K02988">K02988</a>  RP-S5, MRPS5, rpsE; small subunit ribosomal protein S5
+D      PROKKA_01669 <a href="/dbget-bin/www_bget?ko:K02990">K02990</a>  RP-S6, MRPS6, rpsF; small subunit ribosomal protein S6
+D      PROKKA_01233 <a href="/dbget-bin/www_bget?ko:K02992">K02992</a>  RP-S7, MRPS7, rpsG; small subunit ribosomal protein S7
+D      PROKKA_00224 <a href="/dbget-bin/www_bget?ko:K02994">K02994</a>  RP-S8, rpsH; small subunit ribosomal protein S8
+D      PROKKA_00447 <a href="/dbget-bin/www_bget?ko:K02994">K02994</a>  RP-S8, rpsH; small subunit ribosomal protein S8
+D      PROKKA_00209 <a href="/dbget-bin/www_bget?ko:K02946">K02946</a>  RP-S10, MRPS10, rpsJ; small subunit ribosomal protein S10
+D      PROKKA_00234 <a href="/dbget-bin/www_bget?ko:K02948">K02948</a>  RP-S11, MRPS11, rpsK; small subunit ribosomal protein S11
+D      PROKKA_00438 <a href="/dbget-bin/www_bget?ko:K02948">K02948</a>  RP-S11, MRPS11, rpsK; small subunit ribosomal protein S11
+D      PROKKA_01234 <a href="/dbget-bin/www_bget?ko:K02950">K02950</a>  RP-S12, MRPS12, rpsL; small subunit ribosomal protein S12
+D      PROKKA_00233 <a href="/dbget-bin/www_bget?ko:K02952">K02952</a>  RP-S13, rpsM; small subunit ribosomal protein S13
+D      PROKKA_00439 <a href="/dbget-bin/www_bget?ko:K02952">K02952</a>  RP-S13, rpsM; small subunit ribosomal protein S13
+D      PROKKA_00223 <a href="/dbget-bin/www_bget?ko:K02954">K02954</a>  RP-S14, MRPS14, rpsN; small subunit ribosomal protein S14
+D      PROKKA_00448 <a href="/dbget-bin/www_bget?ko:K02954">K02954</a>  RP-S14, MRPS14, rpsN; small subunit ribosomal protein S14
+D      PROKKA_01206 <a href="/dbget-bin/www_bget?ko:K02956">K02956</a>  RP-S15, MRPS15, rpsO; small subunit ribosomal protein S15
+D      PROKKA_00219 <a href="/dbget-bin/www_bget?ko:K02961">K02961</a>  RP-S17, MRPS17, rpsQ; small subunit ribosomal protein S17
+D      PROKKA_00452 <a href="/dbget-bin/www_bget?ko:K02961">K02961</a>  RP-S17, MRPS17, rpsQ; small subunit ribosomal protein S17
+D      PROKKA_01667 <a href="/dbget-bin/www_bget?ko:K02963">K02963</a>  RP-S18, MRPS18, rpsR; small subunit ribosomal protein S18
+D      PROKKA_00214 <a href="/dbget-bin/www_bget?ko:K02965">K02965</a>  RP-S19, rpsS; small subunit ribosomal protein S19
+D      PROKKA_00457 <a href="/dbget-bin/www_bget?ko:K02965">K02965</a>  RP-S19, rpsS; small subunit ribosomal protein S19
+D      PROKKA_01724 <a href="/dbget-bin/www_bget?ko:K02968">K02968</a>  RP-S20, rpsT; small subunit ribosomal protein S20
+D      PROKKA_00663 <a href="/dbget-bin/www_bget?ko:K02970">K02970</a>  RP-S21, MRPS21, rpsU; small subunit ribosomal protein S21
+D      PROKKA_01226 <a href="/dbget-bin/www_bget?ko:K02863">K02863</a>  RP-L1, MRPL1, rplA; large subunit ribosomal protein L1
+D      PROKKA_00213 <a href="/dbget-bin/www_bget?ko:K02886">K02886</a>  RP-L2, MRPL2, rplB; large subunit ribosomal protein L2
+D      PROKKA_00210 <a href="/dbget-bin/www_bget?ko:K02906">K02906</a>  RP-L3, MRPL3, rplC; large subunit ribosomal protein L3
+D      PROKKA_00211 <a href="/dbget-bin/www_bget?ko:K02926">K02926</a>  RP-L4, MRPL4, rplD; large subunit ribosomal protein L4
+D      PROKKA_00222 <a href="/dbget-bin/www_bget?ko:K02931">K02931</a>  RP-L5, MRPL5, rplE; large subunit ribosomal protein L5
+D      PROKKA_00449 <a href="/dbget-bin/www_bget?ko:K02931">K02931</a>  RP-L5, MRPL5, rplE; large subunit ribosomal protein L5
+D      PROKKA_00225 <a href="/dbget-bin/www_bget?ko:K02933">K02933</a>  RP-L6, MRPL6, rplF; large subunit ribosomal protein L6
+D      PROKKA_00446 <a href="/dbget-bin/www_bget?ko:K02933">K02933</a>  RP-L6, MRPL6, rplF; large subunit ribosomal protein L6
+D      PROKKA_01224 <a href="/dbget-bin/www_bget?ko:K02935">K02935</a>  RP-L7, MRPL12, rplL; large subunit ribosomal protein L7/L12
+D      PROKKA_01666 <a href="/dbget-bin/www_bget?ko:K02939">K02939</a>  RP-L9, MRPL9, rplI; large subunit ribosomal protein L9
+D      PROKKA_01225 <a href="/dbget-bin/www_bget?ko:K02864">K02864</a>  RP-L10, MRPL10, rplJ; large subunit ribosomal protein L10
+D      PROKKA_01227 <a href="/dbget-bin/www_bget?ko:K02867">K02867</a>  RP-L11, MRPL11, rplK; large subunit ribosomal protein L11
+D      PROKKA_00220 <a href="/dbget-bin/www_bget?ko:K02874">K02874</a>  RP-L14, MRPL14, rplN; large subunit ribosomal protein L14
+D      PROKKA_00451 <a href="/dbget-bin/www_bget?ko:K02874">K02874</a>  RP-L14, MRPL14, rplN; large subunit ribosomal protein L14
+D      PROKKA_00228 <a href="/dbget-bin/www_bget?ko:K02876">K02876</a>  RP-L15, MRPL15, rplO; large subunit ribosomal protein L15
+D      PROKKA_00442 <a href="/dbget-bin/www_bget?ko:K02876">K02876</a>  RP-L15, MRPL15, rplO; large subunit ribosomal protein L15
+D      PROKKA_00217 <a href="/dbget-bin/www_bget?ko:K02878">K02878</a>  RP-L16, MRPL16, rplP; large subunit ribosomal protein L16
+D      PROKKA_00454 <a href="/dbget-bin/www_bget?ko:K02878">K02878</a>  RP-L16, MRPL16, rplP; large subunit ribosomal protein L16
+D      PROKKA_00237 <a href="/dbget-bin/www_bget?ko:K02879">K02879</a>  RP-L17, MRPL17, rplQ; large subunit ribosomal protein L17
+D      PROKKA_00435 <a href="/dbget-bin/www_bget?ko:K02879">K02879</a>  RP-L17, MRPL17, rplQ; large subunit ribosomal protein L17
+D      PROKKA_00226 <a href="/dbget-bin/www_bget?ko:K02881">K02881</a>  RP-L18, MRPL18, rplR; large subunit ribosomal protein L18
+D      PROKKA_00445 <a href="/dbget-bin/www_bget?ko:K02881">K02881</a>  RP-L18, MRPL18, rplR; large subunit ribosomal protein L18
+D      PROKKA_01447 <a href="/dbget-bin/www_bget?ko:K02887">K02887</a>  RP-L20, MRPL20, rplT; large subunit ribosomal protein L20
+D      PROKKA_00312 <a href="/dbget-bin/www_bget?ko:K02888">K02888</a>  RP-L21, MRPL21, rplU; large subunit ribosomal protein L21
+D      PROKKA_00215 <a href="/dbget-bin/www_bget?ko:K02890">K02890</a>  RP-L22, MRPL22, rplV; large subunit ribosomal protein L22
+D      PROKKA_00456 <a href="/dbget-bin/www_bget?ko:K02890">K02890</a>  RP-L22, MRPL22, rplV; large subunit ribosomal protein L22
+D      PROKKA_00212 <a href="/dbget-bin/www_bget?ko:K02892">K02892</a>  RP-L23, MRPL23, rplW; large subunit ribosomal protein L23
+D      PROKKA_00221 <a href="/dbget-bin/www_bget?ko:K02895">K02895</a>  RP-L24, MRPL24, rplX; large subunit ribosomal protein L24
+D      PROKKA_00450 <a href="/dbget-bin/www_bget?ko:K02895">K02895</a>  RP-L24, MRPL24, rplX; large subunit ribosomal protein L24
+D      PROKKA_00577 <a href="/dbget-bin/www_bget?ko:K02897">K02897</a>  RP-L25, rplY; large subunit ribosomal protein L25
+D      PROKKA_01478 <a href="/dbget-bin/www_bget?ko:K02897">K02897</a>  RP-L25, rplY; large subunit ribosomal protein L25
+D      PROKKA_00313 <a href="/dbget-bin/www_bget?ko:K02899">K02899</a>  RP-L27, MRPL27, rpmA; large subunit ribosomal protein L27
+D      PROKKA_00218 <a href="/dbget-bin/www_bget?ko:K02904">K02904</a>  RP-L29, rpmC; large subunit ribosomal protein L29
+D      PROKKA_00453 <a href="/dbget-bin/www_bget?ko:K02904">K02904</a>  RP-L29, rpmC; large subunit ribosomal protein L29
+D      PROKKA_00443 <a href="/dbget-bin/www_bget?ko:K02907">K02907</a>  RP-L30, MRPL30, rpmD; large subunit ribosomal protein L30
+D      PROKKA_01446 <a href="/dbget-bin/www_bget?ko:K02916">K02916</a>  RP-L35, MRPL35, rpmI; large subunit ribosomal protein L35
+D      PROKKA_00232 <a href="/dbget-bin/www_bget?ko:K02919">K02919</a>  RP-L36, MRPL36, rpmJ; large subunit ribosomal protein L36
+D      PROKKA_00440 <a href="/dbget-bin/www_bget?ko:K02919">K02919</a>  RP-L36, MRPL36, rpmJ; large subunit ribosomal protein L36
+C    00970 Aminoacyl-tRNA biosynthesis [PATH:ko00970]
+D      PROKKA_00978 <a href="/dbget-bin/www_bget?ko:K01885">K01885</a>  EARS, gltX; glutamyl-tRNA synthetase [EC:6.1.1.17]
+D      PROKKA_00333 <a href="/dbget-bin/www_bget?ko:K02433">K02433</a>  gatA, QRSL1; aspartyl-tRNA(Asn)/glutamyl-tRNA(Gln) amidotransferase subunit A [EC:6.3.5.6 6.3.5.7]
+D      PROKKA_00412 <a href="/dbget-bin/www_bget?ko:K01872">K01872</a>  AARS, alaS; alanyl-tRNA synthetase [EC:6.1.1.7]
+D      PROKKA_01220 <a href="/dbget-bin/www_bget?ko:K01872">K01872</a>  AARS, alaS; alanyl-tRNA synthetase [EC:6.1.1.7]
+D      PROKKA_00987 <a href="/dbget-bin/www_bget?ko:K01878">K01878</a>  glyQ; glycyl-tRNA synthetase alpha chain [EC:6.1.1.14]
+D      PROKKA_00406 <a href="/dbget-bin/www_bget?ko:K01879">K01879</a>  glyS; glycyl-tRNA synthetase beta chain [EC:6.1.1.14]
+D      PROKKA_00988 <a href="/dbget-bin/www_bget?ko:K01879">K01879</a>  glyS; glycyl-tRNA synthetase beta chain [EC:6.1.1.14]
+D      PROKKA_00912 <a href="/dbget-bin/www_bget?ko:K01868">K01868</a>  TARS, thrS; threonyl-tRNA synthetase [EC:6.1.1.3]
+D      PROKKA_01444 <a href="/dbget-bin/www_bget?ko:K01868">K01868</a>  TARS, thrS; threonyl-tRNA synthetase [EC:6.1.1.3]
+D      PROKKA_00592 <a href="/dbget-bin/www_bget?ko:K01875">K01875</a>  SARS, serS; seryl-tRNA synthetase [EC:6.1.1.11]
+D      PROKKA_00610 <a href="/dbget-bin/www_bget?ko:K01042">K01042</a>  selA; L-seryl-tRNA(Ser) seleniumtransferase [EC:2.9.1.1]
+D      PROKKA_00334 <a href="/dbget-bin/www_bget?ko:K01870">K01870</a>  IARS, ileS; isoleucyl-tRNA synthetase [EC:6.1.1.5]
+D      PROKKA_01348 <a href="/dbget-bin/www_bget?ko:K04567">K04567</a>  KARS, lysS; lysyl-tRNA synthetase, class II [EC:6.1.1.6]
+D      PROKKA_00769 <a href="/dbget-bin/www_bget?ko:K01887">K01887</a>  RARS, argS; arginyl-tRNA synthetase [EC:6.1.1.19]
+D      PROKKA_00316 <a href="/dbget-bin/www_bget?ko:K01881">K01881</a>  PARS, proS; prolyl-tRNA synthetase [EC:6.1.1.15]
+D      PROKKA_00637 <a href="/dbget-bin/www_bget?ko:K01892">K01892</a>  HARS, hisS; histidyl-tRNA synthetase [EC:6.1.1.21]
+D      PROKKA_01250 <a href="/dbget-bin/www_bget?ko:K01889">K01889</a>  FARSA, pheS; phenylalanyl-tRNA synthetase alpha chain [EC:6.1.1.20]
+D      PROKKA_01204 <a href="/dbget-bin/www_bget?ko:K01890">K01890</a>  FARSB, pheT; phenylalanyl-tRNA synthetase beta chain [EC:6.1.1.20]
+D      PROKKA_01251 <a href="/dbget-bin/www_bget?ko:K01890">K01890</a>  FARSB, pheT; phenylalanyl-tRNA synthetase beta chain [EC:6.1.1.20]
+D      PROKKA_00367 <a href="/dbget-bin/www_bget?ko:K01866">K01866</a>  YARS, tyrS; tyrosyl-tRNA synthetase [EC:6.1.1.1]
+D      PROKKA_00590 <a href="/dbget-bin/www_bget?ko:K01867">K01867</a>  WARS, trpS; tryptophanyl-tRNA synthetase [EC:6.1.1.2]
+C    03013 RNA transport [PATH:ko03013]
+D      PROKKA_00402 <a href="/dbget-bin/www_bget?ko:K00974">K00974</a>  cca; tRNA nucleotidyltransferase (CCA-adding enzyme) [EC:2.7.7.72 3.1.3.- 3.1.4.-]
+C    03008 Ribosome biogenesis in eukaryotes [PATH:ko03008]
+D      PROKKA_01297 <a href="/dbget-bin/www_bget?ko:K03685">K03685</a>  rnc, DROSHA, RNT1; ribonuclease III [EC:3.1.26.3]
+D      PROKKA_01427 <a href="/dbget-bin/www_bget?ko:K03685">K03685</a>  rnc, DROSHA, RNT1; ribonuclease III [EC:3.1.26.3]
+D      PROKKA_01323 <a href="/dbget-bin/www_bget?ko:K13288">K13288</a>  orn, REX2, REXO2; oligoribonuclease [EC:3.1.-.-]
+B  <b>Folding, sorting and degradation</b>
+C    03060 Protein export [PATH:ko03060]
+D      PROKKA_00229 <a href="/dbget-bin/www_bget?ko:K03076">K03076</a>  secY; preprotein translocase subunit SecY
+D      PROKKA_00441 <a href="/dbget-bin/www_bget?ko:K03076">K03076</a>  secY; preprotein translocase subunit SecY
+D      PROKKA_01229 <a href="/dbget-bin/www_bget?ko:K03073">K03073</a>  secE; preprotein translocase subunit SecE
+D      PROKKA_00303 <a href="/dbget-bin/www_bget?ko:K03070">K03070</a>  secA; preprotein translocase subunit SecA
+D      PROKKA_00553 <a href="/dbget-bin/www_bget?ko:K03071">K03071</a>  secB; preprotein translocase subunit SecB
+D      PROKKA_01461 <a href="/dbget-bin/www_bget?ko:K03106">K03106</a>  SRP54, ffh; signal recognition particle subunit SRP54 [EC:3.6.5.4]
+D      PROKKA_00560 <a href="/dbget-bin/www_bget?ko:K03110">K03110</a>  ftsY; fused signal recognition particle receptor
+D      PROKKA_00418 <a href="/dbget-bin/www_bget?ko:K03116">K03116</a>  tatA; sec-independent protein translocase protein TatA
+D      PROKKA_00770 <a href="/dbget-bin/www_bget?ko:K03116">K03116</a>  tatA; sec-independent protein translocase protein TatA
+D      PROKKA_00417 <a href="/dbget-bin/www_bget?ko:K03117">K03117</a>  tatB; sec-independent protein translocase protein TatB
+D      PROKKA_00416 <a href="/dbget-bin/www_bget?ko:K03118">K03118</a>  tatC; sec-independent protein translocase protein TatC
+D      PROKKA_01296 <a href="/dbget-bin/www_bget?ko:K03100">K03100</a>  lepB, TPP; signal peptidase I [EC:3.4.21.89]
+D      PROKKA_00921 <a href="/dbget-bin/www_bget?ko:K03101">K03101</a>  lspA; signal peptidase II [EC:3.4.23.36]
+C    04141 Protein processing in endoplasmic reticulum [PATH:ko04141]
+D      PROKKA_00618 <a href="/dbget-bin/www_bget?ko:K07151">K07151</a>  STT3; dolichyl-diphosphooligosaccharide--protein glycosyltransferase [EC:2.4.99.18]
+D      PROKKA_00625 <a href="/dbget-bin/www_bget?ko:K07151">K07151</a>  STT3; dolichyl-diphosphooligosaccharide--protein glycosyltransferase [EC:2.4.99.18]
+C    04122 Sulfur relay system [PATH:ko04122]
+D      PROKKA_01339 <a href="/dbget-bin/www_bget?ko:K04487">K04487</a>  iscS, NFS1; cysteine desulfurase [EC:2.8.1.7]
+D      PROKKA_01702 <a href="/dbget-bin/www_bget?ko:K01011">K01011</a>  TST, MPST, sseA; thiosulfate/3-mercaptopyruvate sulfurtransferase [EC:2.8.1.1 2.8.1.2]
+D      PROKKA_01219 <a href="/dbget-bin/www_bget?ko:K04085">K04085</a>  tusA, sirA; tRNA 2-thiouridine synthesizing protein A [EC:2.8.1.-]
+D      PROKKA_01436 <a href="/dbget-bin/www_bget?ko:K00566">K00566</a>  mnmA, trmU; tRNA-uridine 2-sulfurtransferase [EC:2.8.1.13]
+D      PROKKA_01088 <a href="/dbget-bin/www_bget?ko:K03635">K03635</a>  MOCS2B, moaE; molybdopterin synthase catalytic subunit [EC:2.8.1.12]
+D      PROKKA_01320 <a href="/dbget-bin/www_bget?ko:K03639">K03639</a>  moaA, CNX2; GTP 3',8-cyclase [EC:4.1.99.22]
+D      PROKKA_01089 <a href="/dbget-bin/www_bget?ko:K03636">K03636</a>  moaD, cysO; sulfur-carrier protein
+D      PROKKA_00549 <a href="/dbget-bin/www_bget?ko:K21029">K21029</a>  moeB; molybdopterin-synthase adenylyltransferase [EC:2.7.7.80]
+D      PROKKA_01577 <a href="/dbget-bin/www_bget?ko:K03637">K03637</a>  moaC, CNX3; cyclic pyranopterin monophosphate synthase [EC:4.6.1.17]
+C    03018 RNA degradation [PATH:ko03018]
+D      PROKKA_00025 <a href="/dbget-bin/www_bget?ko:K01689">K01689</a>  ENO, eno; enolase [EC:4.2.1.11]
+D      PROKKA_00900 <a href="/dbget-bin/www_bget?ko:K01689">K01689</a>  ENO, eno; enolase [EC:4.2.1.11]
+D      PROKKA_01671 <a href="/dbget-bin/www_bget?ko:K12573">K12573</a>  rnr, vacB; ribonuclease R [EC:3.1.-.-]
+D      PROKKA_01480 <a href="/dbget-bin/www_bget?ko:K05592">K05592</a>  deaD, cshA; ATP-dependent RNA helicase DeaD [EC:3.6.4.13]
+D      PROKKA_00100 <a href="/dbget-bin/www_bget?ko:K12574">K12574</a>  rnj; ribonuclease J [EC:3.1.-.-]
+D      PROKKA_00688 <a href="/dbget-bin/www_bget?ko:K04077">K04077</a>  groEL, HSPD1; chaperonin GroEL
+D      PROKKA_00642 <a href="/dbget-bin/www_bget?ko:K03666">K03666</a>  hfq; host factor-I protein
+B  <b>Replication and repair</b>
+C    03030 DNA replication [PATH:ko03030]
+D      PROKKA_01209 <a href="/dbget-bin/www_bget?ko:K02342">K02342</a>  DPO3E, dnaQ; DNA polymerase III subunit epsilon [EC:2.7.7.7]
+D      PROKKA_00347 <a href="/dbget-bin/www_bget?ko:K02337">K02337</a>  DPO3A1, dnaE; DNA polymerase III subunit alpha [EC:2.7.7.7]
+D      PROKKA_01155 <a href="/dbget-bin/www_bget?ko:K02343">K02343</a>  DPO3G, dnaX; DNA polymerase III subunit gamma/tau [EC:2.7.7.7]
+D      PROKKA_00943 <a href="/dbget-bin/www_bget?ko:K02341">K02341</a>  DPO3D2, holB; DNA polymerase III subunit delta' [EC:2.7.7.7]
+D      PROKKA_01758 <a href="/dbget-bin/www_bget?ko:K02339">K02339</a>  DPO3C, holC; DNA polymerase III subunit chi [EC:2.7.7.7]
+D      PROKKA_00125 <a href="/dbget-bin/www_bget?ko:K02338">K02338</a>  DPO3B, dnaN; DNA polymerase III subunit beta [EC:2.7.7.7]
+D      PROKKA_01665 <a href="/dbget-bin/www_bget?ko:K02314">K02314</a>  dnaB; replicative DNA helicase [EC:3.6.4.12]
+D      PROKKA_01430 <a href="/dbget-bin/www_bget?ko:K02316">K02316</a>  dnaG; DNA primase [EC:2.7.7.-]
+D      PROKKA_01428 <a href="/dbget-bin/www_bget?ko:K03469">K03469</a>  rnhA, RNASEH1; ribonuclease HI [EC:3.1.26.4]
+D      PROKKA_00205 <a href="/dbget-bin/www_bget?ko:K03470">K03470</a>  rnhB; ribonuclease HII [EC:3.1.26.4]
+D      PROKKA_00320 <a href="/dbget-bin/www_bget?ko:K02335">K02335</a>  DPO1, polA; DNA polymerase I [EC:2.7.7.7]
+D      PROKKA_00613 <a href="/dbget-bin/www_bget?ko:K10747">K10747</a>  LIG1; DNA ligase 1 [EC:6.5.1.1 6.5.1.6 6.5.1.7]
+C    03410 Base excision repair [PATH:ko03410]
+D      PROKKA_01677 <a href="/dbget-bin/www_bget?ko:K10773">K10773</a>  NTH; endonuclease III [EC:4.2.99.18]
+D      PROKKA_00612 <a href="/dbget-bin/www_bget?ko:K01246">K01246</a>  tag; DNA-3-methyladenine glycosylase I [EC:3.2.2.20]
+D      PROKKA_00910 <a href="/dbget-bin/www_bget?ko:K03648">K03648</a>  UNG, UDG; uracil-DNA glycosylase [EC:3.2.2.27]
+D      PROKKA_00320 <a href="/dbget-bin/www_bget?ko:K02335">K02335</a>  DPO1, polA; DNA polymerase I [EC:2.7.7.7]
+D      PROKKA_00277 <a href="/dbget-bin/www_bget?ko:K07462">K07462</a>  recJ; single-stranded-DNA-specific exonuclease [EC:3.1.-.-]
+D      PROKKA_01350 <a href="/dbget-bin/www_bget?ko:K07462">K07462</a>  recJ; single-stranded-DNA-specific exonuclease [EC:3.1.-.-]
+D      PROKKA_00613 <a href="/dbget-bin/www_bget?ko:K10747">K10747</a>  LIG1; DNA ligase 1 [EC:6.5.1.1 6.5.1.6 6.5.1.7]
+C    03420 Nucleotide excision repair [PATH:ko03420]
+D      PROKKA_00535 <a href="/dbget-bin/www_bget?ko:K03701">K03701</a>  uvrA; excinuclease ABC subunit A
+D      PROKKA_01272 <a href="/dbget-bin/www_bget?ko:K03701">K03701</a>  uvrA; excinuclease ABC subunit A
+D      PROKKA_01111 <a href="/dbget-bin/www_bget?ko:K03703">K03703</a>  uvrC; excinuclease ABC subunit C
+D      PROKKA_00320 <a href="/dbget-bin/www_bget?ko:K02335">K02335</a>  DPO1, polA; DNA polymerase I [EC:2.7.7.7]
+D      PROKKA_00613 <a href="/dbget-bin/www_bget?ko:K10747">K10747</a>  LIG1; DNA ligase 1 [EC:6.5.1.1 6.5.1.6 6.5.1.7]
+C    03430 Mismatch repair [PATH:ko03430]
+D      PROKKA_00324 <a href="/dbget-bin/www_bget?ko:K07456">K07456</a>  mutS2; DNA mismatch repair protein MutS2
+D      PROKKA_00564 <a href="/dbget-bin/www_bget?ko:K03601">K03601</a>  xseA; exodeoxyribonuclease VII large subunit [EC:3.1.11.6]
+D      PROKKA_00702 <a href="/dbget-bin/www_bget?ko:K03601">K03601</a>  xseA; exodeoxyribonuclease VII large subunit [EC:3.1.11.6]
+D      PROKKA_00330 <a href="/dbget-bin/www_bget?ko:K03602">K03602</a>  xseB; exodeoxyribonuclease VII small subunit [EC:3.1.11.6]
+D      PROKKA_00277 <a href="/dbget-bin/www_bget?ko:K07462">K07462</a>  recJ; single-stranded-DNA-specific exonuclease [EC:3.1.-.-]
+D      PROKKA_01350 <a href="/dbget-bin/www_bget?ko:K07462">K07462</a>  recJ; single-stranded-DNA-specific exonuclease [EC:3.1.-.-]
+D      PROKKA_00347 <a href="/dbget-bin/www_bget?ko:K02337">K02337</a>  DPO3A1, dnaE; DNA polymerase III subunit alpha [EC:2.7.7.7]
+D      PROKKA_00125 <a href="/dbget-bin/www_bget?ko:K02338">K02338</a>  DPO3B, dnaN; DNA polymerase III subunit beta [EC:2.7.7.7]
+D      PROKKA_01155 <a href="/dbget-bin/www_bget?ko:K02343">K02343</a>  DPO3G, dnaX; DNA polymerase III subunit gamma/tau [EC:2.7.7.7]
+D      PROKKA_00943 <a href="/dbget-bin/www_bget?ko:K02341">K02341</a>  DPO3D2, holB; DNA polymerase III subunit delta' [EC:2.7.7.7]
+D      PROKKA_01209 <a href="/dbget-bin/www_bget?ko:K02342">K02342</a>  DPO3E, dnaQ; DNA polymerase III subunit epsilon [EC:2.7.7.7]
+D      PROKKA_01758 <a href="/dbget-bin/www_bget?ko:K02339">K02339</a>  DPO3C, holC; DNA polymerase III subunit chi [EC:2.7.7.7]
+D      PROKKA_00613 <a href="/dbget-bin/www_bget?ko:K10747">K10747</a>  LIG1; DNA ligase 1 [EC:6.5.1.1 6.5.1.6 6.5.1.7]
+C    03440 Homologous recombination [PATH:ko03440]
+D      PROKKA_00277 <a href="/dbget-bin/www_bget?ko:K07462">K07462</a>  recJ; single-stranded-DNA-specific exonuclease [EC:3.1.-.-]
+D      PROKKA_01350 <a href="/dbget-bin/www_bget?ko:K07462">K07462</a>  recJ; single-stranded-DNA-specific exonuclease [EC:3.1.-.-]
+D      PROKKA_01029 <a href="/dbget-bin/www_bget?ko:K03584">K03584</a>  recO; DNA repair protein RecO (recombination protein O)
+D      PROKKA_01159 <a href="/dbget-bin/www_bget?ko:K06187">K06187</a>  recR; recombination protein RecR
+D      PROKKA_00024 <a href="/dbget-bin/www_bget?ko:K03553">K03553</a>  recA; recombination protein RecA
+D      PROKKA_00320 <a href="/dbget-bin/www_bget?ko:K02335">K02335</a>  DPO1, polA; DNA polymerase I [EC:2.7.7.7]
+D      PROKKA_00510 <a href="/dbget-bin/www_bget?ko:K03551">K03551</a>  ruvB; holliday junction DNA helicase RuvB [EC:3.6.4.12]
+D      PROKKA_00123 <a href="/dbget-bin/www_bget?ko:K01159">K01159</a>  ruvC; crossover junction endodeoxyribonuclease RuvC [EC:3.1.22.4]
+D      PROKKA_01460 <a href="/dbget-bin/www_bget?ko:K01159">K01159</a>  ruvC; crossover junction endodeoxyribonuclease RuvC [EC:3.1.22.4]
+D      PROKKA_01328 <a href="/dbget-bin/www_bget?ko:K03655">K03655</a>  recG; ATP-dependent DNA helicase RecG [EC:3.6.4.12]
+D      PROKKA_00347 <a href="/dbget-bin/www_bget?ko:K02337">K02337</a>  DPO3A1, dnaE; DNA polymerase III subunit alpha [EC:2.7.7.7]
+D      PROKKA_00125 <a href="/dbget-bin/www_bget?ko:K02338">K02338</a>  DPO3B, dnaN; DNA polymerase III subunit beta [EC:2.7.7.7]
+D      PROKKA_01155 <a href="/dbget-bin/www_bget?ko:K02343">K02343</a>  DPO3G, dnaX; DNA polymerase III subunit gamma/tau [EC:2.7.7.7]
+D      PROKKA_00943 <a href="/dbget-bin/www_bget?ko:K02341">K02341</a>  DPO3D2, holB; DNA polymerase III subunit delta' [EC:2.7.7.7]
+D      PROKKA_01209 <a href="/dbget-bin/www_bget?ko:K02342">K02342</a>  DPO3E, dnaQ; DNA polymerase III subunit epsilon [EC:2.7.7.7]
+D      PROKKA_01758 <a href="/dbget-bin/www_bget?ko:K02339">K02339</a>  DPO3C, holC; DNA polymerase III subunit chi [EC:2.7.7.7]
+D      PROKKA_01668 <a href="/dbget-bin/www_bget?ko:K02686">K02686</a>  priB; primosomal replication protein N
+#
+A<b>Environmental Information Processing</b>
+B  <b>Membrane transport</b>
+C    02010 ABC transporters [PATH:ko02010]
+D      PROKKA_01364 <a href="/dbget-bin/www_bget?ko:K02046">K02046</a>  cysU; sulfate transport system permease protein
+D      PROKKA_01363 <a href="/dbget-bin/www_bget?ko:K02047">K02047</a>  cysW; sulfate transport system permease protein
+D      PROKKA_01362 <a href="/dbget-bin/www_bget?ko:K02045">K02045</a>  cysA; sulfate transport system ATP-binding protein [EC:3.6.3.25]
+D      PROKKA_00242 <a href="/dbget-bin/www_bget?ko:K15553">K15553</a>  ssuA; sulfonate transport system substrate-binding protein
+D      PROKKA_00240 <a href="/dbget-bin/www_bget?ko:K15554">K15554</a>  ssuC; sulfonate transport system permease protein
+D      PROKKA_00009 <a href="/dbget-bin/www_bget?ko:K02020">K02020</a>  modA; molybdate transport system substrate-binding protein
+D      PROKKA_00017 <a href="/dbget-bin/www_bget?ko:K02020">K02020</a>  modA; molybdate transport system substrate-binding protein
+D      PROKKA_00797 <a href="/dbget-bin/www_bget?ko:K02020">K02020</a>  modA; molybdate transport system substrate-binding protein
+D      PROKKA_00006 <a href="/dbget-bin/www_bget?ko:K02018">K02018</a>  modB; molybdate transport system permease protein
+D      PROKKA_00016 <a href="/dbget-bin/www_bget?ko:K02018">K02018</a>  modB; molybdate transport system permease protein
+D      PROKKA_00796 <a href="/dbget-bin/www_bget?ko:K02018">K02018</a>  modB; molybdate transport system permease protein
+D      PROKKA_00007 <a href="/dbget-bin/www_bget?ko:K02017">K02017</a>  modC; molybdate transport system ATP-binding protein [EC:3.6.3.29]
+D      PROKKA_00795 <a href="/dbget-bin/www_bget?ko:K02017">K02017</a>  modC; molybdate transport system ATP-binding protein [EC:3.6.3.29]
+D      PROKKA_01020 <a href="/dbget-bin/www_bget?ko:K02012">K02012</a>  afuA, fbpA; iron(III) transport system substrate-binding protein
+D      PROKKA_01021 <a href="/dbget-bin/www_bget?ko:K02011">K02011</a>  afuB, fbpB; iron(III) transport system permease protein
+D      PROKKA_01100 <a href="/dbget-bin/www_bget?ko:K02010">K02010</a>  afuC, fbpC; iron(III) transport system ATP-binding protein [EC:3.6.3.30]
+D      PROKKA_00012 <a href="/dbget-bin/www_bget?ko:K07323">K07323</a>  mlaC; phospholipid transport system substrate-binding protein
+D      PROKKA_00422 <a href="/dbget-bin/www_bget?ko:K07323">K07323</a>  mlaC; phospholipid transport system substrate-binding protein
+D      PROKKA_00424 <a href="/dbget-bin/www_bget?ko:K02067">K02067</a>  mlaD, linM; phospholipid/cholesterol/gamma-HCH transport system substrate-binding protein
+D      PROKKA_00425 <a href="/dbget-bin/www_bget?ko:K02066">K02066</a>  mlaE, linK; phospholipid/cholesterol/gamma-HCH transport system permease protein
+D      PROKKA_00421 <a href="/dbget-bin/www_bget?ko:K07122">K07122</a>  mlaB; phospholipid transport system transporter-binding protein
+D      PROKKA_00426 <a href="/dbget-bin/www_bget?ko:K02065">K02065</a>  mlaF, linL, mkl; phospholipid/cholesterol/gamma-HCH transport system ATP-binding protein
+D      PROKKA_01201 <a href="/dbget-bin/www_bget?ko:K02040">K02040</a>  pstS; phosphate transport system substrate-binding protein
+D      PROKKA_01200 <a href="/dbget-bin/www_bget?ko:K02037">K02037</a>  pstC; phosphate transport system permease protein
+D      PROKKA_01199 <a href="/dbget-bin/www_bget?ko:K02038">K02038</a>  pstA; phosphate transport system permease protein
+D      PROKKA_01198 <a href="/dbget-bin/www_bget?ko:K02036">K02036</a>  pstB; phosphate transport system ATP-binding protein [EC:3.6.3.27]
+D      PROKKA_01492 <a href="/dbget-bin/www_bget?ko:K10001">K10001</a>  gltI, aatJ; glutamate/aspartate transport system substrate-binding protein
+D      PROKKA_01490 <a href="/dbget-bin/www_bget?ko:K10002">K10002</a>  gltK, aatM; glutamate/aspartate transport system permease protein
+D      PROKKA_01491 <a href="/dbget-bin/www_bget?ko:K10003">K10003</a>  gltJ, aatQ; glutamate/aspartate transport system permease protein
+D      PROKKA_01489 <a href="/dbget-bin/www_bget?ko:K10004">K10004</a>  gltL, aatP; glutamate/aspartate transport system ATP-binding protein [EC:3.6.3.-]
+D      PROKKA_00872 <a href="/dbget-bin/www_bget?ko:K02424">K02424</a>  fliY; cystine transport system substrate-binding protein
+D      PROKKA_00871 <a href="/dbget-bin/www_bget?ko:K10009">K10009</a>  ABC.CYST.P; cystine transport system permease protein
+D      PROKKA_00870 <a href="/dbget-bin/www_bget?ko:K16960">K16960</a>  tcyN; L-cystine transport system ATP-binding protein [EC:3.6.3.-]
+D      PROKKA_00837 <a href="/dbget-bin/www_bget?ko:K02073">K02073</a>  metQ; D-methionine transport system substrate-binding protein
+D      PROKKA_01598 <a href="/dbget-bin/www_bget?ko:K02073">K02073</a>  metQ; D-methionine transport system substrate-binding protein
+D      PROKKA_01605 <a href="/dbget-bin/www_bget?ko:K02073">K02073</a>  metQ; D-methionine transport system substrate-binding protein
+D      PROKKA_01601 <a href="/dbget-bin/www_bget?ko:K02072">K02072</a>  metI; D-methionine transport system permease protein
+D      PROKKA_01600 <a href="/dbget-bin/www_bget?ko:K02071">K02071</a>  metN; D-methionine transport system ATP-binding protein
+D      PROKKA_00707 <a href="/dbget-bin/www_bget?ko:K13889">K13889</a>  gsiB; glutathione transport system substrate-binding protein
+D      PROKKA_00856 <a href="/dbget-bin/www_bget?ko:K13889">K13889</a>  gsiB; glutathione transport system substrate-binding protein
+D      PROKKA_01747 <a href="/dbget-bin/www_bget?ko:K13889">K13889</a>  gsiB; glutathione transport system substrate-binding protein
+D      PROKKA_00857 <a href="/dbget-bin/www_bget?ko:K13890">K13890</a>  gsiC; glutathione transport system permease protein
+D      PROKKA_00858 <a href="/dbget-bin/www_bget?ko:K13891">K13891</a>  gsiD; glutathione transport system permease protein
+D      PROKKA_00855 <a href="/dbget-bin/www_bget?ko:K13892">K13892</a>  gsiA; glutathione transport system ATP-binding protein
+D      PROKKA_00973 <a href="/dbget-bin/www_bget?ko:K02016">K02016</a>  ABC.FEV.S; iron complex transport system substrate-binding protein
+D      PROKKA_01008 <a href="/dbget-bin/www_bget?ko:K02016">K02016</a>  ABC.FEV.S; iron complex transport system substrate-binding protein
+D      PROKKA_01393 <a href="/dbget-bin/www_bget?ko:K02016">K02016</a>  ABC.FEV.S; iron complex transport system substrate-binding protein
+D      PROKKA_01394 <a href="/dbget-bin/www_bget?ko:K02016">K02016</a>  ABC.FEV.S; iron complex transport system substrate-binding protein
+D      PROKKA_01520 <a href="/dbget-bin/www_bget?ko:K02016">K02016</a>  ABC.FEV.S; iron complex transport system substrate-binding protein
+D      PROKKA_01686 <a href="/dbget-bin/www_bget?ko:K02016">K02016</a>  ABC.FEV.S; iron complex transport system substrate-binding protein
+D      PROKKA_00972 <a href="/dbget-bin/www_bget?ko:K02015">K02015</a>  ABC.FEV.P; iron complex transport system permease protein
+D      PROKKA_01518 <a href="/dbget-bin/www_bget?ko:K02015">K02015</a>  ABC.FEV.P; iron complex transport system permease protein
+D      PROKKA_01687 <a href="/dbget-bin/www_bget?ko:K02015">K02015</a>  ABC.FEV.P; iron complex transport system permease protein
+D      PROKKA_00971 <a href="/dbget-bin/www_bget?ko:K02013">K02013</a>  ABC.FEV.A; iron complex transport system ATP-binding protein [EC:3.6.3.34]
+D      PROKKA_01519 <a href="/dbget-bin/www_bget?ko:K02013">K02013</a>  ABC.FEV.A; iron complex transport system ATP-binding protein [EC:3.6.3.34]
+D      PROKKA_01685 <a href="/dbget-bin/www_bget?ko:K02013">K02013</a>  ABC.FEV.A; iron complex transport system ATP-binding protein [EC:3.6.3.34]
+D      PROKKA_00641 <a href="/dbget-bin/www_bget?ko:K02009">K02009</a>  cbiN; cobalt/nickel transport protein
+D      PROKKA_01106 <a href="/dbget-bin/www_bget?ko:K02196">K02196</a>  ccmD; heme exporter protein D
+D      PROKKA_01107 <a href="/dbget-bin/www_bget?ko:K02195">K02195</a>  ccmC; heme exporter protein C
+D      PROKKA_01108 <a href="/dbget-bin/www_bget?ko:K02194">K02194</a>  ccmB; heme exporter protein B
+D      PROKKA_01109 <a href="/dbget-bin/www_bget?ko:K02193">K02193</a>  ccmA; heme exporter protein A [EC:3.6.3.41]
+D      PROKKA_01269 <a href="/dbget-bin/www_bget?ko:K07091">K07091</a>  lptF; lipopolysaccharide export system permease protein
+D      PROKKA_00575 <a href="/dbget-bin/www_bget?ko:K11720">K11720</a>  lptG; lipopolysaccharide export system permease protein
+D      PROKKA_01271 <a href="/dbget-bin/www_bget?ko:K11720">K11720</a>  lptG; lipopolysaccharide export system permease protein
+D      PROKKA_00362 <a href="/dbget-bin/www_bget?ko:K09811">K09811</a>  ftsX; cell division transport system permease protein
+D      PROKKA_00557 <a href="/dbget-bin/www_bget?ko:K09811">K09811</a>  ftsX; cell division transport system permease protein
+D      PROKKA_00361 <a href="/dbget-bin/www_bget?ko:K09812">K09812</a>  ftsE; cell division transport system ATP-binding protein
+D      PROKKA_00558 <a href="/dbget-bin/www_bget?ko:K09812">K09812</a>  ftsE; cell division transport system ATP-binding protein
+D      PROKKA_00674 <a href="/dbget-bin/www_bget?ko:K06159">K06159</a>  yojI; multidrug/microcin transport system ATP-binding/permease protein
+C    03070 Bacterial secretion system [PATH:ko03070]
+D      PROKKA_01229 <a href="/dbget-bin/www_bget?ko:K03073">K03073</a>  secE; preprotein translocase subunit SecE
+D      PROKKA_00229 <a href="/dbget-bin/www_bget?ko:K03076">K03076</a>  secY; preprotein translocase subunit SecY
+D      PROKKA_00441 <a href="/dbget-bin/www_bget?ko:K03076">K03076</a>  secY; preprotein translocase subunit SecY
+D      PROKKA_00303 <a href="/dbget-bin/www_bget?ko:K03070">K03070</a>  secA; preprotein translocase subunit SecA
+D      PROKKA_00560 <a href="/dbget-bin/www_bget?ko:K03110">K03110</a>  ftsY; fused signal recognition particle receptor
+D      PROKKA_00553 <a href="/dbget-bin/www_bget?ko:K03071">K03071</a>  secB; preprotein translocase subunit SecB
+D      PROKKA_01461 <a href="/dbget-bin/www_bget?ko:K03106">K03106</a>  SRP54, ffh; signal recognition particle subunit SRP54 [EC:3.6.5.4]
+D      PROKKA_00418 <a href="/dbget-bin/www_bget?ko:K03116">K03116</a>  tatA; sec-independent protein translocase protein TatA
+D      PROKKA_00770 <a href="/dbget-bin/www_bget?ko:K03116">K03116</a>  tatA; sec-independent protein translocase protein TatA
+D      PROKKA_00417 <a href="/dbget-bin/www_bget?ko:K03117">K03117</a>  tatB; sec-independent protein translocase protein TatB
+D      PROKKA_00416 <a href="/dbget-bin/www_bget?ko:K03118">K03118</a>  tatC; sec-independent protein translocase protein TatC
+B  <b>Signal transduction</b>
+C    02020 Two-component system [PATH:ko02020]
+D      PROKKA_01195 <a href="/dbget-bin/www_bget?ko:K07636">K07636</a>  phoR; two-component system, OmpR family, phosphate regulon sensor histidine kinase PhoR [EC:2.7.13.3]
+D      PROKKA_01196 <a href="/dbget-bin/www_bget?ko:K07657">K07657</a>  phoB; two-component system, OmpR family, phosphate regulon response regulator PhoB
+D      PROKKA_00699 <a href="/dbget-bin/www_bget?ko:K01077">K01077</a>  E3.1.3.1, phoA, phoB; alkaline phosphatase [EC:3.1.3.1]
+D      PROKKA_01201 <a href="/dbget-bin/www_bget?ko:K02040">K02040</a>  pstS; phosphate transport system substrate-binding protein
+D      PROKKA_01303 <a href="/dbget-bin/www_bget?ko:K07638">K07638</a>  envZ; two-component system, OmpR family, osmolarity sensor histidine kinase EnvZ [EC:2.7.13.3]
+D      PROKKA_01302 <a href="/dbget-bin/www_bget?ko:K07659">K07659</a>  ompR; two-component system, OmpR family, phosphate regulon response regulator OmpR
+D      PROKKA_01130 <a href="/dbget-bin/www_bget?ko:K07798">K07798</a>  cusB, silB; membrane fusion protein, Cu(I)/Ag(I) efflux system
+D      PROKKA_01129 <a href="/dbget-bin/www_bget?ko:K07787">K07787</a>  cusA, silA; Cu(I)/Ag(I) efflux system membrane protein CusA/SilA
+D      PROKKA_00380 <a href="/dbget-bin/www_bget?ko:K02406">K02406</a>  fliC; flagellin
+D      PROKKA_00137 <a href="/dbget-bin/www_bget?ko:K03532">K03532</a>  torC; trimethylamine-N-oxide reductase (cytochrome c), cytochrome c-type subunit TorC
+D      PROKKA_00124 <a href="/dbget-bin/www_bget?ko:K02313">K02313</a>  dnaA; chromosomal replication initiator protein
+D      PROKKA_00526 <a href="/dbget-bin/www_bget?ko:K01910">K01910</a>  citC; [citrate (pro-3S)-lyase] ligase [EC:6.2.1.22]
+D      PROKKA_00530 <a href="/dbget-bin/www_bget?ko:K01646">K01646</a>  citD; citrate lyase subunit gamma (acyl carrier protein)
+D      PROKKA_00531 <a href="/dbget-bin/www_bget?ko:K01644">K01644</a>  citE; citrate lyase subunit beta / citryl-CoA lyase [EC:4.1.3.34]
+D      PROKKA_00532 <a href="/dbget-bin/www_bget?ko:K01644">K01644</a>  citE; citrate lyase subunit beta / citryl-CoA lyase [EC:4.1.3.34]
+D      PROKKA_00533 <a href="/dbget-bin/www_bget?ko:K01643">K01643</a>  citF; citrate lyase subunit alpha / citrate CoA-transferase [EC:2.8.3.10]
+D      PROKKA_00525 <a href="/dbget-bin/www_bget?ko:K13927">K13927</a>  citXG; holo-ACP synthase / triphosphoribosyl-dephospho-CoA synthase [EC:2.7.7.61 2.4.2.52]
+D      PROKKA_00528 <a href="/dbget-bin/www_bget?ko:K11692">K11692</a>  K11692, dctR; two-component system, CitB family, response regulator DctR
+D      PROKKA_00527 <a href="/dbget-bin/www_bget?ko:K11614">K11614</a>  yufL, malK; two-component system, CitB family, sensor histidine kinase MalK [EC:2.7.13.3]
+D      PROKKA_00529 <a href="/dbget-bin/www_bget?ko:K11616">K11616</a>  maeN; malate:Na+ symporter
+D      PROKKA_01674 <a href="/dbget-bin/www_bget?ko:K07673">K07673</a>  narX; two-component system, NarL family, nitrate/nitrite sensor histidine kinase NarX [EC:2.7.13.3]
+D      PROKKA_00554 <a href="/dbget-bin/www_bget?ko:K07684">K07684</a>  narL; two-component system, NarL family, nitrate/nitrite response regulator NarL
+D      PROKKA_00828 <a href="/dbget-bin/www_bget?ko:K00244">K00244</a>  frdA; fumarate reductase flavoprotein subunit [EC:1.3.5.4]
+D      PROKKA_00879 <a href="/dbget-bin/www_bget?ko:K00244">K00244</a>  frdA; fumarate reductase flavoprotein subunit [EC:1.3.5.4]
+D      PROKKA_00896 <a href="/dbget-bin/www_bget?ko:K00244">K00244</a>  frdA; fumarate reductase flavoprotein subunit [EC:1.3.5.4]
+D      PROKKA_00961 <a href="/dbget-bin/www_bget?ko:K00244">K00244</a>  frdA; fumarate reductase flavoprotein subunit [EC:1.3.5.4]
+D      PROKKA_00966 <a href="/dbget-bin/www_bget?ko:K00244">K00244</a>  frdA; fumarate reductase flavoprotein subunit [EC:1.3.5.4]
+D      PROKKA_01141 <a href="/dbget-bin/www_bget?ko:K00244">K00244</a>  frdA; fumarate reductase flavoprotein subunit [EC:1.3.5.4]
+D      PROKKA_01188 <a href="/dbget-bin/www_bget?ko:K00244">K00244</a>  frdA; fumarate reductase flavoprotein subunit [EC:1.3.5.4]
+D      PROKKA_01611 <a href="/dbget-bin/www_bget?ko:K00244">K00244</a>  frdA; fumarate reductase flavoprotein subunit [EC:1.3.5.4]
+D      PROKKA_01615 <a href="/dbget-bin/www_bget?ko:K00244">K00244</a>  frdA; fumarate reductase flavoprotein subunit [EC:1.3.5.4]
+D      PROKKA_01641 <a href="/dbget-bin/www_bget?ko:K00244">K00244</a>  frdA; fumarate reductase flavoprotein subunit [EC:1.3.5.4]
+D      PROKKA_01676 <a href="/dbget-bin/www_bget?ko:K00244">K00244</a>  frdA; fumarate reductase flavoprotein subunit [EC:1.3.5.4]
+D      PROKKA_01703 <a href="/dbget-bin/www_bget?ko:K00244">K00244</a>  frdA; fumarate reductase flavoprotein subunit [EC:1.3.5.4]
+D      PROKKA_01723 <a href="/dbget-bin/www_bget?ko:K00244">K00244</a>  frdA; fumarate reductase flavoprotein subunit [EC:1.3.5.4]
+D      PROKKA_01774 <a href="/dbget-bin/www_bget?ko:K00244">K00244</a>  frdA; fumarate reductase flavoprotein subunit [EC:1.3.5.4]
+D      PROKKA_01782 <a href="/dbget-bin/www_bget?ko:K00244">K00244</a>  frdA; fumarate reductase flavoprotein subunit [EC:1.3.5.4]
+D      PROKKA_01169 <a href="/dbget-bin/www_bget?ko:K04751">K04751</a>  glnB; nitrogen regulatory protein P-II 1
+D      PROKKA_01502 <a href="/dbget-bin/www_bget?ko:K07708">K07708</a>  glnL, ntrB; two-component system, NtrC family, nitrogen regulation sensor histidine kinase GlnL [EC:2.7.13.3]
+D      PROKKA_01501 <a href="/dbget-bin/www_bget?ko:K07712">K07712</a>  glnG, ntrC; two-component system, NtrC family, nitrogen regulation response regulator GlnG
+D      PROKKA_01503 <a href="/dbget-bin/www_bget?ko:K01915">K01915</a>  glnA, GLUL; glutamine synthetase [EC:6.3.1.2]
+D      PROKKA_00734 <a href="/dbget-bin/www_bget?ko:K11103">K11103</a>  dctA; aerobic C4-dicarboxylate transport protein
+D      PROKKA_00376 <a href="/dbget-bin/www_bget?ko:K03406">K03406</a>  mcp; methyl-accepting chemotaxis protein
+D      PROKKA_00580 <a href="/dbget-bin/www_bget?ko:K03408">K03408</a>  cheW; purine-binding chemotaxis protein CheW
+D      PROKKA_00581 <a href="/dbget-bin/www_bget?ko:K03407">K03407</a>  cheA; two-component system, chemotaxis family, sensor kinase CheA [EC:2.7.13.3]
+D      PROKKA_00582 <a href="/dbget-bin/www_bget?ko:K03415">K03415</a>  cheV; two-component system, chemotaxis family, response regulator CheV
+D      PROKKA_00522 <a href="/dbget-bin/www_bget?ko:K13040">K13040</a>  ttrS; two-component system, LuxR family, sensor histidine kinase TtrS [EC:2.7.13.3]
+D      PROKKA_00868 <a href="/dbget-bin/www_bget?ko:K13040">K13040</a>  ttrS; two-component system, LuxR family, sensor histidine kinase TtrS [EC:2.7.13.3]
+D      PROKKA_00945 <a href="/dbget-bin/www_bget?ko:K13040">K13040</a>  ttrS; two-component system, LuxR family, sensor histidine kinase TtrS [EC:2.7.13.3]
+D      PROKKA_00964 <a href="/dbget-bin/www_bget?ko:K13040">K13040</a>  ttrS; two-component system, LuxR family, sensor histidine kinase TtrS [EC:2.7.13.3]
+D      PROKKA_01143 <a href="/dbget-bin/www_bget?ko:K13040">K13040</a>  ttrS; two-component system, LuxR family, sensor histidine kinase TtrS [EC:2.7.13.3]
+D      PROKKA_01613 <a href="/dbget-bin/www_bget?ko:K13040">K13040</a>  ttrS; two-component system, LuxR family, sensor histidine kinase TtrS [EC:2.7.13.3]
+D      PROKKA_01642 <a href="/dbget-bin/www_bget?ko:K13040">K13040</a>  ttrS; two-component system, LuxR family, sensor histidine kinase TtrS [EC:2.7.13.3]
+D      PROKKA_01489 <a href="/dbget-bin/www_bget?ko:K10004">K10004</a>  gltL, aatP; glutamate/aspartate transport system ATP-binding protein [EC:3.6.3.-]
+D      PROKKA_01490 <a href="/dbget-bin/www_bget?ko:K10002">K10002</a>  gltK, aatM; glutamate/aspartate transport system permease protein
+D      PROKKA_01491 <a href="/dbget-bin/www_bget?ko:K10003">K10003</a>  gltJ, aatQ; glutamate/aspartate transport system permease protein
+D      PROKKA_01492 <a href="/dbget-bin/www_bget?ko:K10001">K10001</a>  gltI, aatJ; glutamate/aspartate transport system substrate-binding protein
+D      PROKKA_00760 <a href="/dbget-bin/www_bget?ko:K00411">K00411</a>  UQCRFS1, RIP1, petA; ubiquinol-cytochrome c reductase iron-sulfur subunit [EC:1.10.2.2]
+D      PROKKA_00759 <a href="/dbget-bin/www_bget?ko:K00412">K00412</a>  CYTB, petB; ubiquinol-cytochrome c reductase cytochrome b subunit
+D      PROKKA_00758 <a href="/dbget-bin/www_bget?ko:K00413">K00413</a>  CYC1, CYT1, petC; ubiquinol-cytochrome c reductase cytochrome c1 subunit
+D      PROKKA_00273 <a href="/dbget-bin/www_bget?ko:K00425">K00425</a>  cydA; cytochrome d ubiquinol oxidase subunit I [EC:1.10.3.14]
+D      PROKKA_00272 <a href="/dbget-bin/www_bget?ko:K00426">K00426</a>  cydB; cytochrome d ubiquinol oxidase subunit II [EC:1.10.3.14]
+C    04013 MAPK signaling pathway - fly [PATH:ko04013]
+D      PROKKA_00200 <a href="/dbget-bin/www_bget?ko:K04564">K04564</a>  SOD2; superoxide dismutase, Fe-Mn family [EC:1.15.1.1]
+D      PROKKA_00701 <a href="/dbget-bin/www_bget?ko:K04564">K04564</a>  SOD2; superoxide dismutase, Fe-Mn family [EC:1.15.1.1]
+C    04016 MAPK signaling pathway - plant [PATH:ko04016]
+D      PROKKA_00633 <a href="/dbget-bin/www_bget?ko:K00940">K00940</a>  ndk, NME; nucleoside-diphosphate kinase [EC:2.7.4.6]
+C    04066 HIF-1 signaling pathway [PATH:ko04066]
+D      PROKKA_00765 <a href="/dbget-bin/www_bget?ko:K00134">K00134</a>  GAPDH, gapA; glyceraldehyde 3-phosphate dehydrogenase [EC:1.2.1.12]
+D      PROKKA_00025 <a href="/dbget-bin/www_bget?ko:K01689">K01689</a>  ENO, eno; enolase [EC:4.2.1.11]
+D      PROKKA_00900 <a href="/dbget-bin/www_bget?ko:K01689">K01689</a>  ENO, eno; enolase [EC:4.2.1.11]
+C    04068 FoxO signaling pathway [PATH:ko04068]
+D      PROKKA_00200 <a href="/dbget-bin/www_bget?ko:K04564">K04564</a>  SOD2; superoxide dismutase, Fe-Mn family [EC:1.15.1.1]
+D      PROKKA_00701 <a href="/dbget-bin/www_bget?ko:K04564">K04564</a>  SOD2; superoxide dismutase, Fe-Mn family [EC:1.15.1.1]
+C    04070 Phosphatidylinositol signaling system [PATH:ko04070]
+D      PROKKA_01336 <a href="/dbget-bin/www_bget?ko:K01092">K01092</a>  E3.1.3.25, IMPA, suhB; myo-inositol-1(or 4)-monophosphatase [EC:3.1.3.25]
+D      PROKKA_00928 <a href="/dbget-bin/www_bget?ko:K00981">K00981</a>  E2.7.7.41, CDS1, CDS2, cdsA; phosphatidate cytidylyltransferase [EC:2.7.7.41]
+D      PROKKA_01556 <a href="/dbget-bin/www_bget?ko:K00981">K00981</a>  E2.7.7.41, CDS1, CDS2, cdsA; phosphatidate cytidylyltransferase [EC:2.7.7.41]
+C    04152 AMPK signaling pathway [PATH:ko04152]
+D      PROKKA_00801 <a href="/dbget-bin/www_bget?ko:K03841">K03841</a>  FBP, fbp; fructose-1,6-bisphosphatase I [EC:3.1.3.11]
+#
+A<b>Cellular Processes</b>
+B  <b>Transport and catabolism</b>
+C    04146 Peroxisome [PATH:ko04146]
+D      PROKKA_00481 <a href="/dbget-bin/www_bget?ko:K01897">K01897</a>  ACSL, fadD; long-chain acyl-CoA synthetase [EC:6.2.1.3]
+D      PROKKA_00925 <a href="/dbget-bin/www_bget?ko:K01897">K01897</a>  ACSL, fadD; long-chain acyl-CoA synthetase [EC:6.2.1.3]
+D      PROKKA_01179 <a href="/dbget-bin/www_bget?ko:K01897">K01897</a>  ACSL, fadD; long-chain acyl-CoA synthetase [EC:6.2.1.3]
+D      PROKKA_01508 <a href="/dbget-bin/www_bget?ko:K00031">K00031</a>  IDH1, IDH2, icd; isocitrate dehydrogenase [EC:1.1.1.42]
+D      PROKKA_01359 <a href="/dbget-bin/www_bget?ko:K04565">K04565</a>  SOD1; superoxide dismutase, Cu-Zn family [EC:1.15.1.1]
+D      PROKKA_00200 <a href="/dbget-bin/www_bget?ko:K04564">K04564</a>  SOD2; superoxide dismutase, Fe-Mn family [EC:1.15.1.1]
+D      PROKKA_00701 <a href="/dbget-bin/www_bget?ko:K04564">K04564</a>  SOD2; superoxide dismutase, Fe-Mn family [EC:1.15.1.1]
+C    04138 Autophagy - yeast [PATH:ko04138]
+D      PROKKA_01707 <a href="/dbget-bin/www_bget?ko:K06902">K06902</a>  UMF1; MFS transporter, UMF1 family
+B  <b>Cell growth and death</b>
+C    04112 Cell cycle - Caulobacter [PATH:ko04112]
+D      PROKKA_00124 <a href="/dbget-bin/www_bget?ko:K02313">K02313</a>  dnaA; chromosomal replication initiator protein
+D      PROKKA_01665 <a href="/dbget-bin/www_bget?ko:K02314">K02314</a>  dnaB; replicative DNA helicase [EC:3.6.4.12]
+D      PROKKA_00300 <a href="/dbget-bin/www_bget?ko:K03531">K03531</a>  ftsZ; cell division protein FtsZ
+D      PROKKA_00298 <a href="/dbget-bin/www_bget?ko:K03589">K03589</a>  ftsQ; cell division protein FtsQ
+D      PROKKA_00299 <a href="/dbget-bin/www_bget?ko:K03590">K03590</a>  ftsA; cell division protein FtsA
+D      PROKKA_00294 <a href="/dbget-bin/www_bget?ko:K03588">K03588</a>  ftsW, spoVE; cell division protein FtsW
+D      PROKKA_00295 <a href="/dbget-bin/www_bget?ko:K02563">K02563</a>  murG; UDP-N-acetylglucosamine--N-acetylmuramyl-(pentapeptide) pyrophosphoryl-undecaprenol N-acetylglucosamine transferase [EC:2.4.1.227]
+D      PROKKA_01317 <a href="/dbget-bin/www_bget?ko:K03544">K03544</a>  clpX, CLPX; ATP-dependent Clp protease ATP-binding subunit ClpX
+D      PROKKA_01449 <a href="/dbget-bin/www_bget?ko:K03544">K03544</a>  clpX, CLPX; ATP-dependent Clp protease ATP-binding subunit ClpX
+D      PROKKA_00486 <a href="/dbget-bin/www_bget?ko:K01358">K01358</a>  clpP, CLPP; ATP-dependent Clp protease, protease subunit [EC:3.4.21.92]
+D      PROKKA_01450 <a href="/dbget-bin/www_bget?ko:K01358">K01358</a>  clpP, CLPP; ATP-dependent Clp protease, protease subunit [EC:3.4.21.92]
+D      PROKKA_01150 <a href="/dbget-bin/www_bget?ko:K02651">K02651</a>  flp, pilA; pilus assembly protein Flp/PilA
+C    04216 Ferroptosis [PATH:ko04216]
+D      PROKKA_00481 <a href="/dbget-bin/www_bget?ko:K01897">K01897</a>  ACSL, fadD; long-chain acyl-CoA synthetase [EC:6.2.1.3]
+D      PROKKA_00925 <a href="/dbget-bin/www_bget?ko:K01897">K01897</a>  ACSL, fadD; long-chain acyl-CoA synthetase [EC:6.2.1.3]
+D      PROKKA_01179 <a href="/dbget-bin/www_bget?ko:K01897">K01897</a>  ACSL, fadD; long-chain acyl-CoA synthetase [EC:6.2.1.3]
+C    04217 Necroptosis [PATH:ko04217]
+D      PROKKA_01503 <a href="/dbget-bin/www_bget?ko:K01915">K01915</a>  glnA, GLUL; glutamine synthetase [EC:6.3.1.2]
+B  <b>Cellular community - prokaryotes</b>
+C    02024 Quorum sensing [PATH:ko02024]
+D      PROKKA_00121 <a href="/dbget-bin/www_bget?ko:K07173">K07173</a>  luxS; S-ribosylhomocysteine lyase [EC:4.4.1.21]
+D      PROKKA_00642 <a href="/dbget-bin/www_bget?ko:K03666">K03666</a>  hfq; host factor-I protein
+D      PROKKA_00956 <a href="/dbget-bin/www_bget?ko:K01657">K01657</a>  trpE; anthranilate synthase component I [EC:4.1.3.27]
+D      PROKKA_00957 <a href="/dbget-bin/www_bget?ko:K01658">K01658</a>  trpG; anthranilate synthase component II [EC:4.1.3.27]
+D      PROKKA_00336 <a href="/dbget-bin/www_bget?ko:K01728">K01728</a>  pel; pectate lyase [EC:4.2.2.2]
+D      PROKKA_00337 <a href="/dbget-bin/www_bget?ko:K01728">K01728</a>  pel; pectate lyase [EC:4.2.2.2]
+D      PROKKA_00481 <a href="/dbget-bin/www_bget?ko:K01897">K01897</a>  ACSL, fadD; long-chain acyl-CoA synthetase [EC:6.2.1.3]
+D      PROKKA_00925 <a href="/dbget-bin/www_bget?ko:K01897">K01897</a>  ACSL, fadD; long-chain acyl-CoA synthetase [EC:6.2.1.3]
+D      PROKKA_01179 <a href="/dbget-bin/www_bget?ko:K01897">K01897</a>  ACSL, fadD; long-chain acyl-CoA synthetase [EC:6.2.1.3]
+D      PROKKA_00723 <a href="/dbget-bin/www_bget?ko:K11752">K11752</a>  ribD; diaminohydroxyphosphoribosylaminopyrimidine deaminase / 5-amino-6-(5-phosphoribosylamino)uracil reductase [EC:3.5.4.26 1.1.1.193]
+D      PROKKA_00658 <a href="/dbget-bin/www_bget?ko:K18139">K18139</a>  oprM, emhC, ttgC, cusC, adeK, smeF, mtrE, cmeC, gesC; outer membrane protein, multidrug efflux system
+D      PROKKA_01296 <a href="/dbget-bin/www_bget?ko:K03100">K03100</a>  lepB, TPP; signal peptidase I [EC:3.4.21.89]
+D      PROKKA_01309 <a href="/dbget-bin/www_bget?ko:K02035">K02035</a>  ABC.PE.S; peptide/nickel transport system substrate-binding protein
+D      PROKKA_01310 <a href="/dbget-bin/www_bget?ko:K02033">K02033</a>  ABC.PE.P; peptide/nickel transport system permease protein
+D      PROKKA_01352 <a href="/dbget-bin/www_bget?ko:K02033">K02033</a>  ABC.PE.P; peptide/nickel transport system permease protein
+D      PROKKA_01311 <a href="/dbget-bin/www_bget?ko:K02034">K02034</a>  ABC.PE.P1; peptide/nickel transport system permease protein
+D      PROKKA_01351 <a href="/dbget-bin/www_bget?ko:K02034">K02034</a>  ABC.PE.P1; peptide/nickel transport system permease protein
+D      PROKKA_01312 <a href="/dbget-bin/www_bget?ko:K02031">K02031</a>  ABC.PE.A; peptide/nickel transport system ATP-binding protein
+D      PROKKA_01229 <a href="/dbget-bin/www_bget?ko:K03073">K03073</a>  secE; preprotein translocase subunit SecE
+D      PROKKA_00229 <a href="/dbget-bin/www_bget?ko:K03076">K03076</a>  secY; preprotein translocase subunit SecY
+D      PROKKA_00441 <a href="/dbget-bin/www_bget?ko:K03076">K03076</a>  secY; preprotein translocase subunit SecY
+D      PROKKA_00303 <a href="/dbget-bin/www_bget?ko:K03070">K03070</a>  secA; preprotein translocase subunit SecA
+D      PROKKA_00560 <a href="/dbget-bin/www_bget?ko:K03110">K03110</a>  ftsY; fused signal recognition particle receptor
+D      PROKKA_00553 <a href="/dbget-bin/www_bget?ko:K03071">K03071</a>  secB; preprotein translocase subunit SecB
+D      PROKKA_01461 <a href="/dbget-bin/www_bget?ko:K03106">K03106</a>  SRP54, ffh; signal recognition particle subunit SRP54 [EC:3.6.5.4]
+C    05111 Biofilm formation - Vibrio cholerae [PATH:ko05111]
+D      PROKKA_00121 <a href="/dbget-bin/www_bget?ko:K07173">K07173</a>  luxS; S-ribosylhomocysteine lyase [EC:4.4.1.21]
+D      PROKKA_00642 <a href="/dbget-bin/www_bget?ko:K03666">K03666</a>  hfq; host factor-I protein
+D      PROKKA_00477 <a href="/dbget-bin/www_bget?ko:K03557">K03557</a>  fis; Fis family transcriptional regulator, factor for inversion stimulation protein
+C    02025 Biofilm formation - Pseudomonas aeruginosa [PATH:ko02025]
+D      PROKKA_00956 <a href="/dbget-bin/www_bget?ko:K01657">K01657</a>  trpE; anthranilate synthase component I [EC:4.1.3.27]
+D      PROKKA_00957 <a href="/dbget-bin/www_bget?ko:K01658">K01658</a>  trpG; anthranilate synthase component II [EC:4.1.3.27]
+C    02026 Biofilm formation - Escherichia coli [PATH:ko02026]
+D      PROKKA_00546 <a href="/dbget-bin/www_bget?ko:K06204">K06204</a>  dksA; DnaK suppressor protein
+D      PROKKA_01260 <a href="/dbget-bin/www_bget?ko:K00694">K00694</a>  bcsA; cellulose synthase (UDP-forming) [EC:2.4.1.12]
+D      PROKKA_00121 <a href="/dbget-bin/www_bget?ko:K07173">K07173</a>  luxS; S-ribosylhomocysteine lyase [EC:4.4.1.21]
+D      PROKKA_01327 <a href="/dbget-bin/www_bget?ko:K04761">K04761</a>  oxyR; LysR family transcriptional regulator, hydrogen peroxide-inducible genes activator
+D      PROKKA_01439 <a href="/dbget-bin/www_bget?ko:K03567">K03567</a>  gcvR; glycine cleavage system transcriptional repressor
+D      PROKKA_01303 <a href="/dbget-bin/www_bget?ko:K07638">K07638</a>  envZ; two-component system, OmpR family, osmolarity sensor histidine kinase EnvZ [EC:2.7.13.3]
+D      PROKKA_01302 <a href="/dbget-bin/www_bget?ko:K07659">K07659</a>  ompR; two-component system, OmpR family, phosphate regulon response regulator OmpR
+B  <b>Cell motility</b>
+C    02030 Bacterial chemotaxis [PATH:ko02030]
+D      PROKKA_00376 <a href="/dbget-bin/www_bget?ko:K03406">K03406</a>  mcp; methyl-accepting chemotaxis protein
+D      PROKKA_00581 <a href="/dbget-bin/www_bget?ko:K03407">K03407</a>  cheA; two-component system, chemotaxis family, sensor kinase CheA [EC:2.7.13.3]
+D      PROKKA_00580 <a href="/dbget-bin/www_bget?ko:K03408">K03408</a>  cheW; purine-binding chemotaxis protein CheW
+D      PROKKA_00582 <a href="/dbget-bin/www_bget?ko:K03415">K03415</a>  cheV; two-component system, chemotaxis family, response regulator CheV
+D      PROKKA_00570 <a href="/dbget-bin/www_bget?ko:K02410">K02410</a>  fliG; flagellar motor switch protein FliG
+D      PROKKA_00377 <a href="/dbget-bin/www_bget?ko:K02557">K02557</a>  motB; chemotaxis protein MotB
+C    02040 Flagellar assembly [PATH:ko02040]
+D      PROKKA_00380 <a href="/dbget-bin/www_bget?ko:K02406">K02406</a>  fliC; flagellin
+D      PROKKA_00131 <a href="/dbget-bin/www_bget?ko:K02389">K02389</a>  flgD; flagellar basal-body rod modification protein FlgD
+D      PROKKA_00118 <a href="/dbget-bin/www_bget?ko:K02390">K02390</a>  flgE; flagellar hook protein FlgE
+D      PROKKA_00130 <a href="/dbget-bin/www_bget?ko:K02390">K02390</a>  flgE; flagellar hook protein FlgE
+D      PROKKA_00382 <a href="/dbget-bin/www_bget?ko:K02392">K02392</a>  flgG; flagellar basal-body rod protein FlgG
+D      PROKKA_00383 <a href="/dbget-bin/www_bget?ko:K02392">K02392</a>  flgG; flagellar basal-body rod protein FlgG
+D      PROKKA_00571 <a href="/dbget-bin/www_bget?ko:K02409">K02409</a>  fliF; flagellar M-ring protein FliF
+D      PROKKA_00570 <a href="/dbget-bin/www_bget?ko:K02410">K02410</a>  fliG; flagellar motor switch protein FliG
+D      PROKKA_00569 <a href="/dbget-bin/www_bget?ko:K02411">K02411</a>  fliH; flagellar assembly protein FliH
+D      PROKKA_00483 <a href="/dbget-bin/www_bget?ko:K02412">K02412</a>  fliI; flagellum-specific ATP synthase [EC:3.6.3.14]
+D      PROKKA_00021 <a href="/dbget-bin/www_bget?ko:K02420">K02420</a>  fliQ; flagellar biosynthetic protein FliQ
+D      PROKKA_00773 <a href="/dbget-bin/www_bget?ko:K02421">K02421</a>  fliR; flagellar biosynthetic protein FliR
+D      PROKKA_00377 <a href="/dbget-bin/www_bget?ko:K02557">K02557</a>  motB; chemotaxis protein MotB
+#
+A<b>Organismal Systems</b>
+B  <b>Immune system</b>
+C    04621 NOD-like receptor signaling pathway [PATH:ko04621]
+D      PROKKA_01154 <a href="/dbget-bin/www_bget?ko:K03671">K03671</a>  trxA; thioredoxin 1
+D      PROKKA_01418 <a href="/dbget-bin/www_bget?ko:K03671">K03671</a>  trxA; thioredoxin 1
+D      PROKKA_00380 <a href="/dbget-bin/www_bget?ko:K02406">K02406</a>  fliC; flagellin
+B  <b>Endocrine system</b>
+C    04910 Insulin signaling pathway [PATH:ko04910]
+D      PROKKA_00801 <a href="/dbget-bin/www_bget?ko:K03841">K03841</a>  FBP, fbp; fructose-1,6-bisphosphatase I [EC:3.1.3.11]
+C    04920 Adipocytokine signaling pathway [PATH:ko04920]
+D      PROKKA_00481 <a href="/dbget-bin/www_bget?ko:K01897">K01897</a>  ACSL, fadD; long-chain acyl-CoA synthetase [EC:6.2.1.3]
+D      PROKKA_00925 <a href="/dbget-bin/www_bget?ko:K01897">K01897</a>  ACSL, fadD; long-chain acyl-CoA synthetase [EC:6.2.1.3]
+D      PROKKA_01179 <a href="/dbget-bin/www_bget?ko:K01897">K01897</a>  ACSL, fadD; long-chain acyl-CoA synthetase [EC:6.2.1.3]
+C    03320 PPAR signaling pathway [PATH:ko03320]
+D      PROKKA_00481 <a href="/dbget-bin/www_bget?ko:K01897">K01897</a>  ACSL, fadD; long-chain acyl-CoA synthetase [EC:6.2.1.3]
+D      PROKKA_00925 <a href="/dbget-bin/www_bget?ko:K01897">K01897</a>  ACSL, fadD; long-chain acyl-CoA synthetase [EC:6.2.1.3]
+D      PROKKA_01179 <a href="/dbget-bin/www_bget?ko:K01897">K01897</a>  ACSL, fadD; long-chain acyl-CoA synthetase [EC:6.2.1.3]
+D      PROKKA_01281 <a href="/dbget-bin/www_bget?ko:K00864">K00864</a>  glpK, GK; glycerol kinase [EC:2.7.1.30]
+B  <b>Circulatory system</b>
+C    04260 Cardiac muscle contraction [PATH:ko04260]
+D      PROKKA_00760 <a href="/dbget-bin/www_bget?ko:K00411">K00411</a>  UQCRFS1, RIP1, petA; ubiquinol-cytochrome c reductase iron-sulfur subunit [EC:1.10.2.2]
+D      PROKKA_00759 <a href="/dbget-bin/www_bget?ko:K00412">K00412</a>  CYTB, petB; ubiquinol-cytochrome c reductase cytochrome b subunit
+D      PROKKA_00758 <a href="/dbget-bin/www_bget?ko:K00413">K00413</a>  CYC1, CYT1, petC; ubiquinol-cytochrome c reductase cytochrome c1 subunit
+B  <b>Nervous system</b>
+C    04724 Glutamatergic synapse [PATH:ko04724]
+D      PROKKA_01503 <a href="/dbget-bin/www_bget?ko:K01915">K01915</a>  glnA, GLUL; glutamine synthetase [EC:6.3.1.2]
+C    04727 GABAergic synapse [PATH:ko04727]
+D      PROKKA_01503 <a href="/dbget-bin/www_bget?ko:K01915">K01915</a>  glnA, GLUL; glutamine synthetase [EC:6.3.1.2]
+B  <b>Aging</b>
+C    04211 Longevity regulating pathway - mammal [PATH:ko04211]
+D      PROKKA_00200 <a href="/dbget-bin/www_bget?ko:K04564">K04564</a>  SOD2; superoxide dismutase, Fe-Mn family [EC:1.15.1.1]
+D      PROKKA_00701 <a href="/dbget-bin/www_bget?ko:K04564">K04564</a>  SOD2; superoxide dismutase, Fe-Mn family [EC:1.15.1.1]
+C    04212 Longevity regulating pathway - worm [PATH:ko04212]
+D      PROKKA_00200 <a href="/dbget-bin/www_bget?ko:K04564">K04564</a>  SOD2; superoxide dismutase, Fe-Mn family [EC:1.15.1.1]
+D      PROKKA_00701 <a href="/dbget-bin/www_bget?ko:K04564">K04564</a>  SOD2; superoxide dismutase, Fe-Mn family [EC:1.15.1.1]
+D      PROKKA_00486 <a href="/dbget-bin/www_bget?ko:K01358">K01358</a>  clpP, CLPP; ATP-dependent Clp protease, protease subunit [EC:3.4.21.92]
+D      PROKKA_01450 <a href="/dbget-bin/www_bget?ko:K01358">K01358</a>  clpP, CLPP; ATP-dependent Clp protease, protease subunit [EC:3.4.21.92]
+D      PROKKA_00688 <a href="/dbget-bin/www_bget?ko:K04077">K04077</a>  groEL, HSPD1; chaperonin GroEL
+C    04213 Longevity regulating pathway - multiple species [PATH:ko04213]
+D      PROKKA_00200 <a href="/dbget-bin/www_bget?ko:K04564">K04564</a>  SOD2; superoxide dismutase, Fe-Mn family [EC:1.15.1.1]
+D      PROKKA_00701 <a href="/dbget-bin/www_bget?ko:K04564">K04564</a>  SOD2; superoxide dismutase, Fe-Mn family [EC:1.15.1.1]
+D      PROKKA_01359 <a href="/dbget-bin/www_bget?ko:K04565">K04565</a>  SOD1; superoxide dismutase, Cu-Zn family [EC:1.15.1.1]
+D      PROKKA_01087 <a href="/dbget-bin/www_bget?ko:K03695">K03695</a>  clpB; ATP-dependent Clp protease ATP-binding subunit ClpB
+B  <b>Environmental adaptation</b>
+C    04626 Plant-pathogen interaction [PATH:ko04626]
+D      PROKKA_00380 <a href="/dbget-bin/www_bget?ko:K02406">K02406</a>  fliC; flagellin
+D      PROKKA_01281 <a href="/dbget-bin/www_bget?ko:K00864">K00864</a>  glpK, GK; glycerol kinase [EC:2.7.1.30]
+#
+A<b>Human Diseases</b>
+B  <b>Cancers</b>
+C    05205 Proteoglycans in cancer [PATH:ko05205]
+D      PROKKA_01297 <a href="/dbget-bin/www_bget?ko:K03685">K03685</a>  rnc, DROSHA, RNT1; ribonuclease III [EC:3.1.26.3]
+D      PROKKA_01427 <a href="/dbget-bin/www_bget?ko:K03685">K03685</a>  rnc, DROSHA, RNT1; ribonuclease III [EC:3.1.26.3]
+B  <b>Immune diseases</b>
+C    05340 Primary immunodeficiency [PATH:ko05340]
+D      PROKKA_01550 <a href="/dbget-bin/www_bget?ko:K01488">K01488</a>  add, ADA; adenosine deaminase [EC:3.5.4.4]
+D      PROKKA_00910 <a href="/dbget-bin/www_bget?ko:K03648">K03648</a>  UNG, UDG; uracil-DNA glycosylase [EC:3.2.2.27]
+B  <b>Neurodegenerative diseases</b>
+C    05010 Alzheimer's disease [PATH:ko05010]
+D      PROKKA_00765 <a href="/dbget-bin/www_bget?ko:K00134">K00134</a>  GAPDH, gapA; glyceraldehyde 3-phosphate dehydrogenase [EC:1.2.1.12]
+D      PROKKA_00760 <a href="/dbget-bin/www_bget?ko:K00411">K00411</a>  UQCRFS1, RIP1, petA; ubiquinol-cytochrome c reductase iron-sulfur subunit [EC:1.10.2.2]
+D      PROKKA_00759 <a href="/dbget-bin/www_bget?ko:K00412">K00412</a>  CYTB, petB; ubiquinol-cytochrome c reductase cytochrome b subunit
+D      PROKKA_00758 <a href="/dbget-bin/www_bget?ko:K00413">K00413</a>  CYC1, CYT1, petC; ubiquinol-cytochrome c reductase cytochrome c1 subunit
+C    05012 Parkinson's disease [PATH:ko05012]
+D      PROKKA_00760 <a href="/dbget-bin/www_bget?ko:K00411">K00411</a>  UQCRFS1, RIP1, petA; ubiquinol-cytochrome c reductase iron-sulfur subunit [EC:1.10.2.2]
+D      PROKKA_00759 <a href="/dbget-bin/www_bget?ko:K00412">K00412</a>  CYTB, petB; ubiquinol-cytochrome c reductase cytochrome b subunit
+D      PROKKA_00758 <a href="/dbget-bin/www_bget?ko:K00413">K00413</a>  CYC1, CYT1, petC; ubiquinol-cytochrome c reductase cytochrome c1 subunit
+C    05014 Amyotrophic lateral sclerosis (ALS) [PATH:ko05014]
+D      PROKKA_01359 <a href="/dbget-bin/www_bget?ko:K04565">K04565</a>  SOD1; superoxide dismutase, Cu-Zn family [EC:1.15.1.1]
+C    05016 Huntington's disease [PATH:ko05016]
+D      PROKKA_01359 <a href="/dbget-bin/www_bget?ko:K04565">K04565</a>  SOD1; superoxide dismutase, Cu-Zn family [EC:1.15.1.1]
+D      PROKKA_00200 <a href="/dbget-bin/www_bget?ko:K04564">K04564</a>  SOD2; superoxide dismutase, Fe-Mn family [EC:1.15.1.1]
+D      PROKKA_00701 <a href="/dbget-bin/www_bget?ko:K04564">K04564</a>  SOD2; superoxide dismutase, Fe-Mn family [EC:1.15.1.1]
+D      PROKKA_00760 <a href="/dbget-bin/www_bget?ko:K00411">K00411</a>  UQCRFS1, RIP1, petA; ubiquinol-cytochrome c reductase iron-sulfur subunit [EC:1.10.2.2]
+D      PROKKA_00759 <a href="/dbget-bin/www_bget?ko:K00412">K00412</a>  CYTB, petB; ubiquinol-cytochrome c reductase cytochrome b subunit
+D      PROKKA_00758 <a href="/dbget-bin/www_bget?ko:K00413">K00413</a>  CYC1, CYT1, petC; ubiquinol-cytochrome c reductase cytochrome c1 subunit
+C    05020 Prion diseases [PATH:ko05020]
+D      PROKKA_01359 <a href="/dbget-bin/www_bget?ko:K04565">K04565</a>  SOD1; superoxide dismutase, Cu-Zn family [EC:1.15.1.1]
+B  <b>Cardiovascular diseases</b>
+C    05418 Fluid shear stress and atherosclerosis [PATH:ko05418]
+D      PROKKA_01154 <a href="/dbget-bin/www_bget?ko:K03671">K03671</a>  trxA; thioredoxin 1
+D      PROKKA_01418 <a href="/dbget-bin/www_bget?ko:K03671">K03671</a>  trxA; thioredoxin 1
+B  <b>Endocrine and metabolic diseases</b>
+C    04940 Type I diabetes mellitus [PATH:ko04940]
+D      PROKKA_00688 <a href="/dbget-bin/www_bget?ko:K04077">K04077</a>  groEL, HSPD1; chaperonin GroEL
+C    04932 Non-alcoholic fatty liver disease (NAFLD) [PATH:ko04932]
+D      PROKKA_00760 <a href="/dbget-bin/www_bget?ko:K00411">K00411</a>  UQCRFS1, RIP1, petA; ubiquinol-cytochrome c reductase iron-sulfur subunit [EC:1.10.2.2]
+D      PROKKA_00759 <a href="/dbget-bin/www_bget?ko:K00412">K00412</a>  CYTB, petB; ubiquinol-cytochrome c reductase cytochrome b subunit
+D      PROKKA_00758 <a href="/dbget-bin/www_bget?ko:K00413">K00413</a>  CYC1, CYT1, petC; ubiquinol-cytochrome c reductase cytochrome c1 subunit
+B  <b>Infectious diseases</b>
+C    05120 Epithelial cell signaling in Helicobacter pylori infection [PATH:ko05120]
+D      PROKKA_00464 <a href="/dbget-bin/www_bget?ko:K08303">K08303</a>  K08303; putative protease [EC:3.4.-.-]
+C    05132 Salmonella infection [PATH:ko05132]
+D      PROKKA_00380 <a href="/dbget-bin/www_bget?ko:K02406">K02406</a>  fliC; flagellin
+D      PROKKA_00460 <a href="/dbget-bin/www_bget?ko:K03385">K03385</a>  nrfA; nitrite reductase (cytochrome c-552) [EC:1.7.2.2]
+D      PROKKA_01648 <a href="/dbget-bin/www_bget?ko:K03385">K03385</a>  nrfA; nitrite reductase (cytochrome c-552) [EC:1.7.2.2]
+C    05133 Pertussis [PATH:ko05133]
+D      PROKKA_00683 <a href="/dbget-bin/www_bget?ko:K12973">K12973</a>  pagP, crcA; lipid IVA palmitoyltransferase [EC:2.3.1.251]
+C    05134 Legionellosis [PATH:ko05134]
+D      PROKKA_00688 <a href="/dbget-bin/www_bget?ko:K04077">K04077</a>  groEL, HSPD1; chaperonin GroEL
+D      PROKKA_01295 <a href="/dbget-bin/www_bget?ko:K03596">K03596</a>  lepA; GTP-binding protein LepA
+D      PROKKA_00380 <a href="/dbget-bin/www_bget?ko:K02406">K02406</a>  fliC; flagellin
+C    05152 Tuberculosis [PATH:ko05152]
+D      PROKKA_01201 <a href="/dbget-bin/www_bget?ko:K02040">K02040</a>  pstS; phosphate transport system substrate-binding protein
+D      PROKKA_00688 <a href="/dbget-bin/www_bget?ko:K04077">K04077</a>  groEL, HSPD1; chaperonin GroEL
+B  <b>Drug resistance</b>
+C    01501 beta-Lactam resistance [PATH:ko01501]
+D      PROKKA_01031 <a href="/dbget-bin/www_bget?ko:K01207">K01207</a>  nagZ; beta-N-acetylhexosaminidase [EC:3.2.1.52]
+D      PROKKA_00660 <a href="/dbget-bin/www_bget?ko:K03585">K03585</a>  acrA, mexA, adeI, smeD, mtrC, cmeA; membrane fusion protein, multidrug efflux system
+D      PROKKA_00659 <a href="/dbget-bin/www_bget?ko:K18138">K18138</a>  acrB, mexB, adeJ, smeE, mtrD, cmeB; multidrug efflux pump
+D      PROKKA_00658 <a href="/dbget-bin/www_bget?ko:K18139">K18139</a>  oprM, emhC, ttgC, cusC, adeK, smeF, mtrE, cmeC, gesC; outer membrane protein, multidrug efflux system
+D      PROKKA_00409 <a href="/dbget-bin/www_bget?ko:K05366">K05366</a>  mrcA; penicillin-binding protein 1A [EC:2.4.1.129 3.4.16.4]
+D      PROKKA_00428 <a href="/dbget-bin/www_bget?ko:K05366">K05366</a>  mrcA; penicillin-binding protein 1A [EC:2.4.1.129 3.4.16.4]
+D      PROKKA_01586 <a href="/dbget-bin/www_bget?ko:K05515">K05515</a>  mrdA; penicillin-binding protein 2 [EC:3.4.16.4]
+D      PROKKA_00289 <a href="/dbget-bin/www_bget?ko:K03587">K03587</a>  ftsI; cell division protein FtsI (penicillin-binding protein 3) [EC:3.4.16.4]
+C    01502 Vancomycin resistance [PATH:ko01502]
+D      PROKKA_00297 <a href="/dbget-bin/www_bget?ko:K01921">K01921</a>  ddl; D-alanine-D-alanine ligase [EC:6.3.2.4]
+D      PROKKA_00291 <a href="/dbget-bin/www_bget?ko:K01929">K01929</a>  murF; UDP-N-acetylmuramoyl-tripeptide--D-alanyl-D-alanine ligase [EC:6.3.2.10]
+D      PROKKA_00292 <a href="/dbget-bin/www_bget?ko:K01000">K01000</a>  mraY; phospho-N-acetylmuramoyl-pentapeptide-transferase [EC:2.7.8.13]
+D      PROKKA_00775 <a href="/dbget-bin/www_bget?ko:K01000">K01000</a>  mraY; phospho-N-acetylmuramoyl-pentapeptide-transferase [EC:2.7.8.13]
+D      PROKKA_00295 <a href="/dbget-bin/www_bget?ko:K02563">K02563</a>  murG; UDP-N-acetylglucosamine--N-acetylmuramyl-(pentapeptide) pyrophosphoryl-undecaprenol N-acetylglucosamine transferase [EC:2.4.1.227]
+C    01503 Cationic antimicrobial peptide (CAMP) resistance [PATH:ko01503]
+D      PROKKA_00683 <a href="/dbget-bin/www_bget?ko:K12973">K12973</a>  pagP, crcA; lipid IVA palmitoyltransferase [EC:2.3.1.251]
+D      PROKKA_00407 <a href="/dbget-bin/www_bget?ko:K03760">K03760</a>  eptA, pmrC; lipid A ethanolaminephosphotransferase [EC:2.7.8.43]
+D      PROKKA_01634 <a href="/dbget-bin/www_bget?ko:K03760">K03760</a>  eptA, pmrC; lipid A ethanolaminephosphotransferase [EC:2.7.8.43]
+D      PROKKA_00369 <a href="/dbget-bin/www_bget?ko:K01448">K01448</a>  E3.5.1.28B, amiA, amiB, amiC; N-acetylmuramoyl-L-alanine amidase [EC:3.5.1.28]
+D      PROKKA_01005 <a href="/dbget-bin/www_bget?ko:K03673">K03673</a>  dsbA; thiol:disulfide interchange protein DsbA
+D      PROKKA_01025 <a href="/dbget-bin/www_bget?ko:K03673">K03673</a>  dsbA; thiol:disulfide interchange protein DsbA
+D      PROKKA_00660 <a href="/dbget-bin/www_bget?ko:K03585">K03585</a>  acrA, mexA, adeI, smeD, mtrC, cmeA; membrane fusion protein, multidrug efflux system
+D      PROKKA_00659 <a href="/dbget-bin/www_bget?ko:K18138">K18138</a>  acrB, mexB, adeJ, smeE, mtrD, cmeB; multidrug efflux pump
+D      PROKKA_01316 <a href="/dbget-bin/www_bget?ko:K00677">K00677</a>  lpxA; UDP-N-acetylglucosamine acyltransferase [EC:2.3.1.129]
+C    01523 Antifolate resistance [PATH:ko01523]
+D      PROKKA_01215 <a href="/dbget-bin/www_bget?ko:K00560">K00560</a>  thyA, TYMS; thymidylate synthase [EC:2.1.1.45]
+D      PROKKA_01216 <a href="/dbget-bin/www_bget?ko:K00287">K00287</a>  folA; dihydrofolate reductase [EC:1.5.1.3]
+D      PROKKA_00476 <a href="/dbget-bin/www_bget?ko:K00602">K00602</a>  purH; phosphoribosylaminoimidazolecarboxamide formyltransferase / IMP cyclohydrolase [EC:2.1.2.3 3.5.4.10]
+!
+#<hr>
+#<b>[ <a href="/kegg/brite.html">BRITE</a> | <a href="/kegg/kegg2.html">KEGG2</a> | <a href="/kegg/">KEGG</a> ]</b><br>
+#Last updated: July 2, 2017

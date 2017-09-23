@@ -1,0 +1,1624 @@
+---
+title: "Comparitive genomics of Campylobacter concisus"
+output: html_document
+---
+
+# Matthew R. Gemmell, Susan Berry, Indrani Mukhopadhya, Richard Hansen, Hans L. Nielsen, Mona Bajaj-Elliott, Henrik Nielsen, Georgina L. Hold
+
+This document contains all figure production carried out in R for the manuscript
+
+All datat to reproduce analysis can be found here: https://github.com/m-gemmell/Gemmell_et_al_Campy_concisus_comparative_genomics.git
+
+### Figure 1: Overview of genome assemblies of Campylobacter concisus strains
+```{r Assembly_assement_barcharts}
+### Load the package or install if not present
+if (!require("ggplot2")) {install.packages("ggplot2")
+  library(ggplot2)}
+if (!require("RColorBrewer")) {install.packages("RColorBrewer")
+  library(RColorBrewer)}
+if (!require("tidyr")) {install.packages("tidyr")
+  library(tidyr)}
+
+#read in file
+info <- read.csv("overall_concise_overview.txt", sep = "\t", check.names = FALSE)
+
+#Wide to long format
+info_long <- gather(info, metric, value, 2:5)
+#Convert NAs to zer
+info_long$value <- gsub("N/A", 0, info_long$value)
+info_long$value <- as.numeric(info_long$value)
+
+#Reorder Samples
+samples <- as.character(info$Sample)
+info_long$Sample <- factor(as.factor(info_long$Sample), levels = as.character(info$Sample))
+#Reorder metrics
+info_long$metric <- factor(as.factor(info_long$metric), levels = as.character(colnames(info)[2:5]))
+
+#Plot bar charts
+#COlour palette
+#Set colours
+col.brew <- c(brewer.pal(9, "Set1"),brewer.pal(8,"Set2"),brewer.pal(12,"Set3"),
+              brewer.pal(9, "Set1"),brewer.pal(8,"Set2"),brewer.pal(12,"Set3"),
+              brewer.pal(9, "Set1"),brewer.pal(8,"Set2"),brewer.pal(12,"Set3"))
+
+g_bar <- ggplot(info_long, aes(x = Sample, y=value, fill=Sample)) + 
+  geom_bar(stat="identity", position="Dodge",colour="Black") +
+  scale_fill_manual(values=col.brew) +
+  facet_wrap(~ metric, ncol = 1 ) +
+  labs(y = "Percentage") +
+  theme(text= element_text(size=8), axis.text.y  = element_text(size=8), 
+        axis.text.x  = element_text(size=7, angle = 60, hjust = 1),
+        legend.position = "none",
+        plot.margin=unit(c(1,1,1,1),"mm")) +
+  scale_y_continuous(breaks = round(seq(min(0), max(100), by = 25),1))
+ggsave("Fig1_Overview_of_genome_assmeblies_of_campylobacter_concisus_strains.pdf", 
+       g_bar, units="mm", height=220, width=170, dpi=300)
+ggsave("Fig1_Overview_of_genome_assmeblies_of_campylobacter_concisus_strains.png", 
+       g_bar, units="mm", height=220, width=170, dpi=300)
+```
+```{r Assembly_assement_barcharts_figure, echo=FALSE}
+g_bar
+#clear workspace
+rm(list = ls())
+```
+
+### Figure 3: Presence of Virulence factors in genomes of isolates sequenced for this study
+```{r card_vfdb_all_heatmap}
+#Loading libraries
+if (!require("gplots")) {install.packages("gplots")
+  library(gplots)}
+if (!require("RColorBrewer")) {install.packages("RColorBrewer")
+  library(RColorBrewer)}
+
+#Read in CARD and VFDB data
+CARD <- read.csv("CARD_exclude_loose_summary.txt", sep = "\t", row.names = 1)
+VFDB <- read.csv("VFDB_all_short_gene_summary.txt", sep = "\t", row.names = 1)
+#Read in metadata
+meta <-read.csv("Concisus_our_study_metadata.csv")
+seq_samples <- meta$SeqSampleName
+
+#Kepp only our samples
+CARD_our <- subset(CARD, rownames(CARD) %in% seq_samples)
+VFDB_our <- subset(VFDB, rownames(VFDB) %in% seq_samples)
+
+#Now to bind the VFDB and CARD data
+CARD_VFDB_our <- cbind(CARD_our, VFDB_our)
+
+#give some of the genes shorter names
+colnames(CARD_VFDB_our)[c(5,10,12)] <- c("ecoli_gyrA", "mtubercolis_gyrA", "saureus_rpoB")
+
+#order the metadata and CARD and VFDB data
+CARD_VFDB_our <- CARD_VFDB_our[order(rownames(CARD_VFDB_our)),]
+meta <- meta[order(meta$SeqSampleName),]
+#check ifthey are the same
+stopifnot(rownames(CARD_VFDB_our) == meta$SeqSampleName)
+
+#Now change the sample names to better names
+rownames(CARD_VFDB_our) <- meta$SampleName
+
+#change any occurence of a number greater than 1 to a 1
+CARD_VFDB_our[ CARD_VFDB_our > 1] <- 1
+#remove any column where sum is equal to 0
+CARD_VFDB_our <- CARD_VFDB_our[,colSums(CARD_VFDB_our) >= 1,]
+
+#producing heatmaps of presence absence data
+#Function
+produce_heatmap <- function(png_file_name, dat, meta, 
+                            png_mm_width, png_mm_height, 
+                            cex_colum_labels, cex_row_labels,
+                            column_margin_size, row_margin_size,
+                            width_dendogram_size,width_heatmap_size,
+                            height_dendogram_size, height_heatmap_size){
+  png(png_file_name, width = png_mm_width, height = png_mm_height, res = 300, units = "mm")
+  heatmap.2(as.matrix(dat),
+            RowSideColors = meta,
+            cexRow = cex_row_labels,
+            cexCol = cex_colum_labels,
+            offsetRow=0.000001,
+            offsetCol = 0.000001,
+            margins = c(column_margin_size,row_margin_size),
+            key.xlab="presence/absence",
+            key.ylab = "",
+            key.par=list(mar=c(2,2,0.5,0.75), cex=0.4),
+            #rotate column labels
+            srtCol = 45,
+            key.title=NA,
+            trace="none",
+            lwid=c( width_dendogram_size,width_heatmap_size),
+            lhei=c(height_dendogram_size, height_heatmap_size),
+            col=function(x)rev(heat.colors(x)))
+  
+  dev.off()
+}
+#pdf colour by faecal or oral
+produce_heatmap("Fig3_Presence_of_virulence_factors_in_genomes_of_isolates_sequenced_for_this_study_meta_disease_heatmap.png", 
+                CARD_VFDB_our, as.character(meta$DiseaseColour),
+                png_mm_width=150, png_mm_height=150, 
+                cex_colum_labels=0.7, cex_row_labels=0.7,
+                column_margin_size=7, row_margin_size=6,
+                #Size ratios of dendogram to heatmap
+                width_dendogram_size=1,width_heatmap_size=4.5,
+                height_dendogram_size=1, height_heatmap_size=10)
+#pdf colour by participant
+produce_heatmap("Fig3_Presence_of_virulence_factors_in_genomes_of_isolates_sequenced_for_this_study_meta_GS_heatmap.png", 
+                CARD_VFDB_our, as.character(meta$GSColour),
+                png_mm_width=150, png_mm_height=150, 
+                cex_colum_labels=0.7, cex_row_labels=0.7,
+                column_margin_size=7, row_margin_size=6,
+                #Size ratios of dendogram to heatmap
+                width_dendogram_size=1,width_heatmap_size=4.5,
+                height_dendogram_size=1, height_heatmap_size=10)
+```
+```{r card_vfdb_all_heatmap_figure, echo=FALSE}
+#producing heatmaps of presence absence data
+#Function
+produce_heatmap <- function(pdf_file_name, dat, meta, 
+                            pdf_mm_width, pdf_mm_height, 
+                            cex_colum_labels, cex_row_labels,
+                            column_margin_size, row_margin_size,
+                            width_dendogram_size,width_heatmap_size,
+                            height_dendogram_size, height_heatmap_size){
+  heatmap.2(as.matrix(dat),
+            RowSideColors = meta,
+            cexRow = cex_row_labels,
+            cexCol = cex_colum_labels,
+            offsetRow=0.000001,
+            offsetCol = 0.000001,
+            margins = c(column_margin_size,row_margin_size),
+            key.xlab="presence/absence",
+            key.ylab = "",
+            key.par=list(mar=c(2,2,0.5,0.75), cex=0.4),
+            #rotate column labels
+            srtCol = 45,
+            key.title=NA,
+            trace="none",
+            lwid=c( width_dendogram_size,width_heatmap_size),
+            lhei=c(height_dendogram_size, height_heatmap_size),
+            col=function(x)rev(heat.colors(x)))
+  
+
+}
+#pdf colour by faecal or oral
+produce_heatmap("CARD_all_VFDB_meta_disease_heatmap.pdf", 
+                CARD_VFDB_our, as.character(meta$DiseaseColour),
+                pdf_mm_width=200, pdf_mm_height=150, 
+                cex_colum_labels=0.7, cex_row_labels=0.7,
+                column_margin_size=5, row_margin_size=10,
+                #Size ratios of dendogram to heatmap
+                width_dendogram_size=1,width_heatmap_size=4.5,
+                height_dendogram_size=1, height_heatmap_size=10)
+#pdf colour by participant
+produce_heatmap("CARD_all_VFDB_meta_GS_heatmap.pdf", 
+                CARD_VFDB_our, as.character(meta$GSColour),
+                pdf_mm_width=200, pdf_mm_height=150, 
+                cex_colum_labels=0.7, cex_row_labels=0.7,
+                column_margin_size=5, row_margin_size=10,
+                #Size ratios of dendogram to heatmap
+                width_dendogram_size=1,width_heatmap_size=4.5,
+                height_dendogram_size=1, height_heatmap_size=10)
+
+```
+
+### Figure 4: T4SS and T6SS presence within the Assembled genomes
+```{r T4SS_T6SS_pangenome_heatmap}
+if (!require("gplots")) {install.packages("gplots")
+  library(gplots)}
+
+##read in pangenome kegg file
+pangenoem_KEGG <- read.csv("all_concisus_pangenome_and_KEGG_BRITE_table.csv",
+                           check.names = FALSE, row.names = 1)
+#read in metadata
+metadata <- read.csv("Concisus_metadata.csv")
+
+#get only secretion system genes
+secretion_system <- pangenoem_KEGG[grep("secretion system", pangenoem_KEGG$D),]
+#Remove unimportant information columns
+secretion_system <- secretion_system[,7:97]
+#COmbine rows with the same gene
+secretion_system <- aggregate(. ~ D + D_shorthand, data = secretion_system, sum)
+#Change into presence absence table
+secretion_system[secretion_system > 1] <- 1
+
+#Now produce heatmap
+#order metatdata_heatmap to match order of heatmap data
+samples <- colnames(secretion_system)[3:ncol(secretion_system)]
+metadata <- metadata[order(match(metadata$SeqSampleName, samples)),]
+#Get df ready for heatmap
+row.names(secretion_system) <- secretion_system[,1]
+secretion_system <- secretion_system[,3:ncol(secretion_system)]
+colnames(secretion_system) <- metadata$SampleName
+secretion_system_mat <- as.matrix(secretion_system)
+
+
+#Time for heatmap
+#producing heatmaps of presence absence data
+#Function
+produce_heatmap <- function(png_file_name, dat, meta, 
+                            png_mm_width, png_mm_height, 
+                            cex_colum_labels, cex_row_labels,
+                            column_margin_size, row_margin_size,
+                            width_dendogram_size,width_heatmap_size,
+                            height_dendogram_size, height_heatmap_size){
+  png(png_file_name, width = png_mm_width, height = png_mm_height, units="mm", res = 300)
+  heatmap.2(as.matrix(dat),
+            RowSideColors = meta,
+            cexRow = cex_row_labels,
+            cexCol = cex_colum_labels,
+            offsetRow=0.000001,
+            offsetCol = 0.000001,
+            margins = c(column_margin_size,row_margin_size),
+            key.xlab="presence/absence",
+            key.ylab = "",
+            key.par=list(mar=c(2,2,0.5,0.75), cex=0.4),
+            #rotate column labels
+            srtCol = 45,
+            key.title=NA,
+            trace="none",
+            lwid=c( width_dendogram_size,width_heatmap_size),
+            lhei=c(height_dendogram_size, height_heatmap_size),
+            col=function(x)rev(heat.colors(x)))
+  
+  dev.off()
+}
+#png with colouring by GS
+produce_heatmap("Fig4_T4SS_and_T6SS_presence_within_the_assembled_genomes_GS_colour_heatmap.png", 
+                t(secretion_system_mat), meta = as.character(metadata$GSColour),
+                png_mm_width=160, png_mm_height=200, 
+                cex_colum_labels=0.6, cex_row_labels=0.6,
+                column_margin_size=9, row_margin_size=8,
+                #Size ratios of dendogram to heatmap
+                width_dendogram_size=1,width_heatmap_size=4.5,
+                height_dendogram_size=1, height_heatmap_size=10)
+#png with colouring by disease presentation
+produce_heatmap("Fig4_T4SS_and_T6SS_presence_within_the_assembled_genomes_disease_colour_heatmap.png", 
+                t(secretion_system_mat), meta = as.character(metadata$DiseaseColour),
+                png_mm_width=160, png_mm_height=200, 
+                cex_colum_labels=0.6, cex_row_labels=0.6,
+                column_margin_size=9, row_margin_size=8,
+                #Size ratios of dendogram to heatmap
+                width_dendogram_size=1,width_heatmap_size=4.5,
+                height_dendogram_size=1, height_heatmap_size=10)
+```
+```{r T4SS_T6SS_pangenome_heatmap_figure, echo=FALSE}
+#Time for heatmap
+#producing heatmaps of presence absence data
+#Function
+produce_heatmap <- function(png_file_name, dat, meta, 
+                            png_mm_width, png_mm_height, 
+                            cex_colum_labels, cex_row_labels,
+                            column_margin_size, row_margin_size,
+                            width_dendogram_size,width_heatmap_size,
+                            height_dendogram_size, height_heatmap_size){
+  png(png_file_name, width = png_mm_width, height = png_mm_height, units="mm", res = 300)
+  heatmap.2(as.matrix(dat),
+            RowSideColors = meta,
+            cexRow = cex_row_labels,
+            cexCol = cex_colum_labels,
+            offsetRow=0.000001,
+            offsetCol = 0.000001,
+            margins = c(column_margin_size,row_margin_size),
+            key.xlab="presence/absence",
+            key.ylab = "",
+            key.par=list(mar=c(2,2,0.5,0.75), cex=0.4),
+            #rotate column labels
+            srtCol = 45,
+            key.title=NA,
+            trace="none",
+            lwid=c( width_dendogram_size,width_heatmap_size),
+            lhei=c(height_dendogram_size, height_heatmap_size),
+            col=function(x)rev(heat.colors(x)))
+  
+  dev.off()
+}
+#png with colouring by GS
+produce_heatmap("Fig4_T4SS_and_T6SS_presence_within_the_assembled_genomes_GS_colour_heatmap.png", 
+                t(secretion_system_mat), meta = as.character(metadata$GSColour),
+                png_mm_width=150, png_mm_height=200, 
+                cex_colum_labels=0.6, cex_row_labels=0.6,
+                column_margin_size=9, row_margin_size=8,
+                #Size ratios of dendogram to heatmap
+                width_dendogram_size=1,width_heatmap_size=4.5,
+                height_dendogram_size=1, height_heatmap_size=10)
+#png with colouring by disease presentation
+produce_heatmap("Fig4_T4SS_and_T6SS_presence_within_the_assembled_genomes_disease_colour_heatmap.png", 
+                t(secretion_system_mat), meta = as.character(metadata$DiseaseColour),
+                png_mm_width=150, png_mm_height=200, 
+                cex_colum_labels=0.6, cex_row_labels=0.6,
+                column_margin_size=9, row_margin_size=8,
+                #Size ratios of dendogram to heatmap
+                width_dendogram_size=1,width_heatmap_size=4.5,
+                height_dendogram_size=1, height_heatmap_size=10)
+```
+
+
+### Figure 5: Pangenome summary of all C. concisus used in this study
+```{r Concisus_pangenome_polyfreq}
+### Load the package or install if not present
+if (!require("RColorBrewer")) {install.packages("RColorBrewer")
+  library(RColorBrewer)}
+if (!require("ggplot2")) {install.packages("ggplot2")
+  library(ggplot2)}
+#read in edited files
+df <- read.csv("concisus_gene_presence_absence.Rtab", sep = "\t", check.names = FALSE)
+#edit to remove genes and make them row names
+rownames(df) <- df[,1]
+df <- df[,-1]
+
+#Df with everything
+everything <- df
+#df of our study samples
+our_study <- df[,c(2:49,53:57)]
+#df of publicly available samples
+public_samples <- df[,c(1,50:52,58:ncol(df))]
+
+#produce DFs of GS1 and GS2
+#read in metadata of GS grouping
+GS_metadata <- read.csv("GS_info.txt", sep = "\t")
+sample_names <- colnames(everything)
+#Order GS metadata by sample_names
+GS_metadata_order <- GS_metadata[match(sample_names, GS_metadata$SeqSampleNames),]
+GS_metadata_order_t <- t(GS_metadata)
+#GS1 df
+GS1 <- everything[,GS_metadata_order_t["GS",] == 1]
+GS2 <- everything[,GS_metadata_order_t["GS",] == 2]
+
+#Produce DF for genes only in GS1 and only in GS2
+GS1_only <- GS1[rowSums(GS2) == 0,]
+GS2_only <- GS2[rowSums(GS1) == 0,]
+
+#make list of data frames
+list_df <- list(everything, our_study, public_samples, GS1, GS2, GS1_only, GS2_only)
+
+#empty data frame to put info
+pangenome_stats_df <- data.frame(matrix(NA, ncol = length(list_df),
+                                     nrow = 5))
+row.names(pangenome_stats_df) <- c("Core genes", "Soft core genes",
+                                "Shell genes", "Cloud genes",
+                                "Total genes")
+colnames(pangenome_stats_df) <- c("Everything", "our study",
+                                  "public samples", "GS1", "GS2", "GS1 only", "GS2 only")
+
+#loop to summary info of pangenomes for differnet subset
+for (n in 1:length(list_df)){
+x <- list_df[[n]]
+#remove genes with no information
+x <- x[rowSums(x) > 0,]
+#number of samples
+num_samples <- ncol(x)
+# get relative amount of samples the gene is foudn in
+x$rel_samples <- rowSums(x) / num_samples
+#Core genes
+core_genes <- length(x[x$rel_samples >= 0.99, "rel_samples"])
+#Soft core genes
+soft_core_genes <- length(x[x$rel_samples < 0.99 & x$rel_samples >= 0.95,
+                            "rel_samples"])
+#Shell genes
+shell_genes <- length(x[x$rel_samples < 0.95 & x$rel_samples >= 0.15,
+                            "rel_samples"])
+#Cloud genes
+cloud_genes <- length(x[x$rel_samples < 0.15,
+                            "rel_samples"])
+#Total genes
+total_genes <- length(x$rel_samples)
+#vector of info
+info <- c(core_genes,soft_core_genes, shell_genes, cloud_genes, total_genes)
+#add data to data frame
+pangenome_stats_df[,n] <- info
+}
+#Write summary data frame to file
+write.csv(x = pangenome_stats_df, file = "Concisus_pangenome_summary_table.txt")
+
+# Produce line plot of number of genes against percentage of samples found in
+sample_type <- c()
+percs <-c()
+#loop to produce info for line graph
+for (n in 1:length(list_df)){
+  x <- list_df[[n]]
+  #remove genes with no information
+  x <- x[rowSums(x) > 0,]
+  #number of samples
+  num_samples <- ncol(x)
+  # get relative amount of samples the gene is foudn in
+  percs <- c(percs,(rowSums(x) / num_samples) * 100)
+  #vector of sample type
+  sample_type_name <- colnames(pangenome_stats_df)[n]
+  sample_type <- c(sample_type, rep(x = sample_type_name, times = length((rowSums(x) / num_samples))))
+}
+
+#outside loop create data frame  
+histogram_info <- data.frame(sample_type, percs)
+
+#Produce line graph with info
+#Colours for sample groups
+colset <- brewer.pal(9, "Set1")
+colset <- colset[c(1:5,7:9)]
+#Plot the data
+g_freqpoly <- ggplot(histogram_info, aes(percs)) + 
+  #Geom_freq poly
+  #Set bin width to 5 and center to 2.5
+  #This mean the center of the first bin is 2.5 therefore first bin is 0-5
+  geom_freqpoly(binwidth = 5, center=2.5, aes(colour = sample_type)) +
+  geom_histogram(binwidth = 5, center=2.5, position = "identity", alpha = 0.1, aes(fill = sample_type)) +
+  #log 10 count info
+  scale_y_log10() +
+  #Custom a and y labels
+  xlab("Percentage of samples") + ylab("Log10 count of genes") +
+  #Sets theme and sets base font size to 12
+  theme_set(theme_gray(base_size = 12)) +
+  #Sets where to position the legend. In this case the bottom
+  theme(legend.position="bottom") +
+  labs(fill='') +
+  #This sets it so the limit is determined by the maximum and min/starting y values
+  #Used so there is no empty plot space above or below bar graphs
+  scale_x_continuous(limits = c(0,100), expand = c(0,0),
+                     # Set tick marks for x axis
+                     breaks = seq(from = 0, to = 100, by = 5)) +
+  # Set tick marks for y axis
+  scale_y_log10(breaks = c(0,1,10,100,1000,10000,100000)) +
+  #Make saple labels go one on top of each other
+  guides(colour = guide_legend(nrow = 3), fill = FALSE, size = FALSE) +
+  #Set my own colour brewer colours
+  scale_color_manual(values=colset) +
+  scale_fill_manual(values=colset)
+#This command will save the above g_bar object as a pdf
+#Can change the size of the PDF
+PDF_file <- "Fig5_Pangenome_summary_of_al_c_concisus_used_in_this_study.pdf"
+ggsave(PDF_file, g_freqpoly, units="mm", height=150, width=170, dpi=300)
+PNG_file <- "Fig5_Pangenome_summary_of_al_c_concisus_used_in_this_study.png"
+ggsave(PNG_file, g_freqpoly, units="mm", height=150, width=170, dpi=300)
+```
+```{r Concisus_pangenome_polyfreq_figure,echo=FALSE}
+g_freqpoly
+#clear workspace
+rm(list = ls())
+```
+
+### Figure 6: Pangenome summary of all Campylobacter
+```{r campylobacter_pangenome_polyfreq}
+### Load the package or install if not present
+if (!require("RColorBrewer")) {install.packages("RColorBrewer")
+  library(RColorBrewer)}
+if (!require("ggplot2")) {install.packages("ggplot2")
+  library(ggplot2)}
+#read in edited files
+df <- read.csv("campylobacter_gene_presence_absence.Rtab", sep = "\t", check.names = FALSE)
+#edit to remove genes and make them row names
+rownames(df) <- df[,1]
+df <- df[,-1]
+
+#Df with everything
+everything <- df
+#remove a redundant c concisus
+everything <- everything[,-57]
+#df with concisus
+concisus <- df[,c(1:55,75:108)]
+#df with other campylobacter
+campy <- df[,56:74]
+
+#Make a df which contains gene info of other campy where there are nto genes present in concisus
+campy_only <- df[rowSums(concisus) == 0 ,56:75]
+#Make a df which contains gene info of concisus where there are nto genes present in other campy
+conc_only <- df[rowSums(campy) == 0 ,c(1:55,76:109)]
+
+#make list of data frames
+list_df <- list(everything, campy, concisus, campy_only, conc_only)
+
+#empty data frame to put info
+pangenome_stats_df <- data.frame(matrix(NA, ncol = length(list_df),
+                                     nrow = 5))
+row.names(pangenome_stats_df) <- c("Core genes", "Soft core genes",
+                                "Shell genes", "Cloud genes",
+                                "Total genes")
+colnames(pangenome_stats_df) <- c("All Campylobacter", "Other Campylobacter",
+                                  "C. concisus", "Genes present in Other Campylobacter and absent in C. concisus", 
+                                  "Genes present in C. concisus and absent in other Campylobacter"  )
+
+#loop to summary info of pangenomes for differnet subset
+for (n in 1:length(list_df)){
+x <- list_df[[n]]
+#remove genes with no information
+x <- x[rowSums(x) > 0,]
+#number of samples
+num_samples <- ncol(x)
+# get relative amount of samples the gene is foudn in
+x$rel_samples <- rowSums(x) / num_samples
+#Core genes
+core_genes <- length(x[x$rel_samples >= 0.99, "rel_samples"])
+#Soft core genes
+soft_core_genes <- length(x[x$rel_samples < 0.99 & x$rel_samples >= 0.95,
+                            "rel_samples"])
+#Shell genes
+shell_genes <- length(x[x$rel_samples < 0.95 & x$rel_samples >= 0.15,
+                            "rel_samples"])
+#Cloud genes
+cloud_genes <- length(x[x$rel_samples < 0.15,
+                            "rel_samples"])
+#Total genes
+total_genes <- length(x$rel_samples)
+#vector of info
+info <- c(core_genes,soft_core_genes, shell_genes, cloud_genes, total_genes)
+#add data to data frame
+pangenome_stats_df[,n] <- info
+}
+#Write summary data frame to file
+write.csv(x = pangenome_stats_df, file = "Campylobacter_and_Concisus_pangenome_summary_table.txt")
+
+# Produce line plot of number of genes against percentage of samples found in
+sample_type <- c()
+percs <-c()
+#loop to produce info for line graph
+for (n in 1:length(list_df)){
+x <- list_df[[n]]
+#remove genes with no information
+x <- x[rowSums(x) > 0,]
+#number of samples
+num_samples <- ncol(x)
+# get relative amount of samples the gene is foudn in
+percs <- c(percs,(rowSums(x) / num_samples) * 100)
+#vector of sample type
+sample_type_name <- colnames(pangenome_stats_df)[n]
+sample_type <- c(sample_type, rep(x = sample_type_name, times = length((rowSums(x) / num_samples))))
+}
+  
+#outside loop create data frame  
+histogram_info <- data.frame(sample_type, percs)
+
+#Produce line graph with info
+#Colours for sample groups
+colset <- brewer.pal(9, "Set1")
+colset <- colset[c(1:5,7:9)]
+#Plot the data
+g_freqpoly <- ggplot(histogram_info, aes(percs)) + 
+  #Geom_freq poly
+  #Set bin width to 5 and center to 2.5
+  #This mean the center of the first bin is 2.5 therefore first bin is 0-5
+  geom_freqpoly(binwidth = 5, center=2.5, aes(colour= sample_type)) +
+  geom_histogram(binwidth = 5, center=2.5, position = "identity", alpha = 0.1, aes(fill = sample_type)) +
+  #log 10 count info
+  scale_y_log10() +
+  #Custom a and y labels
+  xlab("Percentage of samples") + ylab("Log10 count of genes") +
+  #Sets theme and sets base font size to 12
+  theme_set(theme_gray(base_size = 12)) +
+  #Sets where to position the legend. In this case the bottom
+  theme(legend.position="bottom") +
+  labs(fill='') +
+  #This sets it so the limit is determined by the maximum and min/starting y values
+  #Used so there is no empty plot space above or below bar graphs
+  scale_x_continuous(limits = c(0,100), expand = c(0,0),
+                      # Set tick marks for x axis
+                      breaks = seq(from = 0, to = 100, by = 5)) +
+  # Set tick marks for y axis
+  scale_y_log10(breaks = c(0,1,10,100,1000,10000,100000)) +
+  #Make saple labels go one on top of each other
+  guides(colour = guide_legend(nrow = 5), fill=FALSE) +
+  #Set my own colour brewer colours
+  scale_color_manual(values=colset) +
+  scale_fill_manual(values=colset)
+#This command will save the above g_bar object as a pdf
+#Can change the size of the PDF
+PDF_file <- "Fig6_Pangenome_summary_of_all_campylobacter.pdf"
+ggsave(PDF_file, g_freqpoly, units="mm", height=150, width=170, dpi=300)
+PNG_file <- "Fig6_Pangenome_summary_of_all_campylobacter.png"
+ggsave(PNG_file, g_freqpoly, units="mm", height=150, width=170, dpi=300)
+```   
+```{r campylobacter_pangenome_polyfreq_figure, echo=FALSE}
+g_freqpoly
+#clear workspace
+rm(list = ls())
+
+```   
+
+### Figure 7: Plasmid KEGG Orthology (ko0001) KEGG BRITE hierarchies present within the amino acid sequences present in plasmid sequences of samples
+```{r plasmid_KEGG_BRITE_manip}
+if (!require("reshape")) {install.packages("reshape")
+  library(reshape)}
+if (!require("tidyr")) {install.packages("tidyr")
+  library(tidyr)}
+##Had to do this with 2 files due to the limit of sequences that can be the input for BLASTKOALA
+#read in file
+KEGG_info <- read.csv("most_plasmids_ko00001.keg", 
+                        header = FALSE, colClasses = "character", sep="\t")
+#Remove top and bottom lines
+KEGG_info <- KEGG_info[1]
+KEGG_info <- as.data.frame(KEGG_info[9:(nrow(KEGG_info)-4),1])
+colnames(KEGG_info) <- "V1"
+
+#Remove <b> and </b>
+KEGG_info$V1 <- gsub(pattern = "<b>", replacement = "", x = KEGG_info$V1)
+KEGG_info$V1 <- gsub(pattern = "</b>", replacement = "", x = KEGG_info$V1)
+
+#Add in column which will include just A,B,C or D
+KEGG_info$lvl <- KEGG_info$V1
+KEGG_info$lvl <- sub(pattern = "^(.).*", replacement = "\\1", x = KEGG_info$lvl)
+
+#Make a column containing only information for A
+KEGG_info$A <- KEGG_info$V1
+KEGG_info$A <- gsub(pattern = "^[#BCD].*", replacement = "", x = KEGG_info$A)
+#Loop and if equations to fill it in
+for (n in 1:nrow(KEGG_info)){
+  if (nchar(KEGG_info[n,"A"]) == 0){
+    KEGG_info[n,"A"] <- KEGG_info[(n-1),"A"]
+    }
+}
+#Make a column containing only information for B
+KEGG_info$B <- KEGG_info$V1
+KEGG_info$B <- gsub(pattern = "^[#ACD].*", replacement = "", x = KEGG_info$B)
+#Loop and if equations to fill it in
+for (n in 2:nrow(KEGG_info)){
+  if (nchar(KEGG_info[n,"B"]) == 0){
+    KEGG_info[n,"B"] <- KEGG_info[(n-1),"B"]
+  }
+}
+#Make a column containing only information for C
+KEGG_info$C <- KEGG_info$V1
+KEGG_info$C <- gsub(pattern = "^[#ABD].*", replacement = "", x = KEGG_info$C)
+#Loop and if equations to fill it in
+for (n in 3:nrow(KEGG_info)){
+  if (nchar(KEGG_info[n,"C"]) == 0){
+    KEGG_info[n,"C"] <- KEGG_info[(n-1),"C"]
+  }
+}
+#Make a column containing only information for D
+KEGG_info$D <- KEGG_info$V1
+KEGG_info$D <- gsub(pattern = "^[#ABC].*", replacement = "", x = KEGG_info$D)
+#Loop and if equations to fill it in
+for (n in 4:nrow(KEGG_info)){
+  if (nchar(KEGG_info[n,"D"]) == 0){
+    KEGG_info[n,"D"] <- KEGG_info[(n-1),"D"]
+  }
+}
+
+#Remove rows with no D information
+KEGG_info <- KEGG_info[nchar(KEGG_info$D) > 0,]
+#Remove v1 and lvl column
+KEGG_info <- subset(KEGG_info, select=-c(V1, lvl))
+#Remove letters A,B,C and D in columns
+KEGG_info$A <- gsub("^A", "", KEGG_info$A)
+KEGG_info$B <- gsub("^B ", "", KEGG_info$B)
+KEGG_info$C <- gsub("^C  ", "", KEGG_info$C)
+KEGG_info$D <- gsub("^D  ", "", KEGG_info$D)
+
+
+#Produce a PROKKA column
+KEGG_info$PROKKA <- gsub("<.*", "", KEGG_info$D)
+#ko column
+KEGG_info$ko <- gsub("</a>.*", "", KEGG_info$D)
+KEGG_info$ko <- gsub(".*>K", "K", KEGG_info$ko)
+#D_shorthand
+KEGG_info$D_shorthand <- gsub(".*</a>  ", "", KEGG_info$D)
+KEGG_info$D_shorthand <- gsub(";.*", "", KEGG_info$D_shorthand)
+#Edit D column
+KEGG_info$D <- gsub(".*; ", "", KEGG_info$D)
+KEGG_info$D <- gsub(" .EC.*", "", KEGG_info$D)
+#Edit PROKKA column
+KEGG_info$PROKKA <- gsub(" ", "", KEGG_info$PROKKA)
+
+#CHange PROKKA column to sample and PROKKA
+KEGG_info$sample <- KEGG_info$PROKKA
+KEGG_info$PROKKA <- sub(".*_", "",KEGG_info$PROKKA)
+KEGG_info$sample <- sub("_[^_]+$", "", KEGG_info$sample)
+
+#Save file
+write.csv(x = KEGG_info, file = "most_files_KEGG_info.csv")
+##Next file
+#read in file
+KEGG_info <- read.csv("2010-347972_ko00001.keg", 
+                        header = FALSE, colClasses = "character", sep="\t")
+#Remove top and bottom lines
+KEGG_info <- KEGG_info[1]
+KEGG_info <- as.data.frame(KEGG_info[9:(nrow(KEGG_info)-4),1])
+colnames(KEGG_info) <- "V1"
+
+#Remove <b> and </b>
+KEGG_info$V1 <- gsub(pattern = "<b>", replacement = "", x = KEGG_info$V1)
+KEGG_info$V1 <- gsub(pattern = "</b>", replacement = "", x = KEGG_info$V1)
+
+#Add in column which will include just A,B,C or D
+KEGG_info$lvl <- KEGG_info$V1
+KEGG_info$lvl <- sub(pattern = "^(.).*", replacement = "\\1", x = KEGG_info$lvl)
+
+#Make a column containing only information for A
+KEGG_info$A <- KEGG_info$V1
+KEGG_info$A <- gsub(pattern = "^[#BCD].*", replacement = "", x = KEGG_info$A)
+#Loop and if equations to fill it in
+for (n in 1:nrow(KEGG_info)){
+  if (nchar(KEGG_info[n,"A"]) == 0){
+    KEGG_info[n,"A"] <- KEGG_info[(n-1),"A"]
+    }
+}
+#Make a column containing only information for B
+KEGG_info$B <- KEGG_info$V1
+KEGG_info$B <- gsub(pattern = "^[#ACD].*", replacement = "", x = KEGG_info$B)
+#Loop and if equations to fill it in
+for (n in 2:nrow(KEGG_info)){
+  if (nchar(KEGG_info[n,"B"]) == 0){
+    KEGG_info[n,"B"] <- KEGG_info[(n-1),"B"]
+  }
+}
+#Make a column containing only information for C
+KEGG_info$C <- KEGG_info$V1
+KEGG_info$C <- gsub(pattern = "^[#ABD].*", replacement = "", x = KEGG_info$C)
+#Loop and if equations to fill it in
+for (n in 3:nrow(KEGG_info)){
+  if (nchar(KEGG_info[n,"C"]) == 0){
+    KEGG_info[n,"C"] <- KEGG_info[(n-1),"C"]
+  }
+}
+#Make a column containing only information for C
+KEGG_info$C <- KEGG_info$V1
+KEGG_info$C <- gsub(pattern = "^[#ABD].*", replacement = "", x = KEGG_info$C)
+#Loop and if equations to fill it in
+for (n in 3:nrow(KEGG_info)){
+  if (nchar(KEGG_info[n,"C"]) == 0){
+    KEGG_info[n,"C"] <- KEGG_info[(n-1),"C"]
+  }
+}
+#Make a column containing only information for D
+KEGG_info$D <- KEGG_info$V1
+KEGG_info$D <- gsub(pattern = "^[#ABC].*", replacement = "", x = KEGG_info$D)
+#Loop and if equations to fill it in
+for (n in 4:nrow(KEGG_info)){
+  if (nchar(KEGG_info[n,"D"]) == 0){
+    KEGG_info[n,"D"] <- KEGG_info[(n-1),"D"]
+  }
+}
+
+#Remove rows with no D information
+KEGG_info <- KEGG_info[nchar(KEGG_info$D) > 0,]
+#Remove v1 and lvl column
+KEGG_info <- subset(KEGG_info, select=-c(V1, lvl))
+#Remove letters A,B,C and D in columns
+KEGG_info$A <- gsub("^A", "", KEGG_info$A)
+KEGG_info$B <- gsub("^B ", "", KEGG_info$B)
+KEGG_info$C <- gsub("^C  ", "", KEGG_info$C)
+KEGG_info$D <- gsub("^D  ", "", KEGG_info$D)
+
+
+#Produce a PROKKA column
+KEGG_info$PROKKA <- gsub("<.*", "", KEGG_info$D)
+#ko column
+KEGG_info$ko <- gsub("</a>.*", "", KEGG_info$D)
+KEGG_info$ko <- gsub(".*>K", "K", KEGG_info$ko)
+#D_shorthand
+KEGG_info$D_shorthand <- gsub(".*</a>  ", "", KEGG_info$D)
+KEGG_info$D_shorthand <- gsub(";.*", "", KEGG_info$D_shorthand)
+#Edit D column
+KEGG_info$D <- gsub(".*; ", "", KEGG_info$D)
+KEGG_info$D <- gsub(" .EC.*", "", KEGG_info$D)
+#Edit PROKKA column
+KEGG_info$PROKKA <- gsub(" ", "", KEGG_info$PROKKA)
+
+#Edit PROKKA column
+KEGG_info$PROKKA <- sub("PROKKA_", "", KEGG_info$PROKKA)
+#Add column for sample info
+KEGG_info$sample <- rep(x = "2010-347972", nrow(KEGG_info))
+
+#Save file
+write.csv(x = KEGG_info, file = "2010-347972_KEGG_info.csv")
+#clear workspace
+rm(list = ls())
+
+```
+```{r plasmid_KEGG_heatmap}
+#Loading libraries
+if (!require("gplots")) {install.packages("gplots")
+  library(gplots)}
+if (!require("RColorBrewer")) {install.packages("RColorBrewer")
+  library(RColorBrewer)}
+if (!require("reshape")) {install.packages("reshape")
+  library(reshape)}
+if (!require("tidyr")) {install.packages("tidyr")
+  library(tidyr)}
+
+#Read in two files
+most <- read.csv(file = "most_files_KEGG_info.csv")
+plasmids_2010_347972 <- read.csv(file = "2010-347972_KEGG_info.csv")
+#Read in metadata
+metadata <- read.csv("Concisus_metadata.csv")
+#COmbine the two dfs
+long_list <- rbind(most, plasmids_2010_347972)
+#Remove first column
+long_list <- long_list[,-1]
+#Remove PROKKA row
+long_list <- long_list[,-5]
+#Remove S number
+long_list$sample <- sub("_[^_]+$", "", long_list$sample)
+
+#Get all unique rows
+long_list <- unique(long_list)
+
+#Make a wide presence absence db
+#Add a presence column
+long_list$presence <- rep(1, nrow(long_list))
+#convert to wide
+wide_list <- spread(long_list, sample, presence)
+#COnvert NAs to 0s
+wide_list[is.na(wide_list)] <- 0
+
+#Some KEGGS are apperaing more than once due to level C
+#Therefore remove B and C then deduplicate
+wide_list <- wide_list[,c(-2,-3)]
+wide_list <- unique(wide_list)
+
+#Column for number of samples KEGG present in
+wide_list$num_samples_present <- rowSums(wide_list[,5:65])
+
+
+#Compare how similar samples are
+#First table of number of genes in plasmids shared
+A_levels <- unique(wide_list$A)
+num_samples_vector <- seq(1,18)
+summary_info <- data.frame(matrix(NA, ncol = 18, nrow = 6))
+colnames(summary_info) <- num_samples_vector
+row.names(summary_info) <- A_levels
+for (a in 1:6){
+  A_level <- A_levels[a]
+  df_subset <- wide_list[wide_list$A == A_level,]
+  for (i in 1:18){
+    df_subset_subset <- df_subset[df_subset$num_samples_present == num_samples_vector[i],]
+    number_samples <- nrow(df_subset_subset)
+    summary_info[a,i] <- number_samples
+      }
+}
+#write table to file
+write.csv(x = summary_info, file = "Plasmid_KEGG_summary_info.csv")
+
+#Next we will make a heatmap of KEGG genes that are present in 6 or more samples
+#First subset table
+rare_removed_KEGG <- wide_list[wide_list$num_samples_present > 5,]
+#remove duplicates caused by A leve
+#Remove unwated columns
+rare_removed_KEGG <- rare_removed_KEGG[,c(-1,-4,-66)]
+rare_removed_KEGG <- unique(rare_removed_KEGG)
+#Set row names
+row.names(rare_removed_KEGG) <- rare_removed_KEGG$D
+rare_removed_KEGG <- rare_removed_KEGG[,c(-1,-2)]
+#transpose df
+rare_removed_KEGG_t <- t(rare_removed_KEGG)
+
+
+#Change names of some samples
+row.names(rare_removed_KEGG_t)[c(9,20,37:40)] <- c("2010-112100-F", "2012-191940",
+                                            "B124_Slimy-small", "B124_Small-grey", "B124_Slimy-large",
+                                           "B124_Small-clear")
+#Change some sample names
+row.names(rare_removed_KEGG_t)[c(21,22,27,28)] <- c("2010-25654-F","2010-25654-O",
+                                                 "2010-378007-F", "2010-378007-O")
+#Match metatdata with available samples
+samples <- row.names(rare_removed_KEGG_t)
+metadata_heatmap <- subset(metadata, SampleName %in% samples)
+#order metatdata_heatmap to match order of heatmap data
+metadata_heatmap <- metadata_heatmap[order(match(metadata_heatmap$SampleName, samples)),]
+#Change some sample names
+row.names(rare_removed_KEGG_t)[c(21,22,27,28)] <- c("2010-25654-F","2010-25654-O",
+                                                 "2010-378007-F", "2010-378007-O")
+
+#Time for heatmap
+#producing heatmaps of presence absence data
+#Function
+produce_heatmap <- function(png_file_name, dat, meta, 
+                            png_mm_width, png_mm_height, 
+                            cex_colum_labels, cex_row_labels,
+                            column_margin_size, row_margin_size,
+                            width_dendogram_size,width_heatmap_size,
+                            height_dendogram_size, height_heatmap_size){
+  png(png_file_name, width = png_mm_width, height = png_mm_height, units="mm", res = 300)
+  heatmap.2(as.matrix(dat),
+            RowSideColors = meta,
+            cexRow = cex_row_labels,
+            cexCol = cex_colum_labels,
+            offsetRow=0.000001,
+            offsetCol = 0.000001,
+            margins = c(column_margin_size,row_margin_size),
+            key.xlab="presence/absence",
+            key.ylab = "",
+            key.par=list(mar=c(2,2,0.5,0.75), cex=0.4),
+            #rotate column labels
+            srtCol = 45,
+            key.title=NA,
+            trace="none",
+            lwid=c( width_dendogram_size,width_heatmap_size),
+            lhei=c(height_dendogram_size, height_heatmap_size),
+            col=function(x)rev(heat.colors(x)))
+  
+  dev.off()
+}
+#png with colouring by GS
+produce_heatmap("Fig7_Plasmid_KEGG_orthology_KEGG_BRITE_hierarchies_present_within_the_amino_acid_sequences_present_in_plasmid_sequences_of_samples_GS_colour_heatmap.png", 
+                rare_removed_KEGG_t, as.character(metadata_heatmap$GSColour),
+                png_mm_width=150, png_mm_height=200, 
+                cex_colum_labels=0.7, cex_row_labels=0.7,
+                column_margin_size=12, row_margin_size=8,
+                #Size ratios of dendogram to heatmap
+                width_dendogram_size=1,width_heatmap_size=4.5,
+                height_dendogram_size=1, height_heatmap_size=10)
+#png with colouring by disease presentation
+produce_heatmap("Fig7_Plasmid_KEGG_orthology_KEGG_BRITE_hierarchies_present_within_the_amino_acid_sequences_present_in_plasmid_sequences_of_samples_disease_colour_heatmap.png", 
+                rare_removed_KEGG_t, as.character(metadata_heatmap$DiseaseColour),
+                png_mm_width=150, png_mm_height=200, 
+                cex_colum_labels=0.7, cex_row_labels=0.7,
+                column_margin_size=12, row_margin_size=8,
+                #Size ratios of dendogram to heatmap
+                width_dendogram_size=1,width_heatmap_size=4.5,
+                height_dendogram_size=1, height_heatmap_size=10)
+
+```
+```{r plasmid_KEGG_heatmap_figure, echo=FALSE}
+#Time for heatmap
+#producing heatmaps of presence absence data
+#Function
+produce_heatmap <- function(png_file_name, dat, meta, 
+                            png_mm_width, png_mm_height, 
+                            cex_colum_labels, cex_row_labels,
+                            column_margin_size, row_margin_size,
+                            width_dendogram_size,width_heatmap_size,
+                            height_dendogram_size, height_heatmap_size){
+  #png(png_file_name, width = png_mm_width, height = png_mm_height, units="mm", res = 300)
+  heatmap.2(as.matrix(dat),
+            RowSideColors = meta,
+            cexRow = cex_row_labels,
+            cexCol = cex_colum_labels,
+            offsetRow=0.000001,
+            offsetCol = 0.000001,
+            margins = c(column_margin_size,row_margin_size),
+            key.xlab="presence/absence",
+            key.ylab = "",
+            key.par=list(mar=c(2,2,0.5,0.75), cex=0.4),
+            #rotate column labels
+            srtCol = 45,
+            key.title=NA,
+            trace="none",
+            lwid=c( width_dendogram_size,width_heatmap_size),
+            lhei=c(height_dendogram_size, height_heatmap_size),
+            col=function(x)rev(heat.colors(x)))
+  
+  #dev.off()
+}
+#png with colouring by GS
+produce_heatmap("Plasmid_KEGG_presence_rare_removed_GS_colour_heatmap.png", 
+                rare_removed_KEGG_t, as.character(metadata_heatmap$GSColour),
+                png_mm_width=200, png_mm_height=200, 
+                cex_colum_labels=0.7, cex_row_labels=0.7,
+                column_margin_size=12, row_margin_size=9,
+                #Size ratios of dendogram to heatmap
+                width_dendogram_size=1,width_heatmap_size=4.5,
+                height_dendogram_size=1, height_heatmap_size=10)
+#png with colouring by disease presentation
+produce_heatmap("Plasmid_KEGG_presence_rare_removed_disease_colour_heatmap.png", 
+                rare_removed_KEGG_t, as.character(metadata_heatmap$DiseaseColour),
+                png_mm_width=200, png_mm_height=200, 
+                cex_colum_labels=0.7, cex_row_labels=0.7,
+                column_margin_size=12, row_margin_size=9,
+                #Size ratios of dendogram to heatmap
+                width_dendogram_size=1,width_heatmap_size=4.5,
+                height_dendogram_size=1, height_heatmap_size=10)
+#clear workspace
+rm(list = ls())
+```
+
+### Figure 8B: Heatmap of genes found to be core only in oral samples and core in only fecal samples from oral fecal paired samples.
+```{r Concisus_paired_core_gene_heatmap}
+#Loading libraries
+if (!require("gplots")) {install.packages("gplots")
+  library(gplots)}
+if (!require("RColorBrewer")) {install.packages("RColorBrewer")
+  library(RColorBrewer)}
+#read in edited files
+df <- read.csv("campylobacter_gene_presence_absence.Rtab", sep = "\t", check.names = FALSE)
+#edit to remove genes and make them row names
+rownames(df) <- df[,1]
+df <- df[,-1]
+
+#df of our faecal oral paired samples
+paired_samples <- df[,c(13,14,18,19,20,21,22,23,29,30,38,39)]
+#oral samples
+oral_samples <- paired_samples[,c(1,4,5,8,10,12)]
+#faecal samples
+faecal_samples <- paired_samples[,c(2,3,6,7,9,11)]
+#get genes only core in oral
+core_oral_only <- paired_samples[(rowSums(oral_samples) == 6) & (rowSums(faecal_samples) != 6),]
+#get genes only core in faecal
+core_faecal_only <- paired_samples[(rowSums(oral_samples) != 6) & (rowSums(faecal_samples) == 6),]
+#combine the two data frames
+core_oral_only_faecal_only <- rbind(core_oral_only, core_faecal_only)
+#Change sample names
+colnames(core_oral_only_faecal_only) <- c("2010-112100-O","2010-112100-F","2010-113332-F","2010-113332-O",
+                                          "2010-113862-O","2010-113862-F","2010-115605-F","2010-115605-O",
+                                          "2010-25654-F","2010-25654-O",
+                                          "2010-378007-F","2010-378007-O")
+#Set colour palette
+col.brew <- c(brewer.pal(9, "Set1"),brewer.pal(8,"Set2"),brewer.pal(12,"Set3"))
+palette(col.brew)
+#Set factors to colour by
+oral_faecal_meta <- c("oral", "fecal","fecal","oral","oral",
+                                "fecal","fecal","oral","fecal","oral",
+                                "fecal","oral")
+participant_meta <- as.factor(c("P10","P10","P14","P14","P15","P15",
+                                "P16","P16","P19","P19","P28","P28"))
+#Setting colours
+oral_fecal_colour <- gsub("oral", col.brew[1], oral_faecal_meta)
+oral_fecal_colour <- gsub("fecal", col.brew[2], oral_fecal_colour)
+participant_colour <- gsub("P10", col.brew[3], participant_meta)
+participant_colour <- gsub("P14", col.brew[4], participant_colour)
+participant_colour <- gsub("P15", col.brew[5], participant_colour)
+participant_colour <- gsub("P16", col.brew[6], participant_colour)
+participant_colour <- gsub("P19", col.brew[7], participant_colour)
+participant_colour <- gsub("P28", col.brew[8], participant_colour)
+#producing heatmaps of presence absence data
+#Function
+produce_heatmap <- function(png_file_name, dat, meta, 
+                            png_mm_width, png_mm_height, 
+                            cex_colum_labels, cex_row_labels,
+                            column_margin_size, row_margin_size,
+                            width_dendogram_size,width_heatmap_size,
+                            height_dendogram_size, height_heatmap_size){
+  png(png_file_name, width = png_mm_width, height = png_mm_height, units = "mm", res = 300)
+  heatmap.2(as.matrix(dat),
+            ColSideColors = meta,
+            cexRow = cex_row_labels,
+            cexCol = cex_colum_labels,
+            offsetRow=0.000001,
+            offsetCol = 0.000001,
+            margins = c(column_margin_size,row_margin_size),
+            key.xlab="presence/absence",
+            key.ylab = "",
+            key.par=list(mar=c(2,2,0.5,0.75), cex=0.4),
+            key.title=NA,
+            trace="none",
+            lwid=c( width_dendogram_size,width_heatmap_size),
+            lhei=c(height_dendogram_size, height_heatmap_size),
+            col=function(x)rev(heat.colors(x)))
+  dev.off()
+}
+#png colour by faecal or oral
+produce_heatmap("Fig8B_heatmap_of_genes_found_to_be_core_only_in_oral_samples_and_core_in_only_faecal_samples_from_oral_faecal_paired_samples_meta_oral_faecal.png", 
+                core_oral_only_faecal_only, oral_fecal_colour,
+                png_mm_width=170, png_mm_height=150, 
+                cex_colum_labels=0.7, cex_row_labels=0.5,
+                column_margin_size=10, row_margin_size=6,
+                #Size ratios of dendogram to heatmap
+                width_dendogram_size=1,width_heatmap_size=4.5,
+                height_dendogram_size=1, height_heatmap_size=10)
+#png colour by participant
+produce_heatmap("Fig8B_heatmap_of_genes_found_to_be_core_only_in_oral_samples_and_core_in_only_faecal_samples_from_oral_faecal_paired_samples_meta_participant.png", 
+                core_oral_only_faecal_only, participant_colour,
+                png_mm_width=170, png_mm_height=150, 
+                cex_colum_labels=0.7, cex_row_labels=0.5,
+                column_margin_size=10, row_margin_size=6,
+                #Size ratios of dendogram to heatmap
+                width_dendogram_size=1,width_heatmap_size=4.5,
+                height_dendogram_size=1, height_heatmap_size=10)
+```
+```{r Concisus_paired_core_gene_heatmap_figure echo = FALSE}
+#producing heatmaps of presence absence data
+#Function
+produce_heatmap <- function(png_file_name, dat, meta, 
+                            png_mm_width, png_mm_height, 
+                            cex_colum_labels, cex_row_labels,
+                            column_margin_size, row_margin_size,
+                            width_dendogram_size,width_heatmap_size,
+                            height_dendogram_size, height_heatmap_size){
+  heatmap.2(as.matrix(dat),
+            ColSideColors = meta,
+            cexRow = cex_row_labels,
+            cexCol = cex_colum_labels,
+            offsetRow=0.000001,
+            offsetCol = 0.000001,
+            margins = c(column_margin_size,row_margin_size),
+            key.xlab="presence/absence",
+            key.ylab = "",
+            key.par=list(mar=c(2,2,0.5,0.75), cex=0.4),
+            key.title=NA,
+            trace="none",
+            lwid=c( width_dendogram_size,width_heatmap_size),
+            lhei=c(height_dendogram_size, height_heatmap_size),
+            col=function(x)rev(heat.colors(x)))
+}
+#png colour by faecal or oral
+produce_heatmap("Fig8B_heatmap_of_genes_found_to_be_core_only_in_oral_samples_and_core_in_only_faecal_samples_from_oral_faecal_paired_samples_meta_oral_faecal.png", 
+                core_oral_only_faecal_only, oral_fecal_colour,
+                png_mm_width=160, png_mm_height=150, 
+                cex_colum_labels=0.7, cex_row_labels=0.5,
+                column_margin_size=10, row_margin_size=6,
+                #Size ratios of dendogram to heatmap
+                width_dendogram_size=1,width_heatmap_size=4.5,
+                height_dendogram_size=1, height_heatmap_size=10)
+#png colour by participant
+produce_heatmap("Fig8B_heatmap_of_genes_found_to_be_core_only_in_oral_samples_and_core_in_only_faecal_samples_from_oral_faecal_paired_samples_meta_participant.png", 
+                core_oral_only_faecal_only, participant_colour,
+                png_mm_width=160, png_mm_height=150, 
+                cex_colum_labels=0.7, cex_row_labels=0.5,
+                column_margin_size=10, row_margin_size=6,
+                #Size ratios of dendogram to heatmap
+                width_dendogram_size=1,width_heatmap_size=4.5,
+                height_dendogram_size=1, height_heatmap_size=10)
+```
+
+### Supplementary Figure 2: Number of genes that are within different KEGG BRITE hierarchies in the pangenomes of different groups for the C. concisus
+```{r Concisus_pangenome_KEGG_barcharts}
+### Load the package or install if not present
+if (!require("RColorBrewer")) {install.packages("RColorBrewer")
+  library(RColorBrewer)}
+if (!require("ggplot2")) {install.packages("ggplot2")
+  library(ggplot2)}
+if (!require("tidyr")) {install.packages("tidyr")
+  library(tidyr)}
+if (!require("reshape2")) {install.packages("reshape2")
+  library(reshape2)}
+
+
+#Read in data
+pangenome <- read.csv("concisus_gene_presence_absence.Rtab", sep = "\t", check.names = FALSE)
+KEGG_brite <- read.csv("concisus_ref_aa_BRITE_ko00001_pangenome_info.csv")
+
+#Combine pangenome and KEGG info
+colnames(pangenome)[1] <- "GENE"
+pangenome_KEGG <- merge(KEGG_brite, pangenome, by = "GENE", all.x = TRUE)
+
+#Save pangenome KEGG as a file
+write.csv(x = pangenome_KEGG, file = "all_concisus_pangenome_and_KEGG_BRITE_table.csv")
+
+#Now want to make bar charts facetted by A~B
+#First to make groupings
+KEGG_info <- pangenome_KEGG[,1:8]
+df <- pangenome_KEGG[,9:ncol(pangenome_KEGG)]
+
+#Df with everything
+everything <- df
+everything <- cbind(KEGG_info,everything)
+#df of our study samples
+our_study <- cbind(KEGG_info, df[,c(2:49,53:57)])
+#df of publicly available samples
+public_samples <- cbind(KEGG_info, df[,c(1,50:52,58:ncol(df))])
+
+#produce DFs of GS1 and GS2
+#read in metadata of GS grouping
+GS_metadata <- read.csv("GS_info.txt", sep = "\t")
+sample_names <- colnames(df)
+#Order GS metadata by sample_names
+GS_metadata_order <- GS_metadata[match(sample_names, GS_metadata$SeqSampleNames),]
+GS_metadata_order_t <- t(GS_metadata)
+#GS1 df
+GS1 <- df[,GS_metadata_order_t["GS",] == 1]
+GS2 <- df[,GS_metadata_order_t["GS",] == 2]
+#Add KEGG info
+GS1 <- cbind(KEGG_info, GS1)
+GS2 <- cbind(KEGG_info, GS2)
+#Produce DF for genes only in GS1 and only in GS2
+GS1_only <- GS1[rowSums(GS2[9:ncol(GS2)]) == 0,]
+GS2_only <- GS2[rowSums(GS1[9:ncol(GS1)]) == 0,]
+
+#make list of data frames
+list_df <- list(everything, our_study, public_samples, GS1, GS2, GS1_only, GS2_only)
+
+#Remove genes with no info
+list_df <- lapply(list_df, function(x) x[rowSums(x[,9:ncol(x)]) >= 1,])
+#Add relative abundance column and column indicating if it is core or else
+for (n in 1:length(list_df)){
+  x <- list_df[[n]]
+  #Add relative abundance
+  x$rel_samples <- (rowSums(x[,9:ncol(x)])) / (ncol(x) - 8)
+  #Add column for pangenome group
+  x$pangenome <- as.factor(rep("NA", nrow(x)))
+  ##assign whether a gene is core etc
+  categories <- c("Cloud genes", "Shell genes", "Soft core genes", "Core genes")
+  levels <- c(-Inf, 0.15, 0.95, 0.99, Inf)
+  x$pangenome <- cut(x$rel_samples, levels, categories)
+  #Add a column for the grouping
+  groups <- c("everything", "our_study", "public_samples", "GS1", "GS2", "GS1_only", "GS2_only")
+  x$grouping <- rep(groups[n], nrow(x))
+  #Assign x as the df in the list
+  list_df[[n]] <- x
+}
+
+##Bar charts based on A,B grouping and pangenome
+
+#Create empyt df to input the dfs made below
+long_AB_sum_info <- data.frame(Date=as.Date(character()), File=character(), 
+                 User=character(), stringsAsFactors=FALSE)
+#Calculate number of genes for each BRITE category A and B
+for (n in 1:length(list_df)){
+  x <- list_df[[n]]
+  #Remove unwanted columns
+  xdf <- subset(x, select = -c(GENE, ko, C, D, D_shorthand, rel_samples) )
+  # Produce list samples
+  samples <- colnames(xdf)[4:(ncol(xdf) -2)]
+  #Produce list of what to aggregate against
+  groups <- c("PROKKA","A","B", "pangenome", "grouping")
+  #Melt command and dcast
+  df_melt <- melt(xdf, id = groups)
+  #Now I want to remove the sample info and then remove all duplicate rows for each gene
+  #I will therefore get the number of differnet genes that are core, soft core etc 
+  #Remove sample info
+  df_melt <- subset(df_melt, select = -c(variable))
+  #Now unique the rows This is so we will get 1s and can sum these to see how many of genes of the differnet types are classified to each level
+  #It will give us a bunch of rows that are zero but we will also get rows with 1 for each of thos
+  df_melt <- unique(df_melt)
+  #Now we can aggreagte the results
+  df_cats <- dcast(df_melt, A + B + grouping ~ pangenome, sum)
+  #now convert to long again
+  long_df_sum_genes <- melt(df_cats, id = c("A","B","grouping"))
+  #Add df to overal df
+  long_AB_sum_info <- rbind(long_AB_sum_info, long_df_sum_genes)
+}
+#Add proper column name
+colnames(long_AB_sum_info)[4] <- "pangenome" 
+
+#Set Factors to right orders
+long_AB_sum_info$pangenome <- factor(long_AB_sum_info$pangenome,
+                                     levels = c("Core genes", "Soft core genes",
+                                                "Shell genes", "Cloud genes"))
+long_AB_sum_info$grouping <- factor(long_AB_sum_info$grouping,
+                                    levels = c("everything", "our_study", "public_samples", "GS1", "GS2", "GS1_only", "GS2_only"))
+#get all unique A levels
+A_levels <- unique(long_AB_sum_info$A)
+
+##Loop to produce ggplot for each A level
+for (n in 1:length(A_levels)){
+#set A level
+  A_level <- as.character(A_levels[n])
+  #Subset data to get only info in A level
+  A_df <- long_AB_sum_info[long_AB_sum_info$A == A_level,]
+  #Produce GG bar chart
+  g_bar <- ggplot(data = A_df, aes(y = value, x= grouping, fill = pangenome)) +
+  #Stacked bar chart
+  geom_bar(stat = "identity", position = "dodge") + 
+  #Facet by A and B
+  facet_wrap(~B, ncol = 3,scales="free_y") +
+  #Custom a and y labels
+  xlab("") + ylab("Number of Genes") + ggtitle(A_level) +
+  #Sets theme and sets base font size to 12
+  theme_set(theme_gray(base_size = 8)) +
+  #Rotate axis x labels
+  theme(axis.text.x=element_text(angle=90,hjust=1), legend.position = "bottom") +
+  #Keep all levels
+  scale_fill_discrete(drop=FALSE)
+#This command will save the above g_bar object as a pdf
+#Can change the size of the PDF
+PDF_file <- paste("SF2_",A_level, "_All_concisus_KEGG_AB_BRITE_barchart.pdf")
+ggsave(PDF_file, g_bar, units="mm", height=140, width=170, dpi=300)
+PNG_file <- paste("SF2_",A_level, "_All_concisus_KEGG_AB_BRITE_barchart.png")
+ggsave(PNG_file, g_bar, units="mm", height=140, width=170, dpi=300)
+}
+```
+```{r Concisus_pangenome_KEGG_barcharts_figure, echo=FALSE}
+#Create empty list
+g_bars <- list()
+##Loop to produce ggplot for each A level
+for (n in 1:length(A_levels)){
+#set A level
+  A_level <- as.character(A_levels[n])
+  #Subset data to get only info in A level
+  A_df <- long_AB_sum_info[long_AB_sum_info$A == A_level,]
+  #Produce GG bar chart
+  g_bar <- ggplot(data = A_df, aes(y = value, x= grouping, fill = pangenome)) +
+  #Stacked bar chart
+  geom_bar(stat = "identity", position = "dodge") + 
+  #Facet by A and B
+  facet_wrap(~B, ncol = 3,scales="free_y") +
+  #Custom a and y labels
+  xlab("") + ylab("Number of Genes") + ggtitle(A_level) +
+  #Sets theme and sets base font size to 12
+  theme_set(theme_gray(base_size = 8)) +
+  #Rotate axis x labels
+  theme(axis.text.x=element_text(angle=90,hjust=1)) +
+  #Keep all levels
+  scale_fill_discrete(drop=FALSE)
+#save ggplot object into list
+  g_bars[[n]] <- g_bar
+}
+#Output gplots
+g_bars[1]
+g_bars[2]
+g_bars[3]
+g_bars[4]
+g_bars[5]
+g_bars[6]
+#clear workspace
+rm(list = ls())
+```
+
+###Supplementary Figure 3: Number of genes that are within different KEGG BRITE hierarchies in the pangenomes of different groups for Campylobacter species and C. concisus samples.
+```{r Campylobacter_pangenome_KEGG_barcharts}
+### Load the package or install if not present
+if (!require("RColorBrewer")) {install.packages("RColorBrewer")
+  library(RColorBrewer)}
+if (!require("ggplot2")) {install.packages("ggplot2")
+  library(ggplot2)}
+if (!require("tidyr")) {install.packages("tidyr")
+  library(tidyr)}
+if (!require("reshape2")) {install.packages("reshape2")
+  library(reshape2)}
+
+
+#Read in data
+pangenome <- read.csv("campylobacter_gene_presence_absence.Rtab", sep = "\t", check.names = FALSE)
+KEGG_brite <- read.csv("campy_vs_concisus_ref_aa_BRITE_ko00001_pangenome_info.csv")
+
+#Combine pangenome and KEGG info
+colnames(pangenome)[1] <- "GENE"
+pangenome_KEGG <- merge(KEGG_brite, pangenome, by = "GENE", all.x = TRUE)
+
+#Save pangenome KEGG as a file
+write.csv(x = pangenome_KEGG, file = "campy_vs_concisus_pangenome_and_KEGG_BRITE_table.csv")
+
+#Now want to make bar charts facetted by A~B
+#First to make groupings
+KEGG_info <- pangenome_KEGG[,1:8]
+df <- pangenome_KEGG[,9:ncol(pangenome_KEGG)]
+#Df with everything
+everything <- df
+#remove a redundant c concisus
+everything <- everything[,-57]
+#Add in KEGG info
+everything <- cbind(KEGG_info, everything)
+#df with concisus
+concisus <- cbind(KEGG_info, df[,c(1:55,75:108)])
+#df with other campylobacter
+campy <- cbind(KEGG_info, df[,56:74])
+#Make a df which contains gene info of other campy where there are nto genes present in concisus
+campy_only <- campy[rowSums(concisus[,9:ncol(concisus)]) == 0,]
+#Make a df which contains gene info of concisus where there are nto genes present in other campy
+conc_only <- concisus[rowSums(campy[,9:ncol(campy)]) == 0,]
+
+#make list of data frames
+list_df <- list(everything, campy, concisus, campy_only, conc_only)
+
+#Remove genes with no info
+list_df <- lapply(list_df, function(x) x[rowSums(x[,9:ncol(x)]) >= 1,])
+#Add relative abundance column and column indicating if it is core or else
+for (n in 1:length(list_df)){
+  x <- list_df[[n]]
+  #Add relative abundance
+  x$rel_samples <- (rowSums(x[,9:ncol(x)])) / (ncol(x) - 8)
+  #Add column for pangenome group
+  x$pangenome <- as.factor(rep("NA", nrow(x)))
+  ##assign whether a gene is core etc
+  categories <- c("Cloud genes", "Shell genes", "Soft core genes", "Core genes")
+  levels <- c(-Inf, 0.15, 0.95, 0.99, Inf)
+  x$pangenome <- cut(x$rel_samples, levels, categories)
+  #Add a column for the grouping
+  groups <- c("everything", " other Campylobacter", "concisus", "other campy only", "concisus only")
+  x$grouping <- rep(groups[n], nrow(x))
+  #Assign x as the df in the list
+  list_df[[n]] <- x
+}
+
+##Bar charts based on A,B groupin and pangenome
+
+#Create empyt df to input the dfs made below
+long_AB_sum_info <- data.frame(Date=as.Date(character()), File=character(), 
+                 User=character(), stringsAsFactors=FALSE)
+#Calculate number of genes for each BRITE category A and B
+for (n in 1:length(list_df)){
+  x <- list_df[[n]]
+  #Remove unwanted columns
+  xdf <- subset(x, select = -c(GENE, ko, C, D, D_shorthand, rel_samples) )
+  # Produce list samples
+  samples <- colnames(xdf)[4:(ncol(xdf) -2)]
+  #Produce list of what to aggregate against
+  groups <- c("PROKKA","A","B", "pangenome", "grouping")
+  #Melt command and dcast
+  df_melt <- melt(xdf, id = groups)
+  #Now I want to remove the sample info and then remove all duplicate rows for each gene
+  #I will therefore get the number of differnet genes that are core, soft core etc 
+  #Remove sample info
+  df_melt <- subset(df_melt, select = -c(variable))
+  #Now unique the rows This is so we will get 1s and can sum these to see how many of genes of the differnet types are classified to each level
+  #It will give us a bunch of rows that are zero but we will also get rows with 1 for each of thos
+  df_melt <- unique(df_melt)
+  #Now we can aggreagte the results
+  df_cats <- dcast(df_melt, A + B + grouping ~ pangenome, sum)
+  #now convert to long again
+  long_df_sum_genes <- melt(df_cats, id = c("A","B","grouping"))
+  #Add df to overal df
+  long_AB_sum_info <- rbind(long_AB_sum_info, long_df_sum_genes)
+}
+#Add proper column name
+colnames(long_AB_sum_info)[4] <- "pangenome" 
+
+#Set Factors to right orders
+long_AB_sum_info$pangenome <- factor(long_AB_sum_info$pangenome,
+                                     levels = c("Core genes", "Soft core genes",
+                                                "Shell genes", "Cloud genes"))
+long_AB_sum_info$grouping <- factor(long_AB_sum_info$grouping,
+                                    levels = c("everything", " other Campylobacter", "concisus",
+                                               "other campy only", "concisus only"))
+#get all unique A levels
+A_levels <- unique(long_AB_sum_info$A)
+
+##Loop to produce ggplot for each A level
+for (n in 1:length(A_levels)){
+#set A level
+  A_level <- as.character(A_levels[n])
+  #Subset data to get only info in A level
+  A_df <- long_AB_sum_info[long_AB_sum_info$A == A_level,]
+  #Produce GG bar chart
+  g_bar <- ggplot(data = A_df, aes(y = value, x= grouping, fill = pangenome)) +
+  #Stacked bar chart
+  geom_bar(stat = "identity", position = "dodge") + 
+  #Facet by A and B
+  facet_wrap(~B, ncol = 3,scales="free_y") +
+  #Custom a and y labels
+  xlab("") + ylab("Number of Genes") + ggtitle(A_level) +
+  #Sets theme and sets base font size to 12
+  theme_set(theme_gray(base_size = 8)) +
+  #Rotate axis x labels
+  theme(axis.text.x=element_text(angle=90,hjust=1), legend.position = "bottom") +
+  #Keep all levels
+  scale_fill_discrete(drop=FALSE)
+#This command will save the above g_bar object as a pdf
+#Can change the size of the PDF
+PDF_file <- paste("SF3_", A_level, "_campy_vs_concisus_KEGG_AB_BRITE_barchart.pdf")
+ggsave(PDF_file, g_bar, units="mm", height=140, width=170, dpi=300)
+PNG_file <- paste("SF3_", A_level, "_campy_vs_concisus_KEGG_AB_BRITE_barchart.png")
+ggsave(PNG_file, g_bar, units="mm", height=140, width=170, dpi=300)
+}
+```
+```{r Campylobacter_pangenome_KEGG_barcharts_figure, echo=FALSE}
+#Create empty list
+g_bars <- list()
+##Loop to produce ggplot for each A level
+for (n in 1:length(A_levels)){
+#set A level
+  A_level <- as.character(A_levels[n])
+  #Subset data to get only info in A level
+  A_df <- long_AB_sum_info[long_AB_sum_info$A == A_level,]
+  #Produce GG bar chart
+  g_bar <- ggplot(data = A_df, aes(y = value, x= grouping, fill = pangenome)) +
+  #Stacked bar chart
+  geom_bar(stat = "identity", position = "dodge") + 
+  #Facet by A and B
+  facet_wrap(~B, ncol = 3,scales="free_y") +
+  #Custom a and y labels
+  xlab("") + ylab("Number of Genes") + ggtitle(A_level) +
+  #Sets theme and sets base font size to 12
+  theme_set(theme_gray(base_size = 8)) +
+  #Rotate axis x labels
+  theme(axis.text.x=element_text(angle=90,hjust=1)) +
+  #Keep all levels
+  scale_fill_discrete(drop=FALSE)
+  #save ggplot into list
+  g_bars[[n]] <- g_bar
+}
+#Output gplots
+g_bars[1]
+g_bars[2]
+g_bars[3]
+g_bars[4]
+g_bars[5]
+g_bars[6]
+#clear workspace
+rm(list = ls())
+```
+
+### Supplementary Figure 4: Pangenome summary of paired faecal/oral C. concisus isolates
+```{r oral_feacal_pairs_pangenome_polyfreq}
+#Loading libraries
+if (!require("ggplot2")) {install.packages("ggplot2")
+  library(ggplot2)}
+if (!require("RColorBrewer")) {install.packages("RColorBrewer")
+  library(RColorBrewer)}
+#read in edited files
+df <- read.csv("campylobacter_gene_presence_absence.Rtab", sep = "\t", check.names = FALSE)
+#edit to remove genes and make them row names
+rownames(df) <- df[,1]
+df <- df[,-1]
+
+#df of our faecal oral paired samples
+paired_samples <- df[,c(13,14,18,19,20,21,22,23,29,30,38,39)]
+#oral samples
+oral_samples <- paired_samples[,c(1,4,5,8,10,12)]
+#faecal samples
+faecal_samples <- paired_samples[,c(2,3,6,7,9,11)]
+#Genes only in oral
+oral_only <- oral_samples[rowSums(faecal_samples) == 0,]
+#Genes only in faecal
+faecal_only <- faecal_samples[rowSums(oral_samples) == 0,]
+
+#make list of data frames
+list_df <- list(paired_samples, oral_samples, faecal_samples, oral_only, faecal_only)
+
+#empty data frame to put info
+pangenome_stats_df <- data.frame(matrix(NA, ncol = length(list_df),
+                                     nrow = 5))
+row.names(pangenome_stats_df) <- c("Core genes", "Soft core genes",
+                                "Shell genes", "Cloud genes",
+                                "Total genes")
+colnames(pangenome_stats_df) <- c("Oral and Faecal", "Oral",
+                                  "Faecal", "Oral only", "Faecal only")
+
+#loop to summary info of pangenomes for differnet subset
+for (n in 1:length(list_df)){
+x <- list_df[[n]]
+#remove genes with no information
+x <- x[rowSums(x) > 0,]
+#number of samples
+num_samples <- ncol(x)
+# get relative amount of samples the gene is foudn in
+x$rel_samples <- rowSums(x) / num_samples
+#Core genes
+core_genes <- length(x[x$rel_samples >= 0.99, "rel_samples"])
+#Soft core genes
+soft_core_genes <- length(x[x$rel_samples < 0.99 & x$rel_samples >= 0.95,
+                            "rel_samples"])
+#Shell genes
+shell_genes <- length(x[x$rel_samples < 0.95 & x$rel_samples >= 0.15,
+                            "rel_samples"])
+#Cloud genes
+cloud_genes <- length(x[x$rel_samples < 0.15,
+                            "rel_samples"])
+#Total genes
+total_genes <- length(x$rel_samples)
+#vector of info
+info <- c(core_genes,soft_core_genes, shell_genes, cloud_genes, total_genes)
+#add data to data frame
+pangenome_stats_df[,n] <- info
+}
+#Write summary data frame to file
+write.csv(x = pangenome_stats_df, file = "Concisus_faecal_oral_paired_pangenome_summary_table.txt")
+
+# Produce line plot of number of genes against percentage of samples found in
+sample_type <- c()
+percs <-c()
+#loop to produce info for line graph
+for (n in 1:length(list_df)){
+  x <- list_df[[n]]
+  #remove genes with no information
+  x <- x[rowSums(x) > 0,]
+  #number of samples
+  num_samples <- ncol(x)
+  # get relative amount of samples the gene is foudn in
+  percs <- c(percs,(rowSums(x) / num_samples) * 100)
+  #vector of sample type
+  sample_type_name <- colnames(pangenome_stats_df)[n]
+  sample_type <- c(sample_type, rep(x = sample_type_name, times = length((rowSums(x) / num_samples))))
+}
+
+#outside loop create data frame  
+histogram_info <- data.frame(sample_type, percs)
+
+#Produce line graph with info
+#Colours for sample groups
+colset <- brewer.pal(9, "Set1")
+colset <- colset[c(1:5,7:9)]
+#Plot the data
+g_freqpoly <- ggplot(histogram_info, aes(percs)) + 
+  #Geom_freq poly
+  #Set bin width to 5 and center to 2.5
+  #This mean the center of the first bin is 2.5 therefore first bin is 0-5
+  geom_freqpoly(binwidth = 20, center=0, aes(colour = sample_type)) +
+  geom_histogram(binwidth = 20, center=0, position = "identity", alpha = 0.1, aes(fill = sample_type)) +
+  #log 10 count info
+  scale_y_log10() +
+  #Custom a and y labels
+  xlab("Percentage of samples") + ylab("Log10 count of genes") +
+  #Sets theme and sets base font size to 12
+  theme_set(theme_gray(base_size = 12)) +
+  #Sets where to position the legend. In this case the bottom
+  theme(legend.position="bottom") +
+  labs(fill='') +
+  #This sets it so the limit is determined by the maximum and min/starting y values
+  #Used so there is no empty plot space above or below bar graphs
+  scale_x_continuous(limits = c(-10,110), expand = c(0,0),
+                     # Set tick marks for x axis
+                     breaks = seq(from = 0, to = 100, by = 5)) +
+  # Set tick marks for y axis
+  scale_y_log10(breaks = c(0,1,10,100,1000,10000,100000)) +
+  #Make saple labels go one on top of each other
+  guides(colour = guide_legend(nrow = 3), fill=FALSE) +
+  #Set my own colour brewer colours
+  scale_color_manual(values=colset) +
+  scale_fill_manual(values=colset)
+#This command will save the above g_bar object as a pdf
+#Can change the size of the PDF
+PDF_file <- "SF4_Pangenome_summary_of_paired_faecal_oral_C_concisus_isolates.pdf"
+ggsave(PDF_file, g_freqpoly, units="mm", height=150, width=170, dpi=300)
+PNG_file <- "SF4_Pangenome_summary_of_paired_faecal_oral_C_concisus_isolates.png"
+ggsave(PNG_file, g_freqpoly, units="mm", height=150, width=170, dpi=300)
+
+```
+```{r oral_feacal_pairs_pangenome_polyfreq_figure, echo=FALSE}
+g_freqpoly
+```

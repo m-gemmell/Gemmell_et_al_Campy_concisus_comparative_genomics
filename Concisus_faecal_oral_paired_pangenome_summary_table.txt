@@ -1,0 +1,6 @@
+"","Oral and Faecal","Oral","Faecal","Oral only","Faecal only"
+"Core genes",417,454,458,0,0
+"Soft core genes",0,0,0,0,0
+"Shell genes",3536,5124,4115,1790,785
+"Cloud genes",2410,0,0,0,0
+"Total genes",6363,5578,4573,1790,785
